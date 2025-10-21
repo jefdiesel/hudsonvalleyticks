@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Deploy to DreamHost
-        uses: appleboy/ssh-action@master
+        uses: webfactory/ssh-agent@v0.9.0
         with:
-          host: iad1-shared-b8-11.dreamhost.com
-          username: dh_uj5z8b
-          key: ${{ secrets.DEPLOY_KEY }}
-          port: 22
-          script: /home/dh_uj5z8b/hudsonvalleyticks.com/deploy.sh
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+      
+      - name: Pull and deploy
+        run: |
+          ssh -o StrictHostKeyChecking=no dh_uj5z8b@iad1-shared-b8-11.dreamhost.com /home/dh_uj5z8b/hudsonvalleyticks.com/deploy.sh
