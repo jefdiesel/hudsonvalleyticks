@@ -1,0 +1,136 @@
+[0;34m╔════════════════════════════════════════════════════════════╗[0m
+[0;34m║  Hudson Valley Ticks - WCAG Bulk Fix Script (macOS v2)   ║[0m
+[0;34m╚════════════════════════════════════════════════════════════╝[0m
+
+[1;33m📁 Creating backup at: ./wcag-backup-20251021-142639[0m
+[0;32mFound 20 HTML files to process[0m
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: natural-yard-treatment-tick-control.html[0m
+  [0;34m○[0m <main> landmark already exists
+  [0;32m✓[0m Applied 0 fixes to natural-yard-treatment-tick-control.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: accessibility.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Converting info-box divs to sections
+  [0;32m✓[0m Applied 2 fixes to accessibility.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: tick-types-hudson-valley-identification.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to tick-types-hudson-valley-identification.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: blog.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to blog.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: insect-shield-white-socks-tick-prevention.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to insect-shield-white-socks-tick-prevention.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: insect-shield-pants-permethrin-hiking.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to insect-shield-pants-permethrin-hiking.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: index.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to index.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: how-to-safely-remove-a-tick.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to how-to-safely-remove-a-tick.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: picaridin-vs-deet-bug-repellent.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to picaridin-vs-deet-bug-repellent.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: deet-wipes-portable-tick-protection.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Converting info-box divs to sections
+  [0;32m✓[0m Applied 2 fixes to deet-wipes-portable-tick-protection.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: diy-permethrin-spray-treat-clothes.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to diy-permethrin-spray-treat-clothes.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: protecting-your-yard-tick-control.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to protecting-your-yard-tick-control.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: bens-30-deet-tick-repellent.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Converting info-box divs to sections
+  [0;32m✓[0m Applied 2 fixes to bens-30-deet-tick-repellent.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: insectguard-complete-tick-protection-kit.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Converting info-box divs to sections
+  [0;32m✓[0m Applied 2 fixes to insectguard-complete-tick-protection-kit.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: tick-prevention-gear.html[0m
+  [0;34m○[0m <main> landmark already exists
+  [0;32m✓[0m Fixing nav-menu link contrast
+  [0;32m✓[0m Fixing quick-nav link contrast
+  [0;32m✓[0m Fixing footer link contrast
+  [0;32m✓[0m Adding IDs to section headings
+  [0;32m✓[0m Fixing kit-section heading hierarchy
+  [0;32m✓[0m Applied 5 fixes to tick-prevention-gear.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: test.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to test.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: sawyer-permethrin-24oz-bulk-treatment.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Converting info-box divs to sections
+  [0;32m✓[0m Applied 2 fixes to sawyer-permethrin-24oz-bulk-treatment.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: permethrin-treated-clothing-guide.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to permethrin-treated-clothing-guide.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: early-signs-of-lyme-disease.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Applied 1 fixes to early-signs-of-lyme-disease.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33mProcessing: leg-gaiters-tick-prevention.html[0m
+  [0;32m✓[0m Adding <main> landmark
+  [0;32m✓[0m Converting info-box divs to sections
+  [0;32m✓[0m Applied 2 fixes to leg-gaiters-tick-prevention.html
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32m✓ COMPLETED[0m
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+📊 [0;32mFiles processed:[0m 20 of 20
+🔧 [0;32mTotal fixes applied:[0m 29
+💾 [1;33mBackups saved to:[0m ./wcag-backup-20251021-142639
+
+[1;33m⚠️  MANUAL REVIEW NEEDED:[0m
+   1. Verify closing </section> tags for converted info-boxes
+   2. Check that heading IDs match aria-labelledby attributes
+   3. Test all pages with WAVE or axe DevTools
+
+[0;32m✓ Testing recommended:[0m
+   diff ./wcag-backup-20251021-142639/index.html index.html
+
+📄 [0;32mReport saved:[0m ./wcag-fix-report-20251021-142642.txt
+
