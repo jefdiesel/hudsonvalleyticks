@@ -18,4 +18,6 @@ jobs:
       
       - name: Pull and deploy
         run: |
-          ssh -o StrictHostKeyChecking=no dh_uj5z8b@iad1-shared-b8-11.dreamhost.com /home/dh_uj5z8b/hudsonvalleyticks.com/deploy.sh
+          mkdir -p ~/.ssh
+          ssh-keyscan -H iad1-shared-b8-11.dreamhost.com >> ~/.ssh/known_hosts
+          ssh -i ~/.ssh/id_ed25519 dh_uj5z8b@iad1-shared-b8-11.dreamhost.com /home/dh_uj5z8b/hudsonvalleyticks.com/deploy.sh
