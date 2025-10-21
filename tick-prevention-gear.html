@@ -366,6 +366,44 @@
                 grid-template-columns: 1fr;
             }
         }
+    
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-green);
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s;
+            }
+            
+            .nav-menu.active {
+                max-height: 300px;
+            }
+            
+            .nav-menu li {
+                padding: 1rem 2rem;
+                border-bottom: 1px solid #eee;
+            }
+        }
+
     </style>
 </head>
 <body>
