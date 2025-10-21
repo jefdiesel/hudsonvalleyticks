@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudson Valley Lyme Risk Score</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            padding: 2rem;
+        }
+        
+        .risk-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .risk-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .risk-header h1 {
+            color: #2c5f2d;
+            margin-bottom: 0.5rem;
+        }
+        
+        .risk-header p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .counties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .county-card {
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .county-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .county-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .risk-score {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        
+        .risk-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        
+        /* Risk score colors */
+        .risk-0 { background: linear-gradient(135deg, #90EE90, #7CCD7C); }
+        .risk-1 { background: linear-gradient(135deg, #FFD700, #FFC700); }
+        .risk-2 { background: linear-gradient(135deg, #FFA500, #FF8C00); }
+        .risk-3 { background: linear-gradient(135deg, #FF6347, #FF4500); }
+        .risk-4 { background: linear-gradient(135deg, #DC143C, #B22222); }
+        .risk-5 { background: linear-gradient(135deg, #8B0000, #660000); }
+        
+        .risk-scale {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            gap: 0.5rem;
+        }
+        
+        .scale-item {
+            flex: 1;
+            padding: 0.75rem;
+            border-radius: 6px;
+            text-align: center;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .scale-0 { background: #90EE90; }
+        .scale-1 { background: #FFD700; }
+        .scale-2 { background: #FFA500; }
+        .scale-3 { background: #FF6347; }
+        .scale-4 { background: #DC143C; }
+        .scale-5 { background: #8B0000; }
+        
+        .scale-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .disclaimer {
+            background: #f0f7ff;
+            border-left: 4px solid #2c5f2d;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .ny-map-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .ny-map-link a {
+            display: inline-block;
+            background: #2c5f2d;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .ny-map-link a:hover {
+            background: #1e4620;
+        }
+    </style>
+</head>
+<body>
+    <div class="risk-container">
+        <div class="risk-header">
+            <h1>🔴 Hudson Valley Lyme Risk Scores</h1>
+            <p>Based on NY State Department of Health Data</p>
+        </div>
+        
+        <div class="risk-scale">
+            <div class="scale-item scale-0">0</div>
+            <div class="scale-item scale-1">1</div>
+            <div class="scale-item scale-2">2</div>
+            <div class="scale-item scale-3">3</div>
+            <div class="scale-item scale-4">4</div>
+            <div class="scale-item scale-5">5</div>
+        </div>
+        <div class="scale-labels">
+            <span>Very Low</span>
+            <span>Low</span>
+            <span>Moderate</span>
+            <span>High</span>
+            <span>Very High</span>
+            <span>Extreme</span>
+        </div>
+        
+        <div class="counties-grid">
+            <!-- Putnam County -->
+            <div class="county-card risk-4">
+                <div class="county-name">Putnam County</div>
+                <div class="risk-score">4</div>
+                <div class="risk-label">Very High Risk</div>
+            </div>
+            
+            <!-- Dutchess County -->
+            <div class="county-card risk-4">
+                <div class="county-name">Dutchess County</div>
+                <div class="risk-score">4</div>
+                <div class="risk-label">Very High Risk</div>
+            </div>
+            
+            <!-- Ulster County -->
+            <div class="county-card risk-3">
+                <div class="county-name">Ulster County</div>
+                <div class="risk-score">3</div>
+                <div class="risk-label">High Risk</div>
+            </div>
+            
+            <!-- Orange County -->
+            <div class="county-card risk-3">
+                <div class="county-name">Orange County</div>
+                <div class="risk-score">3</div>
+                <div class="risk-label">High Risk</div>
+            </div>
+            
+            <!-- Rockland County -->
+            <div class="county-card risk-4">
+                <div class="county-name">Rockland County</div>
+                <div class="risk-score">4</div>
+                <div class="risk-label">Very High Risk</div>
+            </div>
+            
+            <!-- Westchester County -->
+            <div class="county-card risk-4">
+                <div class="county-name">Westchester County</div>
+                <div class="risk-score">4</div>
+                <div class="risk-label">Very High Risk</div>
+            </div>
+        </div>
+        
+        <div class="disclaimer">
+            <strong>⚠️ Important:</strong> Risk scores are based on tick population density and pathogen prevalence at specific locations and time points. Scores may vary within counties. Always take precautions to avoid tick bites, especially during peak season (May-September for nymphs, March-May and October-November for adults). Contact your healthcare provider immediately if you develop a rash or flu-like symptoms after outdoor exposure.
+        </div>
+        
+        <div class="ny-map-link">
+            <a href="https://www.health.ny.gov/diseases/communicable/lyme/risk_score_map.htm" target="_blank">
+                View Full NY State Interactive Map →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
