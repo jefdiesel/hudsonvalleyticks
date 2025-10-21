@@ -35,14 +35,14 @@ async function displayRiskScores() {
         }
         return;
     }
-    let html = '<div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">';
+    let html = '<div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">';
     Object.entries(riskData).forEach(([county, data]) => {
         const color = data.riskLevel?.color || '#ccc';
         html += `
-            <div style="padding: 0.75rem; border-radius: 6px; text-align: center; color: white; background: ${color}; min-width: 80px;">
-                <div style="font-weight: 600; margin-bottom: 0.3rem; font-size: 0.85rem;">${county}</div>
-                <div style="font-size: 1.1rem; font-weight: bold;">${data.riskLevel?.score || '—'}</div>
-                <div style="font-size: 0.7rem; opacity: 0.9;">${data.lyme_percent}%</div>
+            <div style="padding: 0.5rem 0.75rem; border-radius: 4px; text-align: center; color: white; background: ${color}; width: 65px;">
+                <div style="font-weight: 600; font-size: 0.75rem;">${county}</div>
+                <div style="font-size: 1rem; font-weight: bold;">${data.riskLevel?.score}</div>
+                <div style="font-size: 0.65rem; opacity: 0.9;">${data.lyme_percent}%</div>
             </div>
         `;
     });
