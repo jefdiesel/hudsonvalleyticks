@@ -312,14 +312,20 @@
 
 <section style="max-width: 900px; margin: 3rem auto; padding: 0 2rem;">
     <div style="text-align: center;">
-        <h2 style="color: #2c5f2d; margin-bottom: 1rem;">Hudson Valley Lyme Risk Scores</h2>
-        <p style="color: #666; margin-bottom: 1.5rem;">Current risk levels by county based on NY State Department of Health data</p>
-        <a href="/lyme-risk-infographic.html" style="display: inline-block; background: #2c5f2d; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background 0.3s;">
-            View Risk Score Infographic →
+        <h2 style="color: #2c5f2d; margin-bottom: 0.5rem;">🔴 Hudson Valley Lyme Risk (Live Data)</h2>
+        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem;">Current infection rates based on NY State tick surveillance</p>
+        
+        <div id="tick-risk-container" style="min-height: 200px; display: flex; justify-content: center; align-items: center;">
+            <p style="color: #999;">Loading risk data...</p>
+        </div>
+        
+        <a href="/lyme-risk-infographic.html" style="display: inline-block; background: #2c5f2d; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; margin-top: 1rem;">
+            View Full County Details →
         </a>
     </div>
 </section>
-    
+
+<script src="/tick-risk-api.js"></script>    
     <div class="container">
         <header>
             <h1>Hudson Valley Tick Bite Information</h1>
