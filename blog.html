@@ -173,33 +173,11 @@
             margin-bottom: 1rem;
             font-size: 1.8rem;
         }
-        .category-filter {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-        .category-btn {
-            background: var(--bg-light);
-            border: 2px solid var(--accent-green);
-            color: var(--primary-green);
-            padding: 0.6rem 1.2rem;
-            border-radius: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        .category-btn:hover, .category-btn.active {
-            background: var(--accent-green);
-            color: white;
-        }
         @media (max-width: 768px) {
             .container { padding: 1rem; }
             h1 { font-size: 2rem; }
             .blog-posts { grid-template-columns: 1fr; }
         }
-    
         .mobile-menu-toggle {
             display: none;
             background: none;
@@ -208,12 +186,10 @@
             cursor: pointer;
             color: var(--primary-green);
         }
-        
         @media (max-width: 768px) {
             .mobile-menu-toggle {
                 display: block;
             }
-            
             .nav-menu {
                 position: absolute;
                 top: 60px;
@@ -226,17 +202,14 @@
                 overflow: hidden;
                 transition: max-height 0.3s;
             }
-            
             .nav-menu.active {
                 max-height: 300px;
             }
-            
             .nav-menu li {
                 padding: 1rem 2rem;
                 border-bottom: 1px solid #eee;
             }
         }
-
     </style>
 <meta name="google-site-verification" content="EdTiTb32BQdG10T38Ag4P7LuN-MymFb4k1G71GaUad0" />
     </head>
@@ -246,14 +219,12 @@
             <a href="/" class="logo">🌿 Hudson Valley Ticks</a>
             <button class="mobile-menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">☰</button>
             <ul class="nav-menu">
-                <li><a href="/" class="active">Tick Bite Info</a></li>
-                <li><a href="/tick-prevention-gear.html" >Tick Prevention Gear</a></li>
-                <li><a href="/blog.html" >HV Tick Blog</a></li>
+                <li><a href="/">Tick Bite Info</a></li>
+                <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
+                <li><a href="/blog.html" class="active">HV Tick Blog</a></li>
             </ul>
         </div>
     </nav>
-
-    
 
     <div class="container">
         <header>
@@ -263,152 +234,88 @@
 
         <div class="featured-section">
             <h2>🛡️ Most Important Protection</h2>
-            <p>A three-layer defense prevents 99%+ of Lyme disease cases: (1) Permethrin-treated clothing, (2) Picaridin skin repellent, (3) Tick checks. Start with the first post below to master the basics.</p>
+            <p>A three-layer defense prevents 99%+ of Lyme disease cases: (1) Permethrin-treated clothing, (2) Picaridan skin repellent, (3) Tick checks. Start with the posts below to master the basics.</p>
         </div>
 
-        <!-- All 15 Blog Posts Grid -->
+        <!-- All 15 Blog Posts Grid - NEWEST TO OLDEST -->
         <div class="blog-posts">
-            <!-- Post 1 -->
+            <!-- NEW Post 15: InsectGuard - NEWEST FIRST -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">Prevention</span>
-                        <h3 class="post-title">Complete Guide to Permethrin-Treated Clothing</h3>
+                        <span class="post-category">⭐ NEW • Protection</span>
+                        <h3 class="post-title">Complete Tick Protection Kits for Full-Body Defense</h3>
                     </div>
-                    <div class="post-meta">October 20, 2025 • 8 min • 5,000+ reviews</div>
+                    <div class="post-meta">October 21, 2025 • 7 min • 2,800+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">Learn why the CDC ranks permethrin-treated clothing as the #1 tick prevention method. Discover how it works, lasts 70+ washes, and which brands offer the best protection.</p>
-                    <div class="product-highlight">📦 Featured: Insect Shield Men's UPF Shirt ($45-55)</div>
-                    <a href="/permethrin-treated-clothing-guide.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">All-in-one permethrin treatment kits include leg gaiters, arm bands, hats, and belts. Get head-to-toe protection with pre-treated gear.</p>
+                    <div class="product-highlight">📦 Featured: InsectGuard Complete Package ($25-35)</div>
+                    <a href="/insectguard-complete-tick-protection-kit.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- Post 2 -->
+            <!-- NEW Post 14: Sawyer 24oz -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">Health</span>
-                        <h3 class="post-title">Early Signs of Lyme Disease</h3>
+                        <span class="post-category">⭐ NEW • DIY Treatment</span>
+                        <h3 class="post-title">Sawyer Permethrin 24oz: Treat Your Whole Wardrobe</h3>
                     </div>
-                    <div class="post-meta">October 18, 2025 • 7 min • 3,200+ reviews</div>
+                    <div class="post-meta">October 21, 2025 • 6 min • 3,700+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">Symptoms beyond the bulls-eye rash that appear within 3-30 days. Learn when to seek medical care and why quick detection matters.</p>
-                    <div class="product-highlight">📦 Featured: Tick Twister 2-Pack ($6-8)</div>
-                    <a href="/early-signs-of-lyme-disease.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">The larger Sawyer Permethrin bottle treats multiple outfits economically. Perfect for families or anyone with extensive outdoor gear.</p>
+                    <div class="product-highlight">📦 Featured: Sawyer Permethrin 24oz ($18-25)</div>
+                    <a href="/sawyer-permethrin-24oz-bulk-treatment.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- Post 3 -->
+            <!-- NEW Post 13: DEET Wipes -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">Removal</span>
-                        <h3 class="post-title">How to Safely Remove a Tick</h3>
+                        <span class="post-category">⭐ NEW • Convenience</span>
+                        <h3 class="post-title">DEET Wipes for On-the-Go Tick Protection</h3>
                     </div>
-                    <div class="post-meta">October 16, 2025 • 6 min • 2,100+ reviews</div>
+                    <div class="post-meta">October 21, 2025 • 5 min • 3,100+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">CDC-approved step-by-step instructions. Avoid common mistakes that increase Lyme transmission risk. Complete guide for adults, children, and pets.</p>
-                    <div class="product-highlight">📦 Featured: TickCheck Premium Kit ($15-18)</div>
-                    <a href="/how-to-safely-remove-a-tick.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Individual DEET wipes are perfect for backpacking, fishing, and outdoor activities. No messy spray bottles needed.</p>
+                    <div class="product-highlight">📦 Featured: Ben's 30% DEET Wipes ($8-12)</div>
+                    <a href="/deet-wipes-portable-tick-protection.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- Post 4 -->
+            <!-- NEW Post 12: Ben's DEET -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">Yard Safety</span>
-                        <h3 class="post-title">Protecting Your Yard: Tick Control</h3>
+                        <span class="post-category">⭐ NEW • Repellents</span>
+                        <h3 class="post-title">Ben's 30% DEET: The CDC-Recommended Standard</h3>
                     </div>
-                    <div class="post-meta">October 14, 2025 • 8 min • 1,800+ reviews</div>
+                    <div class="post-meta">October 21, 2025 • 6 min • 4,500+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">80% of tick bites happen at home. Learn landscaping strategies, yard sprays, and innovative solutions like Tick Tubes to reduce ticks on your property.</p>
-                    <div class="product-highlight">📦 Featured: Thermacell Tick Tubes ($25-30)</div>
-                    <a href="/protecting-your-yard-tick-control.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Why Ben's 30% DEET is the CDC minimum recommendation. Learn differences between DEET percentages and protection duration.</p>
+                    <div class="product-highlight">📦 Featured: Ben's 30% DEET 3.4oz ($10-15)</div>
+                    <a href="/bens-30-deet-tick-repellent.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- Post 5 -->
+            <!-- NEW Post 11: Leg Gaiters -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">Prevention</span>
-                        <h3 class="post-title">Picaridan vs DEET: Which Repellent?</h3>
+                        <span class="post-category">⭐ NEW • Prevention</span>
+                        <h3 class="post-title">Leg Gaiters: Stop Ticks at Your Ankles</h3>
                     </div>
-                    <div class="post-meta">October 12, 2025 • 7 min • 3,500+ reviews</div>
+                    <div class="post-meta">October 21, 2025 • 7 min • 2,400+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">Compare these CDC-recommended bug repellents. Discover why Picarikin offers longer protection and works better with Hudson Valley's humid climate.</p>
-                    <div class="product-highlight">📦 Featured: Sawyer Picaridin 20% ($12-18)</div>
-                    <a href="/picaridin-vs-deet-bug-repellent.html" class="cta-link">Read Full Post →</a>
-                </div>
-            </div>
-
-            <!-- Post 6 -->
-            <div class="post-card">
-                <div class="post-header">
-                    <div>
-                        <span class="post-category">DIY</span>
-                        <h3 class="post-title">DIY Permethrin Spray Guide</h3>
-                    </div>
-                    <div class="post-meta">October 10, 2025 • 6 min • 6,200+ reviews</div>
-                </div>
-                <div class="post-body">
-                    <p class="post-excerpt">Treat your existing clothes for tick protection. Step-by-step instructions plus safety tips for treating outdoor gear, boots, and backpacks.</p>
-                    <div class="product-highlight">📦 Featured: Sawyer Permethrin Pump ($15-20)</div>
-                    <a href="/diy-permethrin-spray-treat-clothes.html" class="cta-link">Read Full Post →</a>
-                </div>
-            </div>
-
-            <!-- Post 7 -->
-            <div class="post-card">
-                <div class="post-header">
-                    <div>
-                        <span class="post-category">Education</span>
-                        <h3 class="post-title">Tick Types in Hudson Valley</h3>
-                    </div>
-                    <div class="post-meta">October 8, 2025 • 6 min • 980+ reviews</div>
-                </div>
-                <div class="post-body">
-                    <p class="post-excerpt">Learn to identify blacklegged ticks, dog ticks, and lone star ticks. Understand which ones transmit Lyme disease and what to do when you find one.</p>
-                    <div class="product-highlight">📦 Featured: TickCheck Value 3-Pack ($8-10)</div>
-                    <a href="/tick-types-hudson-valley-identification.html" class="cta-link">Read Full Post →</a>
-                </div>
-            </div>
-
-            <!-- Post 8 -->
-            <div class="post-card">
-                <div class="post-header">
-                    <div>
-                        <span class="post-category">Prevention</span>
-                        <h3 class="post-title">Why White Socks Matter</h3>
-                    </div>
-                    <div class="post-meta">October 6, 2025 • 5 min • 4,100+ reviews</div>
-                </div>
-                <div class="post-body">
-                    <p class="post-excerpt">Visibility + permethrin treatment = early tick detection. Discover why white socks are crucial for maximum protection against Lyme disease.</p>
-                    <div class="product-highlight">📦 Featured: Insect Shield Socks ($15-20)</div>
-                    <a href="/insect-shield-white-socks-tick-prevention.html" class="cta-link">Read Full Post →</a>
-                </div>
-            </div>
-
-            <!-- Post 9 -->
-            <div class="post-card">
-                <div class="post-header">
-                    <div>
-                        <span class="post-category">Yard Safety</span>
-                        <h3 class="post-title">Natural Yard Treatments: Effective?</h3>
-                    </div>
-                    <div class="post-meta">October 4, 2025 • 7 min • 2,200+ reviews</div>
-                </div>
-                <div class="post-body">
-                    <p class="post-excerpt">Compare cedar oil, diatomaceous earth, and nematodes. Learn which natural options actually work and when to use them vs chemical treatments.</p>
-                    <div class="product-highlight">📦 Featured: Wondercide Natural Spray ($35-40)</div>
-                    <a href="/natural-yard-treatment-tick-control.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Stop ticks before they reach your body. Learn why permethrin-treated leg gaiters are essential for hikers, gardeners, and outdoor workers.</p>
+                    <div class="product-highlight">📦 Featured: LYMEEZ 3D Mesh Leg Gaiters ($20-30)</div>
+                    <a href="/leg-gaiters-tick-prevention.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
@@ -422,97 +329,160 @@
                     <div class="post-meta">October 2, 2025 • 6 min • 3,800+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">Why your pants matter for tick prevention. Discover ripstop fabric benefits and the best permethrin-treated pants for Hudson Valley outdoor activities.</p>
+                    <p class="post-excerpt">Why your pants matter for tick prevention. Discover ripstop fabric benefits and the best permethrin-treated pants.</p>
                     <div class="product-highlight">📦 Featured: Insect Shield Pants ($50-65)</div>
                     <a href="/insect-shield-pants-permethrin-hiking.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- NEW Post 11: Leg Gaiters -->
+            <!-- Post 9 -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">New • Prevention</span>
-                        <h3 class="post-title">Leg Gaiters: Stop Ticks at Your Ankles</h3>
+                        <span class="post-category">Yard Safety</span>
+                        <h3 class="post-title">Natural Yard Treatments: Effective?</h3>
                     </div>
-                    <div class="post-meta">October 21, 2025 • 7 min • 2,400+ reviews</div>
+                    <div class="post-meta">October 4, 2025 • 7 min • 2,200+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">Ticks climb from the ground up—stop them before they reach your body. Learn why permethrin-treated leg gaiters are essential for hikers, gardeners, and outdoor workers in tick country.</p>
-                    <div class="product-highlight">📦 Featured: LYMEEZ 3D Mesh Leg Gaiters ($20-30)</div>
-                    <a href="/leg-gaiters-tick-prevention.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Compare cedar oil, diatomaceous earth, and nematodes. Learn which natural options actually work and when to use them.</p>
+                    <div class="product-highlight">📦 Featured: Wondercide Natural Spray ($35-40)</div>
+                    <a href="/natural-yard-treatment-tick-control.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- NEW Post 12: Ben's 30 DEET Spray -->
+            <!-- Post 8 -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">New • Repellents</span>
-                        <h3 class="post-title">Ben's 30% DEET: The CDC-Recommended Standard</h3>
+                        <span class="post-category">Prevention</span>
+                        <h3 class="post-title">Why White Socks Matter</h3>
                     </div>
-                    <div class="post-meta">October 21, 2025 • 6 min • 4,500+ reviews</div>
+                    <div class="post-meta">October 6, 2025 • 5 min • 4,100+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">Why Ben's 30% DEET is the minimum concentration recommended by the CDC for tick protection. Learn the differences between DEET percentages and how long protection lasts.</p>
-                    <div class="product-highlight">📦 Featured: Ben's 30% DEET 3.4oz Pump ($10-15)</div>
-                    <a href="/bens-30-deet-tick-repellent.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Visibility + permethrin treatment = early tick detection. Discover why white socks are crucial for maximum protection.</p>
+                    <div class="product-highlight">📦 Featured: Insect Shield Socks ($15-20)</div>
+                    <a href="/insect-shield-white-socks-tick-prevention.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- NEW Post 13: Ben's DEET Wipes -->
+            <!-- Post 7 -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">New • Convenience</span>
-                        <h3 class="post-title">DEET Wipes for On-the-Go Tick Protection</h3>
+                        <span class="post-category">Education</span>
+                        <h3 class="post-title">Tick Types in Hudson Valley</h3>
                     </div>
-                    <div class="post-meta">October 21, 2025 • 5 min • 3,100+ reviews</div>
+                    <div class="post-meta">October 8, 2025 • 6 min • 980+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">Individual DEET wipes are perfect for backpacking, fishing, and outdoor activities. No messy spray bottles—just convenient, portable protection against ticks and mosquitoes.</p>
-                    <div class="product-highlight">📦 Featured: Ben's 30% DEET Wipes 24-Pack ($8-12)</div>
-                    <a href="/deet-wipes-portable-tick-protection.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Learn to identify blacklegged ticks, dog ticks, and lone star ticks. Understand which ones transmit Lyme disease.</p>
+                    <div class="product-highlight">📦 Featured: TickCheck Value 3-Pack ($8-10)</div>
+                    <a href="/tick-types-hudson-valley-identification.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- NEW Post 14: Permethrin 24oz Spray -->
+            <!-- Post 6 -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">New • DIY Treatment</span>
-                        <h3 class="post-title">Sawyer Permethrin 24oz: Treat Your Whole Wardrobe</h3>
+                        <span class="post-category">DIY</span>
+                        <h3 class="post-title">DIY Permethrin Spray Guide</h3>
                     </div>
-                    <div class="post-meta">October 21, 2025 • 6 min • 3,700+ reviews</div>
+                    <div class="post-meta">October 10, 2025 • 6 min • 6,200+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">The larger Sawyer Permethrin bottle treats multiple outfits economically. Perfect for families or anyone who owns extensive outdoor gear that needs tick protection.</p>
-                    <div class="product-highlight">📦 Featured: Sawyer Permethrin 24oz Trigger Spray ($18-25)</div>
-                    <a href="/sawyer-permethrin-24oz-bulk-treatment.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Treat your existing clothes for tick protection. Step-by-step instructions plus safety tips for outdoor gear.</p>
+                    <div class="product-highlight">📦 Featured: Sawyer Permethrin Pump ($15-20)</div>
+                    <a href="/diy-permethrin-spray-treat-clothes.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
-            <!-- NEW Post 15: InsectGuard Gaiters -->
+            <!-- Post 5 -->
             <div class="post-card">
                 <div class="post-header">
                     <div>
-                        <span class="post-category">New • Complete Protection</span>
-                        <h3 class="post-title">Complete Tick Protection Kits for Full-Body Defense</h3>
+                        <span class="post-category">Prevention</span>
+                        <h3 class="post-title">Picaridan vs DEET: Which Repellent?</h3>
                     </div>
-                    <div class="post-meta">October 21, 2025 • 7 min • 2,800+ reviews</div>
+                    <div class="post-meta">October 12, 2025 • 7 min • 3,500+ reviews</div>
                 </div>
                 <div class="post-body">
-                    <p class="post-excerpt">All-in-one permethrin treatment kits include leg gaiters, arm bands, hats, and belts. Get head-to-toe protection with pre-treated gear that requires no assembly or spraying.</p>
-                    <div class="product-highlight">📦 Featured: InsectGuard Complete Package ($25-35)</div>
-                    <a href="/insectguard-complete-tick-protection-kit.html" class="cta-link">Read Full Post →</a>
+                    <p class="post-excerpt">Compare CDC-recommended bug repellents. Discover why Picarikan offers longer protection in humid climates.</p>
+                    <div class="product-highlight">📦 Featured: Sawyer Picarikan 20% ($12-18)</div>
+                    <a href="/picaridin-vs-deet-bug-repellent.html" class="cta-link">Read Full Post →</a>
                 </div>
             </div>
 
+            <!-- Post 4 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <div>
+                        <span class="post-category">Yard Safety</span>
+                        <h3 class="post-title">Protecting Your Yard: Tick Control</h3>
+                    </div>
+                    <div class="post-meta">October 14, 2025 • 8 min • 1,800+ reviews</div>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">80% of tick bites happen at home. Learn landscaping strategies and innovative solutions like Tick Tubes.</p>
+                    <div class="product-highlight">📦 Featured: Thermacell Tick Tubes ($25-30)</div>
+                    <a href="/protecting-your-yard-tick-control.html" class="cta-link">Read Full Post →</a>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <div>
+                        <span class="post-category">Removal</span>
+                        <h3 class="post-title">How to Safely Remove a Tick</h3>
+                    </div>
+                    <div class="post-meta">October 16, 2025 • 6 min • 2,100+ reviews</div>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">CDC-approved step-by-step instructions. Avoid common mistakes that increase Lyme transmission risk.</p>
+                    <div class="product-highlight">📦 Featured: TickCheck Premium Kit ($15-18)</div>
+                    <a href="/how-to-safely-remove-a-tick.html" class="cta-link">Read Full Post →</a>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <div>
+                        <span class="post-category">Health</span>
+                        <h3 class="post-title">Early Signs of Lyme Disease</h3>
+                    </div>
+                    <div class="post-meta">October 18, 2025 • 7 min • 3,200+ reviews</div>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Symptoms beyond the bulls-eye rash that appear within 3-30 days. Learn when to seek medical care.</p>
+                    <div class="product-highlight">📦 Featured: Tick Twister 2-Pack ($6-8)</div>
+                    <a href="/early-signs-of-lyme-disease.html" class="cta-link">Read Full Post →</a>
+                </div>
+            </div>
+
+            <!-- Post 1 - OLDEST -->
+            <div class="post-card">
+                <div class="post-header">
+                    <div>
+                        <span class="post-category">Prevention</span>
+                        <h3 class="post-title">Complete Guide to Permethrin-Treated Clothing</h3>
+                    </div>
+                    <div class="post-meta">October 20, 2025 • 8 min • 5,000+ reviews</div>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Learn why CDC ranks permethrin-treated clothing as #1 tick prevention. Discover how it works and which brands offer the best protection.</p>
+                    <div class="product-highlight">📦 Featured: Insect Shield Men's UPF Shirt ($45-55)</div>
+                    <a href="/permethrin-treated-clothing-guide.html" class="cta-link">Read Full Post →</a>
+                </div>
+            </div>
         </div>
 
         <div class="featured-section">
             <h2>📦 15 Featured Products</h2>
-            <p>Each blog post recommends a specific Amazon product with affiliate links (tag: hudsonvalleyt-20). All products are verified, tested, and genuinely recommended for Hudson Valley tick prevention. New additions include leg gaiters, DEET wipes, and complete protection kits.</p>
+            <p>Each blog post recommends a specific Amazon product with affiliate links (tag: hudsonvalleyt-20). All products are verified, tested, and genuinely recommended for Hudson Valley tick prevention.</p>
         </div>
     </div>
 
