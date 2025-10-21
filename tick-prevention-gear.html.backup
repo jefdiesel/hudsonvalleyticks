@@ -453,14 +453,10 @@
     <nav aria-label="Main navigation">
         <div class="nav-container">
             <a href="/" class="logo">🌿 Hudson Valley Ticks</a>
-            <button class="mobile-menu-toggle" 
-                    aria-label="Toggle navigation menu" 
-                    aria-expanded="false" 
-                    aria-controls="nav-menu" 
-                    onclick="toggleMenu()">☰</button>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu()">☰</button>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="/">Tick Bite Info</a></li>
-                <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
+                <li><a href="/tick-prevention-gear.html" class="active">Tick Prevention Gear</a></li>
                 <li><a href="/blog.html">HV Tick Blog</a></li>
             </ul>
         </div>

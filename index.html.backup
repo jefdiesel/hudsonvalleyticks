@@ -298,18 +298,14 @@
 <meta name="google-site-verification" content="EdTiTb32BQdG10T38Ag4P7LuN-MymFb4k1G71GaUad0" />
     </head>
 <body>
-    <nav aria-label="Main navigation">
+    <nav>
         <div class="nav-container">
             <a href="/" class="logo">🌿 Hudson Valley Ticks</a>
-            <button class="mobile-menu-toggle" 
-                    aria-label="Toggle navigation menu" 
-                    aria-expanded="false" 
-                    aria-controls="nav-menu" 
-                    onclick="toggleMenu()">☰</button>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="/">Tick Bite Info</a></li>
-                <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
-                <li><a href="/blog.html">HV Tick Blog</a></li>
+            <button class="mobile-menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">☰</button>
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Tick Bite Info</a></li>
+                <li><a href="/tick-prevention-gear.html" >Tick Prevention Gear</a></li>
+                <li><a href="/blog.html" >HV Tick Blog</a></li>
             </ul>
         </div>
     </nav>
