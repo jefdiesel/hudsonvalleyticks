@@ -23,21 +23,29 @@ try {
     $riskScores = [];
     
     foreach ($counties as $county) {
-        $riskScores[$county] = ['infected' => 0, 'tested' => 0];
+        $riskScores[$county] = ['tested' => 0, 'lyme_percent' => 0, 'count' => 0];
     }
     
     foreach ($lines as $index => $line) {
         if ($index === 0 || empty(trim($line))) continue;
         
         $cols = str_getcsv($line);
-        $county = trim($cols[9] ?? '');
-        $infected = (int)($cols[13] ?? 0);
-        $tested = (int)($cols[12] ?? 0);
+        $county = trim($cols[1] ?? '');
+        $tested = (int)($cols[5] ?? 0);
+        $lyme_percent = floatval($cols[6] ?? 0);
         
-        if (in_array($county, $counties)) {
-            $riskScores[$county]['infected'] += $infected;
+        if (in_array($county, $counties) && $tested > 0) {
             $riskScores[$county]['tested'] += $tested;
+            $riskScores[$county]['lyme_percent'] += $lyme_percent;
+            $riskScores[$county]['count']++;
         }
+    }
+    
+    foreach ($riskScores as $county => $data) {
+        if ($data['count'] > 0) {
+            $riskScores[$county]['lyme_percent'] = round($data['lyme_percent'] / $data['count'], 1);
+        }
+        unset($riskScores[$county]['count']);
     }
     
     echo json_encode($riskScores);
