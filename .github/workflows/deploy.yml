@@ -17,4 +17,5 @@ jobs:
           host: iad1-shared-b8-11.dreamhost.com
           username: dh_uj5z8b
           key: ${{ secrets.DEPLOY_KEY }}
+          port: 22
           script: /home/dh_uj5z8b/hudsonvalleyticks.com/deploy.sh
