@@ -1,0 +1,20 @@
+name: Deploy to DreamHost
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Deploy to DreamHost
+        uses: appleboy/ssh-action@master
+        with:
+          host: iad1-shared-b8-11.dreamhost.com
+          username: dh_uj5z8b
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: /home/dh_uj5z8b/hudsonvalleyticks.com/deploy.sh
