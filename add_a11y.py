@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add accessibility link to all HTML files"""
+"""Add accessibility link to footer of all HTML files"""
 
 import re
 from pathlib import Path
@@ -9,7 +9,7 @@ html_files = sorted(current_dir.glob('*.html'))
 
 skip_files = {'accessibility.html', 'test.html'}
 
-print("🔗 Adding Accessibility Links to All Footers")
+print("🔗 Adding Accessibility Links to Footers")
 print("=" * 60)
 
 updated = 0
@@ -23,36 +23,22 @@ for html_file in html_files:
             content = f.read()
         
         # Skip if already has accessibility link
-        if '/accessibility.html' in content:
-            print(f"⏭️  {html_file.name} (already has link)")
+        if 'accessibility.html' in content:
+            print(f"⏭️  {html_file.name}")
             continue
         
-        # Replace Amazon Affiliate line with accessibility + Amazon line
-        original_content = content
+        # Find closing footer tag and add link right before it
+        new_link = '\n        <p style="margin-top: 2rem;"><a href="/accessibility.html" style="color: var(--primary-green); text-decoration: none; font-weight: 600;">Accessibility Statement</a></p>'
         
-        # Pattern 1: "Amazon Affiliate: hudsonvalleyt-20 | Purchases support..."
-        content = re.sub(
-            r'Amazon Affiliate: hudsonvalleyt-20 \| Purchases support this site at no extra cost to you',
-            '<a href="/accessibility.html">Accessibility</a> | Amazon Affiliate: hudsonvalleyt-20 | Purchases support this site at no extra cost to you',
-            content
-        )
-        
-        # Pattern 2: Just "Amazon Affiliate: hudsonvalleyt-20"
-        if content == original_content:
-            content = re.sub(
-                r'Amazon Affiliate: hudsonvalleyt-20',
-                '<a href="/accessibility.html">Accessibility</a> | Amazon Affiliate: hudsonvalleyt-20',
-                content
-            )
-        
-        # Only write if something changed
-        if content != original_content:
+        if '</footer>' in content:
+            content = content.replace('</footer>', new_link + '\n    </footer>')
+            
             with open(html_file, 'w', encoding='utf-8') as f:
                 f.write(content)
             print(f"✅ {html_file.name}")
             updated += 1
         else:
-            print(f"⏭️  {html_file.name} (no Amazon line found)")
+            print(f"⏭️  {html_file.name} (no footer found)")
     
     except Exception as e:
         print(f"❌ {html_file.name}: {e}")

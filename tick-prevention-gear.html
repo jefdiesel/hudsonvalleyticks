@@ -15,7 +15,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #1a1a1a;
             background: #f8f9fa;
         }
         
@@ -27,7 +27,7 @@
         }
         
         header {
-            background: linear-gradient(135deg, #2c5f2d 0%, #97bc62 100%);
+            background: linear-gradient(135deg, #1a3a1a 0%, #2d5a2d 100%);
             color: white;
             padding: 2rem;
             text-align: center;
@@ -36,14 +36,16 @@
         h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
+            color: white;
         }
         
         .subtitle {
             font-size: 1.1rem;
-            opacity: 0.95;
+            color: #ffffff;
+            font-weight: 400;
         }
         
-        .content {
+        main {
             padding: 2rem;
         }
         
@@ -67,7 +69,7 @@
         .logo {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #2c5f2d;
+            color: #1a3a1a;
             text-decoration: none;
         }
         
@@ -80,19 +82,22 @@
         }
         
         .nav-menu a {
-            color: #333;
+            color: #1a1a1a;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
             position: relative;
         }
         
-        .nav-menu a:hover {
-            color: #2c5f2d;
+        .nav-menu a:hover,
+        .nav-menu a:focus {
+            color: #1a3a1a;
+            outline: 2px solid #1a3a1a;
+            outline-offset: 2px;
         }
         
         .nav-menu a.active {
-            color: #2c5f2d;
+            color: #1a3a1a;
         }
         
         .nav-menu a.active::after {
@@ -102,21 +107,30 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: #2c5f2d;
+            background: #1a3a1a;
         }
         
         .mobile-menu-toggle {
             display: none;
             background: none;
-            border: none;
+            border: 2px solid #1a3a1a;
             font-size: 1.5rem;
             cursor: pointer;
-            color: #2c5f2d;
+            color: #1a3a1a;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .mobile-menu-toggle:hover,
+        .mobile-menu-toggle:focus {
+            background: #f0f0f0;
+            outline: 2px solid #1a3a1a;
+            outline-offset: 2px;
         }
         
         .intro-box {
             background: #e8f5e9;
-            border: 2px solid #4caf50;
+            border: 2px solid #1a3a1a;
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 1.5rem;
@@ -124,14 +138,14 @@
         
         .affiliate-disclosure {
             background: #fff3e0;
-            border: 2px solid #ff9800;
+            border: 2px solid #d48d00;
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
         
         .affiliate-disclosure strong {
-            color: #e65100;
+            color: #8b4513;
         }
         
         .affiliate-disclosure code {
@@ -146,9 +160,24 @@
         }
         
         h2 {
-            color: #2c5f2d;
+            color: #1a3a1a;
             margin-bottom: 1rem;
+            margin-top: 0;
             font-size: 1.6rem;
+        }
+        
+        h3 {
+            color: #2d5a2d;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        
+        h4 {
+            color: #1a3a1a;
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
         }
         
         .product-grid {
@@ -160,13 +189,14 @@
         
         .product-card {
             background: white;
-            border: 1px solid #ddd;
+            border: 2px solid #1a1a1a;
             border-radius: 8px;
             padding: 1.5rem;
             transition: transform 0.3s, box-shadow 0.3s;
         }
         
-        .product-card:hover {
+        .product-card:hover,
+        .product-card:focus-within {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
@@ -174,7 +204,7 @@
         .product-name {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #2c5f2d;
+            color: #1a3a1a;
             margin-bottom: 0.5rem;
         }
         
@@ -186,7 +216,7 @@
         }
         
         .badge {
-            background: #4caf50;
+            background: #1a3a1a;
             color: white;
             padding: 0.25rem 0.5rem;
             border-radius: 4px;
@@ -196,38 +226,42 @@
         }
         
         .badge.bestseller {
-            background: #ff9800;
+            background: #d48d00;
+            color: white;
         }
         
         .badge.essential {
-            background: #d32f2f;
+            background: #b71c1c;
+            color: white;
         }
         
         .badge.recommended {
-            background: #2196f3;
+            background: #004ba0;
+            color: white;
         }
         
         .product-rating {
-            color: #ff9800;
+            color: #b8860b;
             margin-bottom: 0.25rem;
+            font-weight: 600;
         }
         
         .product-price {
             font-weight: 600;
-            color: #388e3c;
+            color: #1a3a1a;
             margin-bottom: 0.75rem;
         }
         
         .product-description {
-            color: #666;
+            color: #1a1a1a;
             margin-bottom: 1rem;
             line-height: 1.5;
         }
         
         .amazon-button {
-            background: linear-gradient(to bottom, #f7dfa5 0%, #f0c14b 100%);
-            color: #111;
-            border: 1px solid #a88734;
+            background: #1a3a1a;
+            color: white;
+            border: 2px solid #1a3a1a;
             padding: 0.75rem 1.5rem;
             text-decoration: none;
             border-radius: 4px;
@@ -236,30 +270,36 @@
             transition: all 0.3s ease;
         }
         
-        .amazon-button:hover {
-            background: linear-gradient(to bottom, #f5d78e 0%, #eeb933 100%);
+        .amazon-button:hover,
+        .amazon-button:focus {
+            background: #2d5a2d;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            outline: 2px solid white;
+            outline-offset: 2px;
         }
         
         .info-box {
             background: #e8f5e9;
-            border-left: 4px solid #4caf50;
+            border-left: 4px solid #1a3a1a;
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 4px;
         }
         
         .info-box h3 {
-            color: #2e7d32;
+            color: #1a3a1a;
+            margin-top: 0;
             margin-bottom: 1rem;
         }
         
-        .info-box ul {
+        .info-box ul,
+        .info-box ol {
             margin-left: 1.5rem;
         }
         
         .info-box li {
             margin-bottom: 0.5rem;
+            color: #1a1a1a;
         }
         
         .kit-section {
@@ -267,10 +307,12 @@
             padding: 2rem;
             border-radius: 8px;
             margin: 2rem 0;
+            border: 2px solid #d48d00;
         }
         
         .kit-section h3 {
-            color: #e65100;
+            color: #8b4513;
+            margin-top: 0;
             margin-bottom: 1.5rem;
         }
         
@@ -279,22 +321,23 @@
             padding: 1.5rem;
             border-radius: 8px;
             margin-bottom: 1.5rem;
-            border: 2px solid #ffb74d;
+            border: 2px solid #d48d00;
         }
         
         .kit-option h4 {
-            color: #f57c00;
+            color: #8b4513;
             margin-bottom: 0.5rem;
+            margin-top: 0;
         }
         
         .kit-price {
             font-weight: 600;
-            color: #388e3c;
+            color: #1a3a1a;
             margin-bottom: 1rem;
         }
         
         footer {
-            background: #2c5f2d;
+            background: #1a3a1a;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -305,9 +348,19 @@
             margin-bottom: 0.5rem;
         }
         
+        footer a {
+            color: #90ee90;
+            text-decoration: underline;
+        }
+        
+        footer a:hover,
+        footer a:focus {
+            color: white;
+        }
+        
         .quick-nav {
             background: #f8f9fa;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid #1a3a1a;
             padding: 1rem 0;
             text-align: center;
             position: sticky;
@@ -316,17 +369,29 @@
         }
         
         .quick-nav a {
-            color: #2c5f2d;
+            color: #1a3a1a;
             text-decoration: none;
             padding: 0.5rem 1rem;
             margin: 0 0.25rem;
             font-weight: 500;
             display: inline-block;
+            border-radius: 4px;
         }
         
-        .quick-nav a:hover {
-            background: rgba(44, 95, 45, 0.1);
-            border-radius: 4px;
+        .quick-nav a:hover,
+        .quick-nav a:focus {
+            background: #e8f5e9;
+            outline: 2px solid #1a3a1a;
+            outline-offset: 2px;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        strong {
+            color: #1a1a1a;
         }
         
         @media (max-width: 768px) {
@@ -343,6 +408,7 @@
                 gap: 0;
                 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
                 display: none;
+                width: 100%;
             }
             
             .nav-menu.active {
@@ -352,6 +418,7 @@
             .nav-menu a {
                 padding: 1rem;
                 border-bottom: 1px solid #eee;
+                display: block;
             }
             
             .nav-menu a.active::after {
@@ -365,79 +432,43 @@
             .product-grid {
                 grid-template-columns: 1fr;
             }
-        }
-    
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--primary-green);
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-menu-toggle {
-                display: block;
-            }
             
-            .nav-menu {
-                position: absolute;
-                top: 60px;
-                left: 0;
-                right: 0;
-                background: white;
-                flex-direction: column;
-                gap: 0;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s;
-            }
-            
-            .nav-menu.active {
-                max-height: 300px;
-            }
-            
-            .nav-menu li {
-                padding: 1rem 2rem;
-                border-bottom: 1px solid #eee;
+            main {
+                padding: 1rem;
             }
         }
-
     </style>
 <meta name="google-site-verification" content="EdTiTb32BQdG10T38Ag4P7LuN-MymFb4k1G71GaUad0" />
-    </head>
+</head>
 <body>
-    <nav>
+    <nav aria-label="Main navigation">
         <div class="nav-container">
             <a href="/" class="logo">🌿 Hudson Valley Ticks</a>
-            <button class="mobile-menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">☰</button>
-            <ul class="nav-menu">
-                <li><a href="/" class="active">Tick Bite Info</a></li>
-                <li><a href="/tick-prevention-gear.html" >Tick Prevention Gear</a></li>
-                <li><a href="/blog.html" >HV Tick Blog</a></li>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/">Tick Bite Info</a></li>
+                <li><a href="/tick-prevention-gear.html" class="active">Tick Prevention Gear</a></li>
+                <li><a href="/blog.html">HV Tick Blog</a></li>
             </ul>
         </div>
     </nav>
 
-    
-    
     <div class="container">
         <header>
-            <h1>🛡️ Tick Prevention Gear</h1>
+            <h1>Tick Prevention Gear</h1>
             <p class="subtitle">Evidence-based products to protect against ticks in the Hudson Valley</p>
         </header>
 
-        <div class="quick-nav">
-            <a href="#clothing">Clothing</a>
-            <a href="#permethrin">Spray</a>
-            <a href="#repellents">Repellents</a>
-            <a href="#removal">Removal</a>
-            <a href="#yard">Yard</a>
-            <a href="#kits">Kits</a>
-        </div>
+        <main>
+            <div class="quick-nav">
+                <a href="#clothing">Clothing</a>
+                <a href="#permethrin">Spray</a>
+                <a href="#repellents">Repellents</a>
+                <a href="#removal">Removal</a>
+                <a href="#yard">Yard</a>
+                <a href="#kits">Kits</a>
+            </div>
 
-        <div class="content">
             <div class="intro-box">
                 <strong>💡 Most Effective Protection Strategy:</strong><br>
                 Layer your defenses: Permethrin-treated clothing + Picaridin repellent on exposed skin + tick checks. This provides 95%+ protection.
@@ -446,287 +477,273 @@
             <div class="affiliate-disclosure">
                 <strong>🔍 Affiliate Disclosure:</strong> This page contains Amazon affiliate links with tag <code>hudsonvalleyt-20</code>. Purchases through these links support HudsonValleyTicks.com at no extra cost to you. All recommendations are based on CDC guidelines and effectiveness.
             </div>
+
             <!-- PRE-TREATED CLOTHING -->
-            <div class="category-section" id="clothing">
-                <div class="category-header">
-                    <span class="category-icon">👕</span>
-                    <h2>Pre-Treated Permethrin Clothing</h2>
-                </div>
+            <section class="category-section" id="clothing">
+                <h2>Pre-Treated Permethrin Clothing</h2>
                 <p><strong>Why this works:</strong> Permethrin-treated clothing kills ticks on contact. Studies show 73.6x reduction in tick bites when wearing treated shoes and socks. Lasts through 70 washes!</p>
                 
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-name">Insect Shield Men's UPF Long Sleeve Shirt</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Insect Shield Men's UPF Long Sleeve Shirt</h3>
                         <div class="product-badges">
                             <span class="badge bestseller">BESTSELLER</span>
                             <span class="badge">UPF 30+</span>
                         </div>
-                        <div class="product-rating">★★★★★ 4.6 (5,000+ reviews)</div>
-                        <div class="product-price">$45-55</div>
-                        <div class="product-description">Lightweight Dri-Balance™ shirt with sun protection. Factory-treated with EPA-registered permethrin. Breathable and quick-drying. The gold standard for tick-bite prevention.</div>
-                        <a href="https://www.amazon.com/Insect-Shield-Dri-Balance-Repellent-Clothing/dp/B0755CG8H1?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★★ 4.6/5 (5,000+ reviews)</div>
+                        <div class="product-price">$45–$55</div>
+                        <p class="product-description">Lightweight Dri-Balance™ shirt with sun protection. Factory-treated with EPA-registered permethrin. Breathable and quick-drying. The gold standard for tick-bite prevention.</p>
+                        <a href="https://www.amazon.com/Insect-Shield-Dri-Balance-Repellent-Clothing/dp/B0755CG8H1?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Insect Shield Performance Ripstop Pants</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Insect Shield Performance Ripstop Pants</h3>
                         <div class="product-badges">
                             <span class="badge bestseller">BESTSELLER</span>
                         </div>
-                        <div class="product-rating">★★★★☆ 4.4 (3,000+ reviews)</div>
-                        <div class="product-price">$50-65</div>
-                        <div class="product-description">Ripstop lightweight pants perfect for hiking and yard work. Durable 8-pocket cargo design with hammer loop. Full leg protection. Lasts 70 washes.</div>
-                        <a href="https://www.amazon.com/Insect-Shield-Performance-Lightweight-Breathable/dp/B0C36HGF4C?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★☆ 4.4/5 (3,000+ reviews)</div>
+                        <div class="product-price">$50–$65</div>
+                        <p class="product-description">Ripstop lightweight pants perfect for hiking and yard work. Durable 8-pocket cargo design with hammer loop. Full leg protection. Lasts 70 washes.</p>
+                        <a href="https://www.amazon.com/Insect-Shield-Performance-Lightweight-Breathable/dp/B0C36HGF4C?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Insect Shield Midweight Hiking Socks</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Insect Shield Midweight Hiking Socks</h3>
                         <div class="product-badges">
                             <span class="badge essential">ESSENTIAL</span>
                             <span class="badge">SPOT TICKS</span>
                         </div>
-                        <div class="product-rating">★★★★☆ 4.3 (2,000+ reviews)</div>
-                        <div class="product-price">$15-20</div>
-                        <div class="product-description"><strong>WHITE = EASY TICK SPOTTING!</strong> Midweight cushioned crew socks. Pre-treated with EPA permethrin. Pull over pant legs. The single most important item for tick country.</div>
-                        <a href="https://www.amazon.com/Insect-Shield-Midweight-Comfortable-Protection/dp/B09T2KCBZ3?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★☆ 4.3/5 (2,000+ reviews)</div>
+                        <div class="product-price">$15–$20</div>
+                        <p class="product-description"><strong>WHITE = EASY TICK SPOTTING!</strong> Midweight cushioned crew socks. Pre-treated with EPA permethrin. Pull over pant legs. The single most important item for tick country.</p>
+                        <a href="https://www.amazon.com/Insect-Shield-Midweight-Comfortable-Protection/dp/B09T2KCBZ3?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Insect Shield Bug Repellent Bandana</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Insect Shield Bug Repellent Bandana</h3>
                         <div class="product-badges">
                             <span class="badge recommended">VERSATILE</span>
                         </div>
-                        <div class="product-rating">★★★★☆ 4.3 (1,500+ reviews)</div>
-                        <div class="product-price">$8-12</div>
-                        <div class="product-description">Camo paisley bandana for neck, shoulder, or head protection. Protects vulnerable areas where ticks climb. Wear as bandana, scarf, or wrap. 50/50 cotton-polyester blend.</div>
-                        <a href="https://www.amazon.com/Insect-Shield-Bug-Repellant-Bandana/dp/B0B8B54YHB?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★☆ 4.3/5 (1,500+ reviews)</div>
+                        <div class="product-price">$8–$12</div>
+                        <p class="product-description">Camo paisley bandana for neck, shoulder, or head protection. Protects vulnerable areas where ticks climb. Wear as bandana, scarf, or wrap. 50/50 cotton-polyester blend.</p>
+                        <a href="https://www.amazon.com/Insect-Shield-Bug-Repellant-Bandana/dp/B0B8B54YHB?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                 </div>
-            </div>
+            </section>
             
             <!-- PERMETHRIN SPRAY -->
-            <div class="category-section" id="permethrin">
-                <div class="category-header">
-                    <span class="category-icon">🧴</span>
-                    <h2>Permethrin Spray (DIY Treatment)</h2>
-                </div>
-                <p><strong>Save money:</strong> Treat your existing clothes, shoes, and gear. One bottle treats 4 complete outfits. Lasts 6 washes or 6 weeks. <strong>CLOTHING ONLY - never apply to skin!</strong></p>
+            <section class="category-section" id="permethrin">
+                <h2>Permethrin Spray (DIY Treatment)</h2>
+                <p><strong>Save money:</strong> Treat your existing clothes, shoes, and gear. One bottle treats 4 complete outfits. Lasts 6 washes or 6 weeks. <strong>CLOTHING ONLY — never apply to skin!</strong></p>
                 
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-name">Sawyer Permethrin 24oz Aerosol</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Sawyer Permethrin 24oz Aerosol</h3>
                         <div class="product-badges">
                             <span class="badge bestseller">#1 BESTSELLER</span>
                         </div>
-                        <div class="product-rating">★★★★★ 4.7 (29,000+ reviews)</div>
-                        <div class="product-price">$18-22</div>
-                        <div class="product-description">The most popular permethrin spray. Easy aerosol application. Odorless after drying. Treats 4 complete outfits (shirts, pants, socks).</div>
-                        <a href="https://www.amazon.com/Sawyer-Products-SP657-Permethrin-Repellent/dp/B001ANQVYU?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★★ 4.7/5 (29,000+ reviews)</div>
+                        <div class="product-price">$18–$22</div>
+                        <p class="product-description">The most popular permethrin spray. Easy aerosol application. Odorless after drying. Treats 4 complete outfits (shirts, pants, socks).</p>
+                        <a href="https://www.amazon.com/Sawyer-Products-SP657-Permethrin-Repellent/dp/B001ANQVYU?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Sawyer Permethrin 24oz Trigger Spray</div>
-                        <div class="product-rating">★★★★★ 4.6 (15,000+ reviews)</div>
-                        <div class="product-price">$16-20</div>
-                        <div class="product-description">Trigger spray version for precise application. Same formula as aerosol. Better for treating specific areas like cuffs and waistbands.</div>
-                        <a href="https://www.amazon.com/Sawyer-Products-Permethrin-Repellent-Clothing/dp/B0F29L8XXJ?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                    <article class="product-card">
+                        <h3 class="product-name">Sawyer Permethrin 24oz Trigger Spray</h3>
+                        <div class="product-rating">★★★★★ 4.6/5 (15,000+ reviews)</div>
+                        <div class="product-price">$16–$20</div>
+                        <p class="product-description">Trigger spray version for precise application. Same formula as aerosol. Better for treating specific areas like cuffs and waistbands.</p>
+                        <a href="https://www.amazon.com/Sawyer-Products-Permethrin-Repellent-Clothing/dp/B0F29L8XXJ?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Sawyer Permethrin Twin Pack</div>
-                        <div class="product-rating">★★★★★ 4.7 (5,000+ reviews)</div>
-                        <div class="product-price">$30-35</div>
-                        <div class="product-description">Best value! Includes both aerosol and trigger spray versions. Treats 8+ outfits. Perfect for families or treating multiple gear sets.</div>
-                        <a href="https://www.amazon.com/Sawyer-Products-Permethrin-Clothing-Repellent/dp/B0C2VCYP2W?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                    <article class="product-card">
+                        <h3 class="product-name">Sawyer Permethrin Twin Pack</h3>
+                        <div class="product-rating">★★★★★ 4.7/5 (5,000+ reviews)</div>
+                        <div class="product-price">$30–$35</div>
+                        <p class="product-description">Best value! Includes both aerosol and trigger spray versions. Treats 8+ outfits. Perfect for families or treating multiple gear sets.</p>
+                        <a href="https://www.amazon.com/Sawyer-Products-Permethrin-Clothing-Repellent/dp/B0C2VCYP2W?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                 </div>
-            </div>
+            </section>
             
             <!-- SKIN REPELLENTS -->
-            <div class="category-section" id="repellents">
-                <div class="category-header">
-                    <span class="category-icon">🧪</span>
-                    <h2>Skin Repellents (For Exposed Skin)</h2>
-                </div>
+            <section class="category-section" id="repellents">
+                <h2>Skin Repellents (For Exposed Skin)</h2>
                 <p><strong>Layer with permethrin clothing for best protection.</strong> Apply to exposed skin only. Picaridin is as effective as DEET but without the smell or gear damage.</p>
                 
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-name">Sawyer Picaridin Lotion (2-Pack)</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Sawyer Picaridin Lotion (2-Pack)</h3>
                         <div class="product-badges">
                             <span class="badge recommended">CDC RECOMMENDED</span>
                         </div>
-                        <div class="product-rating">★★★★★ 4.5 (8,000+ reviews)</div>
-                        <div class="product-price">$15-18</div>
-                        <div class="product-description">20% Picaridin - as effective as DEET. No smell, won't damage gear. 14-hour protection. Non-greasy lotion formula.</div>
-                        <a href="https://www.amazon.com/Sawyer-Products-Premium-Picaridin-Repellent/dp/B07GWJ3H6X?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★★ 4.5/5 (8,000+ reviews)</div>
+                        <div class="product-price">$15–$18</div>
+                        <p class="product-description">20% Picaridin — as effective as DEET. No smell, won't damage gear. 14-hour protection. Non-greasy lotion formula.</p>
+                        <a href="https://www.amazon.com/Sawyer-Products-Premium-Picaridan-Repellent/dp/B07GWJ3H6X?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Ranger Ready Picaridin Spray</div>
-                        <div class="product-rating">★★★★★ 4.6 (3,000+ reviews)</div>
-                        <div class="product-price">$10-12</div>
-                        <div class="product-description">20% Picaridin spray. Orange scent. 12-hour protection. Quick-dry formula perfect for active use.</div>
-                        <a href="https://www.amazon.com/Ranger-Ready-Repellent-Protection-Mosquitoes/dp/B07BFRVVRD?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                    <article class="product-card">
+                        <h3 class="product-name">Ranger Ready Picarikin Spray</h3>
+                        <div class="product-rating">★★★★★ 4.6/5 (3,000+ reviews)</div>
+                        <div class="product-price">$10–$12</div>
+                        <p class="product-description">20% Picaridin spray. Orange scent. 12-hour protection. Quick-dry formula perfect for active use.</p>
+                        <a href="https://www.amazon.com/Ranger-Ready-Repellent-Protection-Mosquitoes/dp/B07BFRVVRD?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Ben's 30% DEET Spray</div>
-                        <div class="product-rating">★★★★★ 4.4 (2,500+ reviews)</div>
-                        <div class="product-price">$8-10</div>
-                        <div class="product-description">Traditional DEET option. 30% concentration provides 8-hour protection. Proven effective but has strong smell.</div>
-                        <a href="https://www.amazon.com/Bens-Tick-Insect-Repellent-Ounce/dp/B00PG8Z4OA?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                    <article class="product-card">
+                        <h3 class="product-name">Ben's 30% DEET Spray</h3>
+                        <div class="product-rating">★★★★★ 4.4/5 (2,500+ reviews)</div>
+                        <div class="product-price">$8–$10</div>
+                        <p class="product-description">Traditional DEET option. 30% concentration provides 8-hour protection. Proven effective but has strong smell.</p>
+                        <a href="https://www.amazon.com/Bens-Tick-Insect-Repellent-Ounce/dp/B00PG8Z4OA?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Ben's 100% DEET MAX</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Ben's 100% DEET MAX</h3>
                         <div class="product-badges">
                             <span class="badge">MAXIMUM STRENGTH</span>
                         </div>
-                        <div class="product-rating">★★★★★ 4.5 (4,000+ reviews)</div>
-                        <div class="product-price">$10-12</div>
-                        <div class="product-description">100% DEET for extreme conditions. 10-hour protection. Only for serious outdoor work in heavily infested areas.</div>
-                        <a href="https://www.amazon.com/Bens-Tick-Insect-Repellent-Ounce/dp/B00E7Y4DDY?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★★ 4.5/5 (4,000+ reviews)</div>
+                        <div class="product-price">$10–$12</div>
+                        <p class="product-description">100% DEET for extreme conditions. 10-hour protection. Only for serious outdoor work in heavily infested areas.</p>
+                        <a href="https://www.amazon.com/Bens-Tick-Insect-Repellent-Ounce/dp/B00E7Y4DDY?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                 </div>
-            </div>
+            </section>
             
             <!-- TICK REMOVAL TOOLS -->
-            <div class="category-section" id="removal">
-                <div class="category-header">
-                    <span class="category-icon">🔧</span>
-                    <h2>Tick Removal Tools</h2>
-                </div>
+            <section class="category-section" id="removal">
+                <h2>Tick Removal Tools</h2>
                 <p><strong>Remove ticks properly to prevent disease transmission.</strong> Never use matches, petroleum jelly, or squeeze the tick's body. Pull straight up with steady pressure.</p>
                 
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-name">TickCheck Premium Removal Kit</div>
+                    <article class="product-card">
+                        <h3 class="product-name">TickCheck Premium Removal Kit</h3>
                         <div class="product-badges">
                             <span class="badge recommended">BEST OVERALL</span>
                         </div>
-                        <div class="product-rating">★★★★★ 4.7 (2,000+ reviews)</div>
-                        <div class="product-price">$15-18</div>
-                        <div class="product-description">Stainless steel tools with leather case. Includes fine-tip tweezers and removal tool. Comes with tick ID card. University tested.</div>
-                        <a href="https://www.amazon.com/TickCheck-Premium-Tick-Remover-Identification/dp/B075DKL3Z6?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★★ 4.7/5 (2,000+ reviews)</div>
+                        <div class="product-price">$15–$18</div>
+                        <p class="product-description">Stainless steel tools with leather case. Includes fine-tip tweezers and removal tool. Comes with tick ID card. University tested.</p>
+                        <a href="https://www.amazon.com/TickCheck-Premium-Tick-Remover-Identification/dp/B075DKL3Z6?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">TickCheck Value 3-Pack</div>
-                        <div class="product-rating">★★★★★ 4.6 (1,500+ reviews)</div>
-                        <div class="product-price">$8-10</div>
-                        <div class="product-description">3 lightweight plastic removers (small, medium, large). Perfect for backpacks and first aid kits. Includes tick ID card.</div>
-                        <a href="https://www.amazon.com/TickCheck-Tick-Remover-Value-Pack/dp/B07D6J52JJ?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                    <article class="product-card">
+                        <h3 class="product-name">TickCheck Value 3-Pack</h3>
+                        <div class="product-rating">★★★★★ 4.6/5 (1,500+ reviews)</div>
+                        <div class="product-price">$8–$10</div>
+                        <p class="product-description">3 lightweight plastic removers (small, medium, large). Perfect for backpacks and first aid kits. Includes tick ID card.</p>
+                        <a href="https://www.amazon.com/TickCheck-Tick-Remover-Value-Pack/dp/B07D6J52JJ?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Tick Twister (2 Pack)</div>
-                        <div class="product-rating">★★★★★ 4.5 (8,000+ reviews)</div>
-                        <div class="product-price">$6-8</div>
-                        <div class="product-description">French-designed twist removal method. Includes large and small tools. Works great on pets too. No squeezing risk.</div>
-                        <a href="https://www.amazon.com/Tick-Twister-Remover-Small-Large/dp/B01BECRHEO?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                    <article class="product-card">
+                        <h3 class="product-name">Tick Twister (2 Pack)</h3>
+                        <div class="product-rating">★★★★★ 4.5/5 (8,000+ reviews)</div>
+                        <div class="product-price">$6–$8</div>
+                        <p class="product-description">French-designed twist removal method. Includes large and small tools. Works great on pets too. No squeezing risk.</p>
+                        <a href="https://www.amazon.com/Tick-Twister-Remover-Small-Large/dp/B01BECRHEO?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">TickCheck Remover Card</div>
-                        <div class="product-rating">★★★★☆ 4.4 (800+ reviews)</div>
-                        <div class="product-price">$5-7</div>
-                        <div class="product-description">Credit card sized for wallet. Multiple notch sizes for different tick sizes. Always have it with you!</div>
-                        <a href="https://www.amazon.com/TickCheck-Tick-Remover-Card-Removal/dp/B078SHZ795?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                    <article class="product-card">
+                        <h3 class="product-name">TickCheck Remover Card</h3>
+                        <div class="product-rating">★★★★☆ 4.4/5 (800+ reviews)</div>
+                        <div class="product-price">$5–$7</div>
+                        <p class="product-description">Credit card sized for wallet. Multiple notch sizes for different tick sizes. Always have it with you!</p>
+                        <a href="https://www.amazon.com/TickCheck-Tick-Remover-Card-Removal/dp/B078SHZ795?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                 </div>
-            </div>
+            </section>
             
             <!-- YARD TREATMENT -->
-            <div class="category-section" id="yard">
-                <div class="category-header">
-                    <span class="category-icon">🏡</span>
-                    <h2>Yard Treatment</h2>
-                </div>
+            <section class="category-section" id="yard">
+                <h2>Yard Treatment</h2>
                 <p><strong>Most tick bites happen in your own yard!</strong> Create a tick-safe zone around your home. Focus on yard perimeter, play areas, and anywhere near woods or tall grass.</p>
                 
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-name">Cutter Backyard Bug Control</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Cutter Backyard Bug Control</h3>
                         <div class="product-badges">
                             <span class="badge bestseller">BESTSELLER</span>
                         </div>
-                        <div class="product-rating">★★★★☆ 4.3 (10,000+ reviews)</div>
-                        <div class="product-price">$10-12</div>
-                        <div class="product-description">Hose-end spray treats 5,000 sq ft. Kills ticks, fleas, mosquitoes. Lasts up to 4 weeks. Quick-dry formula.</div>
-                        <a href="https://www.amazon.com/Cutter-Backyard-Control-Spray-Concentrate/dp/B00ARKSABO?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★☆ 4.3/5 (10,000+ reviews)</div>
+                        <div class="product-price">$10–$12</div>
+                        <p class="product-description">Hose-end spray treats 5,000 sq ft. Kills ticks, fleas, mosquitoes. Lasts up to 4 weeks. Quick-dry formula.</p>
+                        <a href="https://www.amazon.com/Cutter-Backyard-Control-Spray-Concentrate/dp/B00ARKSABO?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Wondercide Natural Yard Spray</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Wondercide Natural Yard Spray</h3>
                         <div class="product-badges">
                             <span class="badge">PET SAFE</span>
                         </div>
-                        <div class="product-rating">★★★★☆ 4.2 (5,000+ reviews)</div>
-                        <div class="product-price">$35-40</div>
-                        <div class="product-description">Cedar oil based, safe for pets & kids. Ready-to-use hose attachment. Treats 5,000 sq ft. Pleasant cedar scent.</div>
-                        <a href="https://www.amazon.com/Wondercide-Essential-Treatment-Repellent-Plant-Based/dp/B01FWRX2NM?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★☆ 4.2/5 (5,000+ reviews)</div>
+                        <div class="product-price">$35–$40</div>
+                        <p class="product-description">Cedar oil based, safe for pets & kids. Ready-to-use hose attachment. Treats 5,000 sq ft. Pleasant cedar scent.</p>
+                        <a href="https://www.amazon.com/Wondercide-Essential-Treatment-Repellent-Plant-Based/dp/B01FWRX2NM?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                     
-                    <div class="product-card">
-                        <div class="product-name">Thermacell Tick Control Tubes</div>
+                    <article class="product-card">
+                        <h3 class="product-name">Thermacell Tick Control Tubes</h3>
                         <div class="product-badges">
                             <span class="badge recommended">INNOVATIVE</span>
                         </div>
-                        <div class="product-rating">★★★★☆ 4.1 (1,500+ reviews)</div>
-                        <div class="product-price">$25-30</div>
-                        <div class="product-description">Harvard-developed! Treats mice (tick carriers) with permethrin cotton. No spraying needed. 6 tubes treat 1/4 acre. Apply twice yearly.</div>
-                        <a href="https://www.amazon.com/Thermacell-Backyards-Properties-Environmentally-Alternative/dp/B098MV9T8L?tag=hudsonvalleyt-20" class="amazon-button" target="_blank">View on Amazon →</a>
-                    </div>
+                        <div class="product-rating">★★★★☆ 4.1/5 (1,500+ reviews)</div>
+                        <div class="product-price">$25–$30</div>
+                        <p class="product-description">Harvard-developed! Treats mice (tick carriers) with permethrin cotton. No spraying needed. 6 tubes treat 1/4 acre. Apply twice yearly.</p>
+                        <a href="https://www.amazon.com/Thermacell-Backyards-Properties-Environmentally-Alternative/dp/B098MV9T8L?tag=hudsonvalleyt-20" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+                    </article>
                 </div>
-            </div>
+            </section>
             
             <!-- RECOMMENDED KITS -->
-            <div class="kit-section" id="kits">
-                <h3>💰 Recommended Starter Kits</h3>
+            <section class="kit-section" id="kits">
+                <h3>Recommended Starter Kits</h3>
                 
-                <div class="kit-option">
+                <article class="kit-option">
                     <h4>Budget Kit</h4>
-                    <div class="kit-price">Total: ~$50-60</div>
+                    <div class="kit-price">Total: ~$50–$60</div>
                     <ul>
-                        <li><a href="https://www.amazon.com/Sawyer-Products-SP657-Permethrin-Repellent/dp/B001ANQVYU?tag=hudsonvalleyt-20" target="_blank">Sawyer Permethrin Spray</a> - Treat your existing clothes ($18)</li>
-                        <li><a href="https://www.amazon.com/Sawyer-Products-Premium-Picaridin-Repellent/dp/B07GWJ3H6X?tag=hudsonvalleyt-20" target="_blank">Sawyer Picaridin Lotion 2-Pack</a> - For exposed skin ($15)</li>
-                        <li><a href="https://www.amazon.com/TickCheck-Tick-Remover-Value-Pack/dp/B07D6J52JJ?tag=hudsonvalleyt-20" target="_blank">TickCheck Value 3-Pack</a> - Removal tools ($8)</li>
-                        <li>White crew socks from any store - For easy tick spotting ($10)</li>
+                        <li><a href="https://www.amazon.com/Sawyer-Products-SP657-Permethrin-Repellent/dp/B001ANQVYU?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Sawyer Permethrin Spray</a> — Treat your existing clothes ($18)</li>
+                        <li><a href="https://www.amazon.com/Sawyer-Products-Premium-Picaridin-Repellent/dp/B07GWJ3H6X?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Sawyer Picaridin Lotion 2-Pack</a> — For exposed skin ($15)</li>
+                        <li><a href="https://www.amazon.com/TickCheck-Tick-Remover-Value-Pack/dp/B07D6J52JJ?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">TickCheck Value 3-Pack</a> — Removal tools ($8)</li>
+                        <li>White crew socks from any store — For easy tick spotting ($10)</li>
                     </ul>
                     <p>Perfect for occasional hikers or those new to tick prevention.</p>
-                </div>
+                </article>
                 
-                <div class="kit-option">
+                <article class="kit-option">
                     <h4>Complete Protection Kit</h4>
-                    <div class="kit-price">Total: ~$130-160</div>
+                    <div class="kit-price">Total: ~$130–$160</div>
                     <ul>
-                        <li><a href="https://www.amazon.com/Insect-Shield-Sleeve-Repellent-Graphite/dp/B07QRKF3V5?tag=hudsonvalleyt-20" target="_blank">Insect Shield Long Sleeve Shirt</a> ($45)</li>
-                        <li><a href="https://www.amazon.com/Insect-Shield-Repellent-Lightweight-Convertible/dp/B07QR9YFR4?tag=hudsonvalleyt-20" target="_blank">Insect Shield Pants</a> ($50)</li>
-                        <li><a href="https://www.amazon.com/Insect-Shield-Crew-Socks-White/dp/B07QRGK6NB?tag=hudsonvalleyt-20" target="_blank">Insect Shield White Socks 3-Pack</a> ($22)</li>
-                        <li><a href="https://www.amazon.com/Sawyer-Products-Premium-Picaridin-Repellent/dp/B07GWJ3H6X?tag=hudsonvalleyt-20" target="_blank">Sawyer Picaridin 2-Pack</a> ($15)</li>
-                        <li><a href="https://www.amazon.com/TickCheck-Premium-Tick-Remover-Identification/dp/B075DKL3Z6?tag=hudsonvalleyt-20" target="_blank">TickCheck Premium Kit</a> ($15)</li>
+                        <li><a href="https://www.amazon.com/Insect-Shield-Sleeve-Repellent-Graphite/dp/B07QRKF3V5?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Insect Shield Long Sleeve Shirt</a> ($45)</li>
+                        <li><a href="https://www.amazon.com/Insect-Shield-Repellent-Lightweight-Convertible/dp/B07QR9YFR4?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Insect Shield Pants</a> ($50)</li>
+                        <li><a href="https://www.amazon.com/Insect-Shield-Crew-Socks-White/dp/B07QRGK6NB?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Insect Shield White Socks 3-Pack</a> ($22)</li>
+                        <li><a href="https://www.amazon.com/Sawyer-Products-Premium-Picaridin-Repellent/dp/B07GWJ3H6X?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Sawyer Picaridin 2-Pack</a> ($15)</li>
+                        <li><a href="https://www.amazon.com/TickCheck-Premium-Tick-Remover-Identification/dp/B075DKL3Z6?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">TickCheck Premium Kit</a> ($15)</li>
                     </ul>
                     <p>For serious hikers, outdoor workers, or those in high-risk areas.</p>
-                </div>
+                </article>
                 
-                <div class="kit-option">
+                <article class="kit-option">
                     <h4>Homeowner Kit</h4>
-                    <div class="kit-price">Total: ~$70-85</div>
+                    <div class="kit-price">Total: ~$70–$85</div>
                     <ul>
-                        <li><a href="https://www.amazon.com/Cutter-Backyard-Control-Spray-Concentrate/dp/B00ARKSABO?tag=hudsonvalleyt-20" target="_blank">Cutter Backyard Bug Control</a> - Yard perimeter ($12)</li>
-                        <li><a href="https://www.amazon.com/Thermacell-Backyards-Properties-Environmentally-Alternative/dp/B098MV9T8L?tag=hudsonvalleyt-20" target="_blank">Thermacell Tick Tubes</a> - Mouse treatment ($28)</li>
-                        <li><a href="https://www.amazon.com/Sawyer-Products-SP657-Permethrin-Repellent/dp/B001ANQVYU?tag=hudsonvalleyt-20" target="_blank">Sawyer Permethrin Spray</a> - For yard work clothes ($18)</li>
-                        <li><a href="https://www.amazon.com/Tick-Twister-Remover-Small-Large/dp/B01BECRHEO?tag=hudsonvalleyt-20" target="_blank">Tick Twister 2-Pack</a> - Quick removal ($7)</li>
+                        <li><a href="https://www.amazon.com/Cutter-Backyard-Control-Spray-Concentrate/dp/B00ARKSABO?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Cutter Backyard Bug Control</a> — Yard perimeter ($12)</li>
+                        <li><a href="https://www.amazon.com/Thermacell-Backyards-Properties-Environmentally-Alternative/dp/B098MV9T8L?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Thermacell Tick Tubes</a> — Mouse treatment ($28)</li>
+                        <li><a href="https://www.amazon.com/Sawyer-Products-SP657-Permethrin-Repellent/dp/B001ANQVYU?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Sawyer Permethrin Spray</a> — For yard work clothes ($18)</li>
+                        <li><a href="https://www.amazon.com/Tick-Twister-Remover-Small-Large/dp/B01BECRHEO?tag=hudsonvalleyt-20" target="_blank" rel="noopener noreferrer">Tick Twister 2-Pack</a> — Quick removal ($7)</li>
                     </ul>
                     <p>Protect your yard and family. Apply treatments in early spring and fall.</p>
-                </div>
-            </div>
+                </article>
+            </section>
             
             <!-- USAGE TIPS -->
             <div class="info-box">
-                <h3>📋 How to Use These Products Effectively</h3>
+                <h3>How to Use These Products Effectively</h3>
                 
-                <p><strong>The Layered Protection Strategy (Most Effective):</strong></p>
+                <h4>The Layered Protection Strategy (Most Effective)</h4>
                 <ol>
                     <li><strong>Wear:</strong> Permethrin-treated long sleeves, pants, and WHITE socks</li>
                     <li><strong>Tuck:</strong> Shirt into pants, pants into socks (yes, it looks dorky but works!)</li>
@@ -735,17 +752,17 @@
                     <li><strong>Shower:</strong> Within 2 hours of coming indoors (helps wash off unattached ticks)</li>
                 </ol>
                 
-                <p><strong>Permethrin Application Tips:</strong></p>
+                <h4>Permethrin Application Tips</h4>
                 <ul>
                     <li>Always spray outdoors or in well-ventilated area</li>
                     <li>Treat clothing while OFF your body</li>
                     <li>Apply until damp, not soaking wet</li>
-                    <li>Let dry completely (2-4 hours) before wearing</li>
+                    <li>Let dry completely (2–4 hours) before wearing</li>
                     <li>Focus extra on: cuffs, waistband, shoe openings, socks</li>
                     <li>Reapply after 6 washes or 6 weeks</li>
                 </ul>
                 
-                <p><strong>Where Ticks Hide on Your Body:</strong></p>
+                <h4>Where Ticks Hide on Your Body</h4>
                 <ul>
                     <li>Behind knees and ears</li>
                     <li>Groin and waistband area</li>
@@ -755,7 +772,7 @@
                 </ul>
             </div>
             
-            <div class="info-box" style="background: #ffebee; border-left-color: #f44336;">
+            <div class="info-box" style="border-left-color: #b71c1c;">
                 <h3>⚠️ Important Safety Notes</h3>
                 <ul>
                     <li><strong>Permethrin:</strong> TOXIC to cats when wet. Keep cats away during application. Safe once dry.</li>
@@ -765,14 +782,24 @@
                     <li><strong>See a Doctor:</strong> If you develop symptoms or can't remove entire tick</li>
                 </ul>
             </div>
-        </div>
+        </main>
         
         <footer>
             <p><strong>HudsonValleyTicks.com</strong></p>
             <p>Evidence-based tick prevention and education for the Hudson Valley region</p>
             <p style="margin-top: 1rem; font-size: 0.9rem;">Educational purposes only. Consult healthcare providers for medical advice.</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">Affiliate Disclosure: We earn from qualifying purchases through Amazon Associates program (hudsonvalleyt-20)</p>
+            <p><a href="/accessibility.html">Accessibility Statement</a></p>
         </footer>
     </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            const button = document.querySelector('.mobile-menu-toggle');
+            menu.classList.toggle('active');
+            button.setAttribute('aria-expanded', button.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+        }
+    </script>
 </body>
 </html>
