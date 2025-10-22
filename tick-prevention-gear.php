@@ -8,14 +8,14 @@ $pageContent = <<<'HTML'
     <p>Evidence-based products to protect against ticks in the Hudson Valley</p>
 </section>
 
-<section class="quick-nav" aria-label="Page sections">
+<nav class="quick-nav" aria-label="Page sections">
     <a href="#clothing">Clothing</a>
     <a href="#permethrin">Spray</a>
     <a href="#repellents">Repellents</a>
     <a href="#removal">Removal</a>
     <a href="#yard">Yard</a>
     <a href="#kits">Kits</a>
-</section>
+</nav>
 
 <section class="section" tabindex="0">
     <div class="intro-box">
