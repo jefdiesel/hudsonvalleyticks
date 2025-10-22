@@ -53,6 +53,7 @@
             z-index: 10001;
             transform: translateY(-100%);
             transition: transform 0.3s ease;
+            border-radius: 0 0 4px 0;
         }
         
         .skip-to-main:focus {
@@ -66,8 +67,7 @@
            ============================================ */
         header {
             background-color: white;
-            color: var(--text-light);
-            padding: 1rem 0;
+            padding: 0.75rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -121,14 +121,14 @@
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
         }
         
         .nav-menu a {
             color: var(--text-dark);
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 3px;
-            padding: 0.75rem 1rem;
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
             border-radius: 4px;
             transition: background-color 0.2s, color 0.2s;
             display: inline-block;
@@ -200,7 +200,7 @@
         }
         
         h2 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary-green);
             margin-top: 1.5rem;
@@ -210,7 +210,7 @@
         }
         
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 600;
             color: var(--primary-green);
             margin-top: 1.5rem;
@@ -233,8 +233,6 @@
         a {
             color: #0066cc;
             text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 3px;
         }
         
         a:hover,
@@ -252,8 +250,16 @@
         }
         
         /* ============================================
-           CONTENT BLOCKS - WCAG COMPLIANT
+           CONTENT BLOCKS
            ============================================ */
+        .intro-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid var(--light-green);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+        
         .alert {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -407,7 +413,6 @@
         .footer-section a:hover,
         .footer-section a:focus {
             color: #ffa500;
-            text-decoration: underline;
         }
         
         .footer-section p {
@@ -425,14 +430,11 @@
             color: #ffa500;
             text-decoration: underline;
             font-weight: 700;
-            display: inline;
         }
         
         .footer-bottom a:hover,
         .footer-bottom a:focus {
             color: var(--text-light);
-            outline: 2px solid #ffa500;
-            outline-offset: 2px;
         }
         
         /* ============================================
@@ -511,8 +513,10 @@
             <p>Evidence-based guide to understanding and treating tick bite reactions</p>
         </section>
 
-        <section class="alert">
-            <strong>⚠️ If you've been suffering for weeks with itchy hives after outdoor activity in the Hudson Valley, you're not alone.</strong> Tick bites—especially from larval ticks (seed ticks)—trigger prolonged immune reactions that doctors often misdiagnose. This site provides the medical evidence you need to get proper treatment.
+        <section class="section">
+            <div class="alert">
+                <strong>⚠️ If you've been suffering for weeks with itchy hives after outdoor activity in the Hudson Valley, you're not alone.</strong> Tick bites—especially from larval ticks (seed ticks)—trigger prolonged immune reactions that doctors often misdiagnose. This site provides the medical evidence you need to get proper treatment.
+            </div>
         </section>
 
         <section class="section">
