@@ -557,6 +557,35 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         }
         
         /* ============================================
+           QUICK NAVIGATION
+           ============================================ */
+        .quick-nav {
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .quick-nav a {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .quick-nav a:hover,
+        .quick-nav a:focus {
+            background: rgba(44, 95, 45, 0.1);
+            color: var(--primary-green);
+            outline: 2px solid #ffa500;
+            outline-offset: -2px;
+        }
+        
+        /* ============================================
            FOOTER
            ============================================ */
         footer {
@@ -671,32 +700,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             .product-grid {
                 grid-template-columns: 1fr;
             }
-
-	    .quick-nav {
-   		padding: 1rem 2rem;
-   		display: flex;
-   		gap: 1rem;
-    		flex-wrap: wrap;
-    		background: white;
-	    }
-
-	    .quick-nav a {
-		color: var(--primary-green);
-   		text-decoration: none;
- 		font-weight: 500;
- 		padding: 0.5rem 1rem;
-   		border-radius: 4px;
-   		transition: background 0.3s;
-	    }
-
-	    .quick-nav a:hover,
-	    .quick-nav a:focus {
-	 	background: rgba(44, 95, 45, 0.1);
-    		color: var(--primary-green);
-    		outline: 2px solid #ffa500;
-    		outline-offset: -2px;
-           }
-
         }
     </style>
 </head>
