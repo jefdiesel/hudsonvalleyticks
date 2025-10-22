@@ -457,7 +457,6 @@
   <link rel="stylesheet" href="css/accessibility-fixes.css">
 </head>
 <body>
-    <main id="main-content">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <nav aria-label="Main navigation">
         <div class="nav-container">
@@ -466,7 +465,7 @@
                     aria-label="Toggle navigation menu" 
                     aria-expanded="false" 
                     aria-controls="nav-menu" 
-                    onclick="toggleMenu()"></button>
+                    onclick="toggleMenu()">☰</button>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="/">Tick Bite Info</a></li>
                 <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
@@ -824,7 +823,5 @@
             button.setAttribute('aria-expanded', button.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
         }
     </script>
-
-    </main>
 </body>
 </html>
