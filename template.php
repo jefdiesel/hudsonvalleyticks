@@ -477,7 +477,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .product-rating {
-            color: #f05b16;
+            color: #a33603;
             font-weight: 600;
             margin-bottom: 0.5rem;
             font-size: 0.95rem;
