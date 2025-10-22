@@ -53,8 +53,6 @@ $pageContent = <<<'HTML'
         <p>If you experience difficulty accessing any content on our website, please contact us:</p>
         <ul>
             <li><strong style="color: #2c5f2d;">Email:</strong> <a href="mailto:accessibility@hudsonvalleyticks.com">accessibility@hudsonvalleyticks.com</a></li>
-            <li><strong style="color: #2c5f2d;">Phone:</strong> (845) 555-0123</li>
-            <li><strong style="color: #2c5f2d;">Mailing Address:</strong> Hudson Valley Ticks, Hudson Valley, NY</li>
         </ul>
         <p>We will respond to accessibility inquiries within 5 business days.</p>
     </section>
@@ -63,7 +61,6 @@ $pageContent = <<<'HTML'
         <h2>Remediation Timeline</h2>
         <ul>
             <li><strong style="color: #2c5f2d;">October 2025:</strong> Initial audit and identification of issues</li>
-            <li><strong style="color: #2c5f2d;">November 2025:</strong> Fix all critical issues (landmarks, contrast, links)</li>
             <li><strong style="color: #2c5f2d;">Ongoing:</strong> Quarterly accessibility audits and continuous improvement</li>
         </ul>
     </section>
