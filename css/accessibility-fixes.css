@@ -1,5 +1,5 @@
 /******************************************************************************
- * WCAG ACCESSIBILITY FIXES
+ * WCAG ACCESSIBILITY FIXES - V2
  ******************************************************************************/
 
 /* 1. PRODUCT RATING CONTRAST FIX */
@@ -31,7 +31,22 @@ a {
 a:visited { color: #6600cc; }
 a:hover { color: #004499; text-decoration-thickness: 3px; }
 
-/* 4. FOCUS INDICATORS */
+/* 4. EXTERNAL LINKS - ENSURE CONTRAST */
+a[target="_blank"] {
+    color: #0066cc !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* 5. BACK LINKS IN LANDMARKS */
+main .back-link {
+    display: block;
+    margin-bottom: 1em;
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* 6. FOCUS INDICATORS */
 *:focus {
     outline: 3px solid #ffb81c !important;
     outline-offset: 2px !important;
@@ -42,12 +57,16 @@ button:focus, input:focus, a:focus {
     outline-offset: 2px;
 }
 
-/* 5. LANDMARKS */
+/* 7. LANDMARKS */
 main, header, footer, nav, section, article, aside {
     display: block;
 }
 
-/* 6. SKIP LINK */
+main {
+    padding: 0;
+}
+
+/* 8. SKIP LINK */
 .skip-link {
     position: absolute;
     top: -9999px;
@@ -56,6 +75,7 @@ main, header, footer, nav, section, article, aside {
     padding: 1em;
     background-color: #000;
     color: #fff;
+    text-decoration: none;
 }
 
 .skip-link:focus {
@@ -63,11 +83,11 @@ main, header, footer, nav, section, article, aside {
     left: 0;
 }
 
-/* 7. FORM ACCESSIBILITY */
+/* 9. FORM ACCESSIBILITY */
 label { font-weight: 600; display: block; margin-bottom: 0.5em; }
 input, textarea, select { min-height: 44px; padding: 8px 12px; font-size: 16px; }
 
-/* 8. BUTTON ACCESSIBILITY */
+/* 10. BUTTON ACCESSIBILITY */
 button, .btn {
     min-height: 44px;
     padding: 10px 16px;
@@ -76,6 +96,19 @@ button, .btn {
     cursor: pointer;
 }
 
-/* 9. TEXT CONTRAST */
+/* 11. TEXT CONTRAST */
 body { color: #1a1a1a; background-color: #ffffff; }
 h1, h2, h3, h4, h5, h6 { color: #1a1a1a; font-weight: 700; }
+
+/* 12. HEADING HIERARCHY - NO SKIPPING LEVELS */
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1em; }
+
+/* 13. SECTIONS IN MAIN */
+main section {
+    margin: 2rem 0;
+}
