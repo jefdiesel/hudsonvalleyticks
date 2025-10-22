@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fall Leaf Peeping? Here's Your Complete Tick Prevention Guide for Hudson Valley</title>
+    <title>Fall Leaf Peeping? Here's Your Complete Tick Prevention Guide | Hudson Valley Ticks</title>
     <meta name="description" content="Complete tick prevention guide for fall foliage season in Hudson Valley. The 5 essential items you need to stay safe while hiking. CDC-approved protection strategies.">
     <meta name="google-site-verification" content="EdTiTb32BQdG10T38Ag4P7LuN-MymFb4k1G71GaUad0" />
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --primary-green: #2c5f2d;
-            --secondary-green: #2d5a2d;
+            --accent-green: #2d5a2d;
             --light-green: #b8e986;
-            --text-dark: #1a1a1a;
-            --text-light: #ffffff;
             --bg-light: #f8f9fa;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
         }
-        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.7;
             color: var(--text-dark);
-            background: var(--bg-light);
+            line-height: 1.7;
+            background-color: #fff;
         }
-        
-        nav {
+        a {
+            color: #1a5f1a;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: var(--primary-green);
+        }
+        header {
             background: white;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        
         .nav-container {
             max-width: 900px;
             margin: 0 auto;
@@ -40,75 +44,125 @@
             align-items: center;
             padding: 1rem 2rem;
         }
-        
         .logo {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: bold;
             color: var(--primary-green);
             text-decoration: none;
         }
-        
         .nav-menu {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-        
-        nav a {
+        .nav-menu a {
             color: var(--text-dark);
             text-decoration: underline;
             font-weight: 500;
+            transition: color 0.3s;
         }
-        
-        nav a:hover {
+        .nav-menu a:hover {
             color: var(--primary-green);
         }
-        
-        main {
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-green);
+        }
+        @media (max-width: 768px) {
+            .mobile-menu-toggle { display: block; }
+            .nav-menu {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s;
+            }
+            .nav-menu.active {
+                max-height: 300px;
+            }
+            .nav-menu li {
+                padding: 1rem 2rem;
+                border-bottom: 1px solid #eee;
+            }
+        }
+        .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
-            color: var(--text-light);
             padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            border-radius: 8px;
         }
-        
-        h1 {
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-green);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: underline;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+            color: #ffffff;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
+            color: #ffffff;
         }
-        
-        .subtitle {
-            font-size: 1.1rem;
+        .hero p {
+            font-size: 1rem;
             opacity: 0.95;
-            color: var(--light-green);
+            color: #ffffff;
         }
-        
-        h2 {
-            font-size: 1.8rem;
+        main h2 {
             color: var(--primary-green);
-            margin: 2rem 0 1rem 0;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
             border-bottom: 2px solid var(--light-green);
             padding-bottom: 0.5rem;
         }
-        
-        h3 {
-            font-size: 1.3rem;
-            color: var(--secondary-green);
-            margin: 1.5rem 0 0.75rem 0;
+        main h3 {
+            color: var(--accent-green);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
         }
-        
-        p {
+        main p {
             margin-bottom: 1rem;
             line-height: 1.8;
         }
-        
+        main ul, main ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        main li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section:focus {
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+        }
         .intro-box {
             background: #e8f5e9;
             border-left: 4px solid var(--primary-green);
@@ -117,43 +171,53 @@
             border-radius: 4px;
             line-height: 1.8;
         }
-        
-        .affiliate-disclosure {
+        .info-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--light-green);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .info-box strong {
+            color: var(--primary-green);
+        }
+        .strategy-box {
+            background: #f0f8f0;
+            border: 2px solid var(--light-green);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .strategy-box strong {
+            color: var(--primary-green);
+        }
+        .warning-box {
             background: #fff3e0;
             border-left: 4px solid #ff9800;
-            padding: 1.5rem;
-            margin: 2rem 0;
+            padding: 1rem;
+            margin: 1rem 0;
             border-radius: 4px;
-            font-size: 0.95rem;
         }
-        
-        .affiliate-disclosure code {
-            background: #ffe0b2;
-            padding: 0.2rem 0.4rem;
-            border-radius: 2px;
-            font-family: monospace;
+        .warning-box strong {
+            color: #ff9800;
         }
-        
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
             margin: 2rem 0;
         }
-        
         .product-card {
-            background: white;
+            background: var(--bg-light);
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 1.5rem;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        
         .product-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        
         .product-number {
             display: inline-block;
             background: var(--primary-green);
@@ -166,46 +230,39 @@
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
-        
         .product-name {
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--primary-green);
             margin-bottom: 0.5rem;
         }
-        
         .product-rating {
             color: #ff9800;
             font-weight: 600;
             margin-bottom: 0.25rem;
         }
-        
         .product-price {
             font-weight: 700;
             color: var(--primary-green);
             font-size: 1.2rem;
             margin-bottom: 0.75rem;
         }
-        
         .product-description {
-            color: #666;
+            color: var(--text-light);
             margin-bottom: 1rem;
             line-height: 1.8;
         }
-        
         .product-features {
             list-style: none;
             padding-left: 0;
             margin-bottom: 1rem;
-            color: #666;
+            color: var(--text-light);
         }
-        
         .product-features li {
             padding-left: 1.5rem;
             margin-bottom: 0.5rem;
             position: relative;
         }
-        
         .product-features li:before {
             content: "✓";
             position: absolute;
@@ -213,7 +270,6 @@
             color: var(--primary-green);
             font-weight: bold;
         }
-        
         .amazon-button {
             background: linear-gradient(to bottom, #f7dfa5 0%, #f0c14b 100%);
             color: #111;
@@ -226,121 +282,99 @@
             transition: all 0.3s ease;
             cursor: pointer;
         }
-        
         .amazon-button:hover {
             background: linear-gradient(to bottom, #f5d78e 0%, #eeb933 100%);
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
-        
-        ul, ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-            line-height: 1.8;
-        }
-        
-        .strategy-box {
-            background: #f0f8f0;
-            border: 2px solid var(--light-green);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-        
-        strong {
+        .back-link {
             color: var(--primary-green);
+            text-decoration: none;
             font-weight: 600;
+            margin-bottom: 2rem;
+            display: inline-block;
         }
-        
-        .warning-box {
-            background: #fff3e0;
-            border-left: 4px solid #ff9800;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
+        .back-link:hover {
+            text-decoration: underline;
         }
-        
         footer {
             background: var(--primary-green);
-            color: white;
-            padding: 2rem;
+            color: #ffffff;
             text-align: center;
+            padding: 2rem;
             margin-top: 3rem;
         }
-        
         footer p {
             margin-bottom: 0.5rem;
         }
-        
         footer a {
             color: var(--light-green);
             text-decoration: underline;
-            font-weight: 600;
         }
-        
+        .footer-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-section h3 {
+            color: var(--light-green);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-section a {
+            color: var(--light-green);
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
         @media (max-width: 768px) {
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            h2 {
-                font-size: 1.4rem;
-            }
-            
-            main {
-                padding: 0 1rem;
-            }
-            
-            .nav-menu {
-                position: absolute;
-                top: 100%;
-                right: 0;
-                display: none;
-                flex-direction: column;
-                background: white;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                width: 100%;
-            }
-            
-            .nav-menu.active {
-                display: flex;
-            }
+            .container { padding: 1rem; }
+            .hero h1 { font-size: 2rem; }
+            .hero { padding: 2rem 1rem; }
+            main h2 { font-size: 1.4rem; }
+            .product-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <nav aria-label="Main navigation">
-        <div class="nav-container">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <nav class="nav-container" aria-label="Main navigation">
             <a href="/" class="logo">🌿 Hudson Valley Ticks</a>
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
-            <ul class="nav-menu">
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" 
+                    onclick="this.parentElement.querySelector('.nav-menu').classList.toggle('active')">☰</button>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="/">Tick Bite Info</a></li>
                 <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
                 <li><a href="/blog.html">HV Tick Blog</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- HEADER -->
-        <header>
-            <h1>🍂 Leaf Peeping? Here's Your Complete Tick Prevention Guide</h1>
-            <p class="subtitle">Everything Hudson Valley hikers need to stay safe during fall foliage season</p>
-        </header>
+    <div class="container">
+        <a href="/blog.html" class="back-link">← Back to Blog</a>
 
-        <!-- ARTICLE -->
-        <article>
-            <!-- INTRODUCTION -->
-            <section>
+        <main id="main-content" role="main">
+            <section class="hero">
+                <h1>🍂 Leaf Peeping? Here's Your Complete Tick Prevention Guide</h1>
+                <p>Everything Hudson Valley hikers need to stay safe during fall foliage season</p>
+            </section>
+
+            <section class="section" tabindex="0" id="introduction">
                 <p>Fall foliage season in the Hudson Valley is magical. The weather cools, the leaves turn brilliant shades of red and gold, and the hiking trails come alive with visitors from across the Northeast. But there's one threat that many leaf peepers overlook: <strong>adult blacklegged ticks</strong> are at peak season from August through November.</p>
                 
                 <div class="intro-box">
@@ -348,14 +382,9 @@
                 </div>
 
                 <p>The good news? With the right preparation and the 5 essential items covered in this guide, you can reduce your tick exposure by up to 95% and hike safely during peak foliage season. This comprehensive guide will walk you through layered defense strategies, product recommendations, and CDC-approved prevention techniques used by Hudson Valley outdoor professionals.</p>
-
-                <div class="affiliate-disclosure">
-                    <strong>🔍 Affiliate Disclosure:</strong> This page contains Amazon affiliate links with tag <code>hudsonvalleyt-20</code>. Purchases support Hudson Valley Ticks at no extra cost to you. We only recommend products we trust for genuine tick prevention.
-                </div>
             </section>
 
-            <!-- WHY FALL IS DIFFERENT -->
-            <section>
+            <section class="section" tabindex="0" id="why-fall-is-different">
                 <h2>Why Fall Tick Season Is Different (And More Dangerous)</h2>
                 
                 <p>You might think that cooler weather means fewer ticks. You'd be wrong. Fall tick season in Hudson Valley is actually one of the most dangerous times to be outdoors.</p>
@@ -367,18 +396,17 @@
                 
                 <h3>Why Hudson Valley Fall Hiking Is Particularly High-Risk</h3>
                 <ul>
-                    <li><strong>Peak population numbers:</strong> Fall sees adult tick populations at their annual maximum across the Hudson Valley</li>
-                    <li><strong>Higher infection rates:</strong> These older ticks have fed all season and accumulated Lyme disease bacteria from infected hosts</li>
-                    <li><strong>Longer attachment times:</strong> Adult ticks are harder to dislodge, meaning if you miss one during a tick check, infection risk skyrockets after 24-36 hours</li>
-                    <li><strong>Trail congestion:</strong> Hudson Valley's most popular hiking trails are packed during peak foliage (late September to mid-October), meaning more humans = more ticks = more risk</li>
-                    <li><strong>Lower vegetation:</strong> As leaves fall, tall brush becomes more visible but ticks remain hidden in leaf litter and ground-level vegetation</li>
+                    <li><strong style="color: #2c5f2d;">Peak population numbers:</strong> Fall sees adult tick populations at their annual maximum across the Hudson Valley</li>
+                    <li><strong style="color: #2c5f2d;">Higher infection rates:</strong> These older ticks have fed all season and accumulated Lyme disease bacteria from infected hosts</li>
+                    <li><strong style="color: #2c5f2d;">Longer attachment times:</strong> Adult ticks are harder to dislodge, meaning if you miss one during a tick check, infection risk skyrockets after 24-36 hours</li>
+                    <li><strong style="color: #2c5f2d;">Trail congestion:</strong> Hudson Valley's most popular hiking trails are packed during peak foliage (late September to mid-October), meaning more humans = more ticks = more risk</li>
+                    <li><strong style="color: #2c5f2d;">Lower vegetation:</strong> As leaves fall, tall brush becomes more visible but ticks remain hidden in leaf litter and ground-level vegetation</li>
                 </ul>
                 
                 <p>Bottom line: <strong>Fall foliage season requires the most aggressive tick prevention strategy of the entire year.</strong></p>
             </section>
 
-            <!-- THE LAYERED DEFENSE STRATEGY -->
-            <section>
+            <section class="section" tabindex="0" id="layered-defense">
                 <h2>The Layered Defense Strategy: How to Achieve 95%+ Protection</h2>
                 
                 <p>CDC and outdoor health professionals recommend a "layered defense" approach because no single prevention method is 100% effective. By combining multiple strategies, you can reduce tick exposure from 100% risk to less than 5%.</p>
@@ -386,7 +414,7 @@
                 <h3>The 5-Layer Protection Model</h3>
                 <div class="strategy-box">
                     <p><strong>Layer 1: Physical Barrier</strong> - Permethrin-treated clothing (kills ticks on contact)</p>
-                    <p><strong>Layer 2: Skin Protection</strong> - DEET or Picaridin repellent on exposed skin (repels and kills ticks)</p>
+                    <p><strong>Layer 2: Skin Protection</strong> - DEET or Picaridan repellent on exposed skin (repels and kills ticks)</p>
                     <p><strong>Layer 3: Protective Gear</strong> - White clothing + leg gaiters (makes ticks visible + blocks entry)</p>
                     <p><strong>Layer 4: Regular Inspection</strong> - Tick checks during and after hiking (catches ticks before attachment)</p>
                     <p><strong>Layer 5: Rapid Removal</strong> - Proper removal tools + technique (removes ticks before transmission begins)</p>
@@ -403,13 +431,11 @@
                 </ul>
             </section>
 
-            <!-- TOP 5 ESSENTIAL PRODUCTS -->
-            <section>
+            <section class="section" tabindex="0" id="five-essentials">
                 <h2>The Essential 5: Products You Need for Safe Fall Hiking</h2>
                 
                 <p>Don't let "essential" fool you—these aren't luxury items. They're the proven tools that Hudson Valley outdoor professionals, park rangers, and hiking guides use to stay tick-free during fall season. Each addresses a specific gap in tick prevention.</p>
 
-                <!-- PRODUCT 1 -->
                 <div class="product-grid">
                     <div class="product-card">
                         <div class="product-number">1</div>
@@ -426,15 +452,12 @@
                             <li>Comfortable fit (ranges from slim to relaxed)</li>
                             <li>Trusted by professional outdoor guides</li>
                         </ul>
-                        <p><strong>Why this is #1:</strong> Permethrin-treated clothing is the single most effective tick prevention method according to CDC. Adult ticks crawling across these pants die within minutes. This is your primary defense layer.</p>
-                        <p><strong>Pro tip:</strong> Treat your pants at home before your trip. Don't wait until you're at the trailhead.</p>
-                        <a href="https://www.amazon.com/Insect-Shield-Performance-Lightweight-Breathable/dp/B0C36HGF4C?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">
-                            View on Amazon →
-                        </a>
+                        <p><strong style="color: #2c5f2d;">Why this is #1:</strong> Permethrin-treated clothing is the single most effective tick prevention method according to CDC. Adult ticks crawling across these pants die within minutes. This is your primary defense layer.</p>
+                        <p><strong style="color: #2c5f2d;">Pro tip:</strong> Treat your pants at home before your trip. Don't wait until you're at the trailhead.</p>
+                        <a href="https://www.amazon.com/Insect-Shield-Performance-Lightweight-Breathable/dp/B0C36HGF4C?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
                     </div>
                 </div>
 
-                <!-- PRODUCT 2 -->
                 <div class="product-grid">
                     <div class="product-card">
                         <div class="product-number">2</div>
@@ -451,40 +474,34 @@
                             <li>Durable merino blend (machine washable, lasts years)</li>
                             <li>Worn by Hudson Valley hiking guides</li>
                         </ul>
-                        <p><strong>Why this matters:</strong> A tick climbing up dark pants can reach your skin before you notice it. White socks give you 5-10 seconds of warning to catch and remove the tick before it attaches. Combined with the pants (Layer 1), you've now got visibility + chemical protection.</p>
-                        <p><strong>Pro tip:</strong> Wear them OVER your pant legs (not tucked in) to maximize visibility of crawling ticks.</p>
-                        <a href="https://www.amazon.com/Insect-Shield-Midweight-Comfortable-Protection/dp/B09T2KCBZ3?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">
-                            View on Amazon →
-                        </a>
+                        <p><strong style="color: #2c5f2d;">Why this matters:</strong> A tick climbing up dark pants can reach your skin before you notice it. White socks give you 5-10 seconds of warning to catch and remove the tick before it attaches. Combined with the pants (Layer 1), you've now got visibility + chemical protection.</p>
+                        <p><strong style="color: #2c5f2d;">Pro tip:</strong> Wear them OVER your pant legs (not tucked in) to maximize visibility of crawling ticks.</p>
+                        <a href="https://www.amazon.com/Insect-Shield-Midweight-Comfortable-Protection/dp/B09T2KCBZ3?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
                     </div>
                 </div>
 
-                <!-- PRODUCT 3 -->
                 <div class="product-grid">
                     <div class="product-card">
                         <div class="product-number">3</div>
-                        <div class="product-name">Sawyer Picaridin 20% Insect Repellent (2-Pack)</div>
+                        <div class="product-name">Sawyer Picaridan 20% Insect Repellent (2-Pack)</div>
                         <div class="product-rating">★★★★★ 4.8 (3,500+ reviews)</div>
                         <div class="product-price">$12-18</div>
                         <div class="product-description">
-                            Apply this to exposed skin and it creates a chemical barrier that repels and kills ticks. Picaridin is recommended by CDC and provides 8+ hours of protection—longer than DEET. The advantage over DEET: less greasy, doesn't damage plastics or electronics, and feels lighter on skin during active hiking.
+                            Apply this to exposed skin and it creates a chemical barrier that repels and kills ticks. Picaridan is recommended by CDC and provides 8+ hours of protection—longer than DEET. The advantage over DEET: less greasy, doesn't damage plastics or electronics, and feels lighter on skin during active hiking.
                         </div>
                         <ul class="product-features">
-                            <li>20% Picaridin concentration (CDC-approved)</li>
+                            <li>20% Picaridan concentration (CDC-approved)</li>
                             <li>8+ hours protection (all-day hiking on one application)</li>
                             <li>Non-greasy, lightweight formula</li>
                             <li>2-pack (keep one in backpack, one at home)</li>
                             <li>Effective on mosquitoes, flies, gnats too</li>
                         </ul>
-                        <p><strong>Why this is essential:</strong> Even with permethrin pants, ticks can crawl up your arms, face, or neck. Picarikin on exposed skin adds Layer 2 of defense. The combination of treated clothing + skin repellent creates a comprehensive barrier.</p>
-                        <p><strong>Application strategy:</strong> Apply to all exposed skin before leaving your car. Reapply after 4 hours or after water exposure.</p>
-                        <a href="https://www.amazon.com/Sawyer-Picaridin-Insect-Repellent-Ounce/dp/B0D5QRXBS4?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">
-                            View on Amazon →
-                        </a>
+                        <p><strong style="color: #2c5f2d;">Why this is essential:</strong> Even with permethrin pants, ticks can crawl up your arms, face, or neck. Picarikan on exposed skin adds Layer 2 of defense. The combination of treated clothing + skin repellent creates a comprehensive barrier.</p>
+                        <p><strong style="color: #2c5f2d;">Application strategy:</strong> Apply to all exposed skin before leaving your car. Reapply after 4 hours or after water exposure.</p>
+                        <a href="https://www.amazon.com/Sawyer-Picaridin-Insect-Repellent-Ounce/dp/B0D5QRXBS4?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
                     </div>
                 </div>
 
-                <!-- PRODUCT 4 -->
                 <div class="product-grid">
                     <div class="product-card">
                         <div class="product-number">4</div>
@@ -501,15 +518,12 @@
                             <li>Easy on/off for mid-hike breaks</li>
                             <li>Waterproof exterior (works in wet conditions)</li>
                         </ul>
-                        <p><strong>Why this completes Layer 3:</strong> Even permethrin-treated pants can have gaps at the ankles or cuffs. Gaiters seal those gaps. Plus, they give you peace of mind—you can SEE the outer surface of your protection and verify ticks aren't getting through.</p>
-                        <p><strong>When to use:</strong> Wear these during peak tick hours (dawn to dusk) or when hiking through particularly brushy areas.</p>
-                        <a href="https://www.amazon.com/LYMEEZ-Gaiters-Tick-Protection-Outdoor/dp/B07BGTF1MV?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">
-                            View on Amazon →
-                        </a>
+                        <p><strong style="color: #2c5f2d;">Why this completes Layer 3:</strong> Even permethrin-treated pants can have gaps at the ankles or cuffs. Gaiters seal those gaps. Plus, they give you peace of mind—you can SEE the outer surface of your protection and verify ticks aren't getting through.</p>
+                        <p><strong style="color: #2c5f2d;">When to use:</strong> Wear these during peak tick hours (dawn to dusk) or when hiking through particularly brushy areas.</p>
+                        <a href="https://www.amazon.com/LYMEEZ-Gaiters-Tick-Protection-Outdoor/dp/B07BGTF1MV?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
                     </div>
                 </div>
 
-                <!-- PRODUCT 5 -->
                 <div class="product-grid">
                     <div class="product-card">
                         <div class="product-number">5</div>
@@ -526,17 +540,14 @@
                             <li>Compact size (fits in backpack pocket)</li>
                             <li>Quality construction (medical-grade materials)</li>
                         </ul>
-                        <p><strong>Why this is your safety net:</strong> If all four layers of prevention fail and a tick does attach, you need the right removal tools. Improper removal (squeezing, twisting, using Vaseline) can rupture the tick and increase Lyme transmission risk. These tweezers are engineered for proper removal.</p>
-                        <p><strong>Critical technique:</strong> Grasp the tick as close to the skin as possible, pull straight out (don't twist), and save the tick in a sealed container or photo for identification in case symptoms develop.</p>
-                        <a href="https://www.amazon.com/TickCheck-Premium-Kit-Tick-Removal/dp/B075DKL3Z6?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">
-                            View on Amazon →
-                        </a>
+                        <p><strong style="color: #2c5f2d;">Why this is your safety net:</strong> If all four layers of prevention fail and a tick does attach, you need the right removal tools. Improper removal (squeezing, twisting, using Vaseline) can rupture the tick and increase Lyme transmission risk. These tweezers are engineered for proper removal.</p>
+                        <p><strong style="color: #2c5f2d;">Critical technique:</strong> Grasp the tick as close to the skin as possible, pull straight out (don't twist), and save the tick in a sealed container or photo for identification in case symptoms develop.</p>
+                        <a href="https://www.amazon.com/TickCheck-Premium-Kit-Tick-Removal/dp/B075DKL3Z6?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank">View on Amazon →</a>
                     </div>
                 </div>
             </section>
 
-            <!-- TOTAL INVESTMENT -->
-            <section>
+            <section class="section" tabindex="0" id="investment">
                 <h2>Your Total Investment for Maximum Fall Safety</h2>
                 
                 <p><strong>Combined cost: $112-151 for complete protection</strong></p>
@@ -544,7 +555,7 @@
                 <ul>
                     <li>Permethrin pants: $50-65</li>
                     <li>White hiking socks: $15-20</li>
-                    <li>Picarikin 2-pack: $12-18</li>
+                    <li>Picarikan 2-pack: $12-18</li>
                     <li>Leg gaiters: $20-30</li>
                     <li>TickCheck kit: $15-18</li>
                 </ul>
@@ -556,8 +567,7 @@
                 </div>
             </section>
 
-            <!-- TICK CHECK PROTOCOL -->
-            <section>
+            <section class="section" tabindex="0" id="tick-check">
                 <h2>The Tick Check Protocol: Your Mid-Hike and Post-Hike Routine</h2>
                 
                 <p>Having the right gear is only half the battle. You also need a systematic inspection routine to catch ticks before they attach.</p>
@@ -584,8 +594,7 @@
                 </div>
             </section>
 
-            <!-- HUDSON VALLEY SPECIFIC INFO -->
-            <section>
+            <section class="section" tabindex="0" id="hudson-valley-risks">
                 <h2>Hudson Valley-Specific Fall Tick Information</h2>
                 
                 <p>The Hudson Valley presents unique tick challenges during fall:</p>
@@ -618,8 +627,7 @@
                 <p><strong>Bottom line:</strong> If you're hiking in Hudson Valley this fall, assume every trail has infected ticks. Use the full five-layer protection strategy.</p>
             </section>
 
-            <!-- SIGNS OF LYME DISEASE -->
-            <section>
+            <section class="section" tabindex="0" id="lyme-symptoms">
                 <h2>What to Watch For: Lyme Disease Symptoms in the Following Weeks</h2>
                 
                 <p>Even with perfect prevention, infection is still possible. Here's what to monitor:</p>
@@ -644,8 +652,7 @@
                 </div>
             </section>
 
-            <!-- CONCLUSION -->
-            <section>
+            <section class="section" tabindex="0" id="conclusion">
                 <h2>Enjoy Fall Foliage Safely</h2>
                 
                 <p>The Hudson Valley's fall foliage is one of the most beautiful sights in the Northeast. Don't let tick fears keep you indoors. Instead, use the comprehensive five-layer protection strategy outlined in this guide.</p>
@@ -665,24 +672,43 @@
                     <p><strong>Final thought:</strong> "An ounce of prevention is worth a pound of cure." Spending $150 on prevention equipment now could save you from months of Lyme disease suffering and thousands in medical bills later. Your future self will thank you for taking this seriously.</p>
                 </div>
             </section>
-        </article>
-    </main>
+        </main>
+    </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p><strong>HudsonValleyTicks.com</strong></p>
-        <p>Evidence-based tick prevention and education for the Hudson Valley region</p>
-        <p style="margin-top: 1rem;">
-            <a href="/accessibility.html">Accessibility Statement</a>
-        </p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Updated: October 21, 2025 | Affiliate: hudsonvalleyt-20</p>
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <section class="footer-section">
+                <h3>About</h3>
+                <p>Hudson Valley Ticks provides evidence-based tick prevention and Lyme disease information for Hudson Valley residents.</p>
+            </section>
+            
+            <section class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Tick Bite Information</a></li>
+                    <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+            </section>
+            
+            <section class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.health.ny.gov/diseases/communicable/lyme/" target="_blank">NY Health Dept</a></li>
+                    <li><a href="https://www.cdc.gov/lyme/" target="_blank">CDC Lyme Info</a></li>
+                </ul>
+            </section>
+            
+            <section class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@hudsonvalleyticks.com">info@hudsonvalleyticks.com</a></p>
+            </section>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hudson Valley Ticks. All rights reserved. | <a href="/accessibility.html">Accessibility</a></p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">WCAG 2.1 AA Compliant | Amazon Affiliate: hudsonvalleyt-20</p>
+        </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
