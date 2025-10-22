@@ -230,7 +230,7 @@ $pageContent = <<<'HTML'
                     <div class="post-body">
                         <p class="post-excerpt">Compare CDC-recommended bug repellents. Discover why Picaridan offers longer protection in humid climates.</p>
                         <div class="product-highlight">📦 Featured: Sawyer Picaridan 20% ($12-18)</div>
-                        <a href="picaridin-vs-deet-bug-repellent.php" class="cta-link">Read Full Post →</a>
+                        <a href="picaridan-vs-deet-bug-repellent.php" class="cta-link">Read Full Post →</a>
                     </div>
                 </article>
 
