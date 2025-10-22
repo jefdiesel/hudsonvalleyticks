@@ -722,7 +722,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     </header>
     
     <!-- MAIN CONTENT AREA -->
-    <main id="main-content" role="main">
+    <main id="main-content">
         <?php echo $pageContent ?? ''; ?>
     </main>
     
