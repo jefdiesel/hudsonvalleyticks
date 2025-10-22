@@ -612,6 +612,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .footer-bottom a {
+            color: var(--text-light);
             text-decoration: underline;
             font-weight: 700;
         }
