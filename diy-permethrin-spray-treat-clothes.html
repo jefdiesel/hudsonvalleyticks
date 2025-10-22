@@ -5,472 +5,663 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIY Permethrin Spray: How to Treat Your Own Clothes | Hudson Valley Ticks</title>
     <meta name="description" content="Learn to treat your own clothes with permethrin for complete tick protection. Step-by-step guide for DIY application to outdoor gear and backpack straps.">
+    <meta name="keywords" content="tick prevention, permethrin, DIY tick protection, clothing treatment">
     <meta name="google-site-verification" content="EdTiTb32BQdG10T38Ag4P7LuN-MymFb4k1G71GaUad0" />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* ============================================
+           WCAG 2.1 AA COMPLIANT STYLES
+           ============================================ */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         :root {
             --primary-green: #2c5f2d;
-            --accent-green: #2d5a2d;
-            --light-green: #b8e986;
-            --bg-light: #f8f9fa;
+            --light-green: #97bc62;
             --text-dark: #1a1a1a;
-            --text-light: #666;
+            --text-light: #ffffff;
+            --bg-light: #f8f9fa;
+            --border-color: #ddd;
         }
+        
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
             color: var(--text-dark);
-            line-height: 1.7;
-            background-color: #fff;
+            background-color: var(--bg-light);
         }
-        a {
-            color: #1a5f1a;
-            text-decoration: underline;
+        
+        /* ============================================
+           SKIP LINK & NAVIGATION
+           ============================================ */
+        .skip-to-main {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--primary-green);
+            color: var(--text-light);
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            z-index: 10001;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            border-radius: 0 0 4px 0;
+            font-weight: 600;
         }
-        a:hover {
-            color: var(--primary-green);
+        
+        .skip-to-main:focus {
+            transform: translateY(0);
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+            color: var(--text-light);
         }
+        
+        .skip-to-main:visited {
+            color: var(--text-light);
+        }
+        
         header {
-            background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+            padding: 0.75rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        
         .nav-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 0 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
+        
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 1.3rem;
+            font-weight: 700;
             color: var(--primary-green);
             text-decoration: none;
+            white-space: nowrap;
         }
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
+        
+        .logo:focus {
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+            border-radius: 2px;
         }
-        .nav-menu a {
-            color: var(--text-dark);
-            text-decoration: underline;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-menu a:hover {
-            color: var(--primary-green);
-        }
+        
         .mobile-menu-toggle {
             display: none;
             background: none;
             border: none;
+            color: var(--primary-green);
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 0.5rem;
+            min-height: 44px;
+            min-width: 44px;
+        }
+        
+        .mobile-menu-toggle:focus {
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+        }
+        
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 500;
+        }
+        
+        .nav-menu a:hover,
+        .nav-menu a:focus {
+            background-color: rgba(44, 95, 45, 0.1);
+            color: var(--primary-green);
+            outline: 2px solid #ffa500;
+            outline-offset: -2px;
+        }
+        
+        .nav-menu a:visited {
+            color: #6600cc;
+        }
+        
+        /* ============================================
+           MAIN CONTENT
+           ============================================ */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: var(--text-light);
+            min-height: calc(100vh - 300px);
+        }
+        
+        .hero {
+            background: var(--primary-green);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+        
+        .section {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:focus {
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--light-green);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        
+        a:hover,
+        a:focus {
+            color: #004499;
+        }
+        
+        a:visited {
+            color: #6600cc;
+        }
+        
+        a:focus {
+            outline: 2px solid #ffa500;
+            outline-offset: 2px;
+        }
+        
+        strong {
             color: var(--primary-green);
         }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* ============================================
+           CONTENT BOXES
+           ============================================ */
+        .intro-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid var(--light-green);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+        
+        .highlight {
+            background: #e8f5e9;
+            border-left: 4px solid var(--light-green);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .warning {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        /* ============================================
+           PRODUCT CARDS & BUTTONS
+           ============================================ */
+        .product-card {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-rating {
+            color: #ff9800;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 0.75rem;
+        }
+        
+        .product-description {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+        
+        .amazon-button {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 44px;
+        }
+        
+        .amazon-button:hover,
+        .amazon-button:focus {
+            background: #1f4620;
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .amazon-button:visited {
+            color: white;
+        }
+        
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: var(--primary-green);
+            color: var(--text-light);
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: var(--text-light);
+            text-decoration: underline;
+        }
+        
+        .footer-section a:hover,
+        .footer-section a:focus {
+            color: #ffa500;
+        }
+        
+        .footer-section p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom a {
+            color: #ffa500;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
         @media (max-width: 768px) {
-            .mobile-menu-toggle { display: block; }
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
             .nav-menu {
                 position: absolute;
-                top: 60px;
+                top: 100%;
                 left: 0;
                 right: 0;
                 background: white;
                 flex-direction: column;
                 gap: 0;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                display: none;
+                width: 100%;
             }
+            
             .nav-menu.active {
-                max-height: 300px;
+                display: flex;
             }
-            .nav-menu li {
-                padding: 1rem 2rem;
+            
+            .nav-menu a {
+                padding: 1rem;
                 border-bottom: 1px solid #eee;
             }
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--primary-green);
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            text-decoration: underline;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        .hero {
-            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
-            color: #ffffff;
-            padding: 2rem;
-            text-align: center;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        .hero h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-        }
-        .hero p {
-            font-size: 0.95rem;
-            opacity: 0.95;
-            color: #ffffff;
-        }
-        main h2 {
-            color: var(--primary-green);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.6rem;
-            border-bottom: 2px solid var(--light-green);
-            padding-bottom: 0.5rem;
-        }
-        main h3 {
-            color: var(--accent-green);
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 1.25rem;
-        }
-        main p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-        main ul, main ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-        main li {
-            margin-bottom: 0.5rem;
-            line-height: 1.8;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section:focus {
-            outline: 3px solid #ffa500;
-            outline-offset: 2px;
-        }
-        .info-box {
-            background: var(--bg-light);
-            border-left: 4px solid var(--light-green);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-        .info-box strong {
-            color: var(--primary-green);
-        }
-        .warning-box {
-            background: rgba(211, 47, 47, 0.05);
-            border-left: 4px solid #d32f2f;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
-        }
-        .warning-box strong {
-            color: #d32f2f;
-        }
-        .product-box {
-            background: var(--bg-light);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-        .product-name {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 0.5rem;
-        }
-        .product-rating {
-            color: #1a1a1a;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-        .product-price {
-            font-size: 1.25rem;
-            color: var(--primary-green);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        .cta-button {
-            display: inline-block;
-            background: var(--primary-green);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        .cta-button:hover {
-            background: var(--accent-green);
-        }
-        .back-link {
-            color: var(--primary-green);
-            text-decoration: none;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            display: inline-block;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: var(--primary-green);
-            color: #ffffff;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-        footer a {
-            color: var(--light-green);
-            text-decoration: underline;
-        }
-        .footer-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            padding: 2rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .footer-section h3 {
-            color: var(--light-green);
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-        .footer-section ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .footer-section li {
-            margin-bottom: 0.5rem;
-        }
-        .footer-section a {
-            color: var(--light-green);
-            text-decoration: underline;
-        }
-        .footer-bottom {
-            padding: 1rem 0;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            .container { padding: 1rem; }
-            .hero h1 { font-size: 1.8rem; }
-            .hero { padding: 2rem 1rem; }
-            main h2 { font-size: 1.4rem; }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.25rem;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- SKIP LINK FOR ACCESSIBILITY -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
     
+    <!-- HEADER WITH NAVIGATION -->
     <header role="banner">
-        <nav class="nav-container" aria-label="Main navigation">
-            <a href="/" class="logo">🌿 Hudson Valley Ticks</a>
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo">🌿 Hudson Valley Ticks</a>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" 
                     onclick="this.parentElement.querySelector('.nav-menu').classList.toggle('active')">☰</button>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="/">Tick Bite Info</a></li>
-                <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
-                <li><a href="/blog.html">HV Tick Blog</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html">Tick Bite Information</a></li>
+                <li><a href="tick-prevention-gear.html">Tick Prevention Gear</a></li>
+                <li><a href="blog.html">HV Tick Blog</a></li>
             </ul>
         </nav>
     </header>
+    
+    <!-- MAIN CONTENT AREA -->
+    <main id="main-content" role="main">
+        <section class="hero">
+            <h1>DIY Permethrin Spray: How to Treat Your Own Clothes</h1>
+            <p>October 10, 2025 • 6 min read • Category: Prevention</p>
+        </section>
 
-    <div class="container">
-        <a href="/blog.html" class="back-link">← Back to Blog</a>
+        <!-- INTRO SECTION -->
+        <section class="section" tabindex="0" id="intro">
+            <div class="intro-box">
+                <strong>🎯 Key Fact:</strong> You already own regular outdoor gear—hiking boots, pants, jackets. These don't have factory permethrin treatment. But they can.
+            </div>
 
-        <main id="main-content" role="main">
-            <section class="hero">
-                <h1>DIY Permethrin Spray: How to Treat Your Own Clothes</h1>
-                <p>October 10, 2025 • 6 min read • Category: Prevention</p>
-            </section>
+            <p>With a permethrin spray, you can treat your existing clothes to provide tick protection comparable to specialty permethrin-treated apparel. This guide shows you exactly how to DIY-treat your clothes, plus answers to common questions about safety and effectiveness.</p>
+        </section>
 
-            <section class="section" tabindex="0" id="introduction">
-                <h2>Introduction</h2>
-                <p>You already own regular outdoor gear—hiking boots, pants, jackets. These don't have factory permethrin treatment. But they can. With a permethrin spray, you can treat your existing clothes to provide tick protection comparable to specialty permethrin-treated apparel.</p>
-                <p>This guide shows you exactly how to DIY-treat your clothes, plus answers to common questions about safety and effectiveness.</p>
-            </section>
+        <!-- WHY TREAT -->
+        <section class="section" tabindex="0" id="why-treat">
+            <h2>Why Treat Your Own Clothes?</h2>
+            <ul>
+                <li><strong>Cost-effective:</strong> Treat existing clothes instead of buying new ones</li>
+                <li><strong>Versatile:</strong> Apply to any fabric—jeans, hiking pants, boots, hats, even backpacks</li>
+                <li><strong>Effective:</strong> Same active ingredient as factory-treated clothing</li>
+                <li><strong>Flexible:</strong> Treat clothes seasonally as needed</li>
+            </ul>
+        </section>
 
-            <section class="section" tabindex="0" id="why-treat">
-                <h2>Why Treat Your Own Clothes?</h2>
-                <ul>
-                    <li><strong style="color: #2c5f2d;">Cost-effective:</strong> Treat existing clothes instead of buying new ones</li>
-                    <li><strong style="color: #2c5f2d;">Versatile:</strong> Apply to any fabric—jeans, hiking pants, boots, hats, even backpacks</li>
-                    <li><strong style="color: #2c5f2d;">Effective:</strong> Same active ingredient as factory-treated clothing</li>
-                    <li><strong style="color: #2c5f2d;">Flexible:</strong> Treat clothes seasonally as needed</li>
-                </ul>
-            </section>
+        <!-- HOW IT WORKS -->
+        <section class="section" tabindex="0" id="how-it-works">
+            <h2>How Permethrin Spray Works</h2>
+            <p>Permethrin spray works exactly like factory treatment. When sprayed on fabrics, it dries and bonds to the fibers. It kills ticks on contact and lasts through multiple washings (typically 5-6 washings depending on the product).</p>
+        </section>
 
-            <section class="section" tabindex="0" id="how-it-works">
-                <h2>How Permethrin Spray Works</h2>
-                <p>Permethrin spray works exactly like factory treatment. When sprayed on fabrics, it dries and bonds to the fibers. It kills ticks on contact and lasts through multiple washings (typically 5-6 washings depending on the product).</p>
-            </section>
+        <!-- STEP BY STEP -->
+        <section class="section" tabindex="0" id="step-by-step">
+            <h2>Step-by-Step: How to Treat Clothes with Permethrin</h2>
 
-            <section class="section" tabindex="0" id="step-by-step">
-                <h2>Step-by-Step: How to Treat Clothes with Permethrin</h2>
+            <h3>What You'll Need</h3>
+            <ul>
+                <li>Permethrin spray (Sawyer or similar brand)</li>
+                <li>Outdoor space (garage, deck, yard)</li>
+                <li>Clothes or gear to treat</li>
+                <li>Hanger or laid flat</li>
+                <li>30 minutes drying time</li>
+            </ul>
 
-                <h3>What You'll Need</h3>
-                <ul>
-                    <li>Permethrin spray (Sawyer or similar brand)</li>
-                    <li>Outdoor space (garage, deck, yard)</li>
-                    <li>Clothes or gear to treat</li>
-                    <li>Hanger or laid flat</li>
-                    <li>30 minutes drying time</li>
-                </ul>
+            <h3>Step 1: Choose Your Location</h3>
+            <p>Spray outside—garage, deck, or yard. You want good ventilation. Do not spray indoors.</p>
 
-                <h3>Step 1: Choose Your Location</h3>
-                <p>Spray outside—garage, deck, or yard. You want good ventilation. Do not spray indoors.</p>
+            <h3>Step 2: Hang or Lay Out Clothes</h3>
+            <p>Hang items on a hanger or lay flat on a table. Make sure all surfaces are accessible.</p>
 
-                <h3>Step 2: Hang or Lay Out Clothes</h3>
-                <p>Hang items on a hanger or lay flat on a table. Make sure all surfaces are accessible.</p>
+            <h3>Step 3: Spray Evenly</h3>
+            <p>Following the bottle instructions, spray until the fabric is slightly wet but not soaking. Cover:</p>
+            <ul>
+                <li>Pants legs and waistband</li>
+                <li>Shirt sleeves and front/back</li>
+                <li>Socks and shoe uppers</li>
+                <li>Hat brims and band</li>
+            </ul>
 
-                <h3>Step 3: Spray Evenly</h3>
-                <p>Following the bottle instructions, spray until the fabric is slightly wet but not soaking. Cover:</p>
-                <ul>
-                    <li>Pants legs and waistband</li>
-                    <li>Shirt sleeves and front/back</li>
-                    <li>Socks and shoe uppers</li>
-                    <li>Hat brims and band</li>
-                </ul>
+            <h3>Step 4: Let Dry Completely</h3>
+            <p>Wait at least 4-6 hours (preferably overnight) before wearing. Full effectiveness requires drying time.</p>
 
-                <h3>Step 4: Let Dry Completely</h3>
-                <p>Wait at least 4-6 hours (preferably overnight) before wearing. Full effectiveness requires drying time.</p>
+            <h3>Step 5: Wait Before Washing</h3>
+            <p>Don't wash treated clothes for at least 24 hours. This allows the permethrin to fully bond to the fibers.</p>
 
-                <h3>Step 5: Wait Before Washing</h3>
-                <p>Don't wash treated clothes for at least 24 hours. This allows the permethrin to fully bond to the fibers.</p>
+            <div class="highlight">
+                <strong>💡 Pro Tip:</strong> Treat clothes the day before a hiking trip. That way they're dry and ready when you head out.
+            </div>
+        </section>
 
-                <div class="info-box">
-                    <strong style="color: #2c5f2d;">💡 Pro Tip:</strong> Treat clothes the day before a hiking trip. That way they're dry and ready when you head out.
-                </div>
-            </section>
+        <!-- SAFETY -->
+        <section class="section" tabindex="0" id="safety">
+            <h2>Safety: Is Permethrin Spray Safe?</h2>
 
-            <section class="section" tabindex="0" id="safety">
-                <h2>Safety: Is Permethrin Spray Safe?</h2>
+            <h3>For Humans</h3>
+            <ul>
+                <li>EPA-registered and safe when used as directed</li>
+                <li>Breaks down on human skin</li>
+                <li>Does not absorb through treated clothing</li>
+                <li>Safe to wear treated clothing against your skin once dry</li>
+            </ul>
 
-                <h3>For Humans</h3>
-                <ul>
-                    <li>EPA-registered and safe when used as directed</li>
-                    <li>Breaks down on human skin</li>
-                    <li>Does not absorb through treated clothing</li>
-                    <li>Safe to wear treated clothing against your skin once dry</li>
-                </ul>
+            <h3>For Pets</h3>
+            <ul>
+                <li>Safe for treated clothing around pets</li>
+                <li>Do not spray directly on animals</li>
+                <li>Let clothes dry completely before allowing pets near them</li>
+                <li>Some pets (especially cats) are more sensitive—use caution</li>
+            </ul>
 
-                <h3>For Pets</h3>
-                <ul>
-                    <li>Safe for treated clothing around pets</li>
-                    <li>Do not spray directly on animals</li>
-                    <li>Let clothes dry completely before allowing pets near them</li>
-                    <li>Some pets (especially cats) are more sensitive—use caution</li>
-                </ul>
+            <h3>Storage and Handling</h3>
+            <ul>
+                <li>Keep out of reach of children and pets</li>
+                <li>Store in cool, dry place</li>
+                <li>Don't inhale fumes—spray outdoors</li>
+                <li>Wash hands after applying</li>
+            </ul>
 
-                <h3>Storage and Handling</h3>
-                <ul>
-                    <li>Keep out of reach of children and pets</li>
-                    <li>Store in cool, dry place</li>
-                    <li>Don't inhale fumes—spray outdoors</li>
-                    <li>Wash hands after applying</li>
-                </ul>
+            <div class="warning">
+                <strong>⚠️ Important:</strong> Never spray permethrin directly on your skin or as a body repellent. It's designed for fabric, not skin. Use skin repellents (Picaridan, DEET) on exposed skin instead.
+            </div>
+        </section>
 
-                <div class="warning-box">
-                    <strong style="color: #d32f2f;">⚠️ Important:</strong> Never spray permethrin directly on your skin or as a body repellent. It's designed for fabric, not skin. Use skin repellents (Picaridan, DEET) on exposed skin instead.
-                </div>
-            </section>
+        <!-- BEST PRODUCTS -->
+        <section class="section" tabindex="0" id="best-products">
+            <h2>Best Products to Treat</h2>
+            <ul>
+                <li><strong>Hiking pants and shirts:</strong> Essential</li>
+                <li><strong>Socks:</strong> Very important (ticks crawl up)</li>
+                <li><strong>Boots:</strong> Important for ankle protection</li>
+                <li><strong>Hats and caps:</strong> Good idea for head/neck protection</li>
+                <li><strong>Backpack exterior:</strong> Helpful as additional barrier</li>
+                <li><strong>Work gloves:</strong> Useful if doing yard work</li>
+            </ul>
+        </section>
 
-            <section class="section" tabindex="0" id="best-products">
-                <h2>Best Products to Treat</h2>
-                <ul>
-                    <li><strong style="color: #2c5f2d;">Hiking pants and shirts:</strong> Essential</li>
-                    <li><strong style="color: #2c5f2d;">Socks:</strong> Very important (ticks crawl up)</li>
-                    <li><strong style="color: #2c5f2d;">Boots:</strong> Important for ankle protection</li>
-                    <li><strong style="color: #2c5f2d;">Hats and caps:</strong> Good idea for head/neck protection</li>
-                    <li><strong style="color: #2c5f2d;">Backpack exterior:</strong> Helpful as additional barrier</li>
-                    <li><strong style="color: #2c5f2d;">Work gloves:</strong> Useful if doing yard work</li>
-                </ul>
-            </section>
+        <!-- RECOMMENDATION -->
+        <section class="section" tabindex="0" id="recommendation">
+            <h2>Our Recommendation</h2>
 
-            <section class="section" tabindex="0" id="recommendation">
-                <h2>Our Recommendation</h2>
+            <div class="product-card">
+                <h3 class="product-name">Sawyer Premium Permethrin Pump Spray</h3>
+                <div class="product-rating">★★★★★ 4.9/5 (6,200+ reviews)</div>
+                <div class="product-price">$15–$20</div>
+                <p class="product-description"><strong>Why it's the best option:</strong> Professional-grade permethrin that's easy to apply. One pump covers about 4 square meters (40 sq ft). Lasts through 6+ washings. The pump bottle makes application easy and controlled. One bottle can treat an entire wardrobe of clothes. Highly recommended by outdoor enthusiasts and tick prevention experts.</p>
+                <a href="https://www.amazon.com/Sawyer-Premium-Permethrin-Pump-Spray/dp/B001ANQVYU?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+            </div>
+        </section>
 
-                <div class="product-box">
-                    <div class="product-name">Sawyer Premium Permethrin Pump Spray</div>
-                    <div class="product-rating">★★★★★ 4.9 (6,200+ reviews)</div>
-                    <div class="product-price">$15–20</div>
-                    <div class="product-details"><strong style="color: #2c5f2d;">Why it's the best option:</strong> Professional-grade permethrin that's easy to apply. One pump covers about 4 square meters (40 sq ft). Lasts through 6+ washings. The pump bottle makes application easy and controlled. One bottle can treat an entire wardrobe of clothes. Highly recommended by outdoor enthusiasts and tick prevention experts.</div>
-                    <a href="https://www.amazon.com/Sawyer-Premium-Permethrin-Pump-Spray/dp/B001ANQVYU?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="cta-button" target="_blank">View on Amazon</a>
-                </div>
-            </section>
+        <!-- EFFECTIVENESS -->
+        <section class="section" tabindex="0" id="effectiveness">
+            <h2>Effectiveness: How Long Does It Last?</h2>
 
-            <section class="section" tabindex="0" id="effectiveness">
-                <h2>Effectiveness: How Long Does It Last?</h2>
+            <p>The permethrin treatment on clothes you've sprayed lasts:</p>
+            <ul>
+                <li><strong>5-6 washings:</strong> At normal water temperature with regular detergent</li>
+                <li><strong>Fewer if:</strong> Hot water, strong detergents, dry cleaning</li>
+                <li><strong>Longer if:</strong> Cold water, gentle detergent, air drying</li>
+            </ul>
 
-                <p>The permethrin treatment on clothes you've sprayed lasts:</p>
-                <ul>
-                    <li><strong style="color: #2c5f2d;">5-6 washings:</strong> At normal water temperature with regular detergent</li>
-                    <li><strong style="color: #2c5f2d;">Fewer if:</strong> Hot water, strong detergents, dry cleaning</li>
-                    <li><strong style="color: #2c5f2d;">Longer if:</strong> Cold water, gentle detergent, air drying</li>
-                </ul>
+            <p>Most people treat clothes once per season, or when they stop working effectively.</p>
+        </section>
 
-                <p>Most people treat clothes once per season, or when they stop working effectively.</p>
-            </section>
+        <!-- COSTS -->
+        <section class="section" tabindex="0" id="costs">
+            <h2>Costs Comparison</h2>
 
-            <section class="section" tabindex="0" id="costs">
-                <h2>Costs Comparison</h2>
+            <ul>
+                <li><strong>Sawyer Permethrin Pump Spray:</strong> $15-20 per bottle</li>
+                <li><strong>Treats:</strong> Multiple sets of clothes (enough to treat 8-10 outfits)</li>
+                <li><strong>Per outfit cost:</strong> ~$2-3</li>
+                <li><strong>vs. Factory-treated Insect Shield shirt:</strong> $45-55</li>
+                <li><strong>Savings:</strong> Significant if you already own outdoor clothes</li>
+            </ul>
+        </section>
 
-                <ul>
-                    <li><strong style="color: #2c5f2d;">Sawyer Permethrin Pump Spray:</strong> $15-20 per bottle</li>
-                    <li><strong style="color: #2c5f2d;">Treats:</strong> Multiple sets of clothes (enough to treat 8-10 outfits)</li>
-                    <li><strong style="color: #2c5f2d;">Per outfit cost:</strong> ~$2-3</li>
-                    <li><strong style="color: #2c5f2d;">vs. Factory-treated Insect Shield shirt:</strong> $45-55</li>
-                    <li><strong style="color: #2c5f2d;">Savings:</strong> Significant if you already own outdoor clothes</li>
-                </ul>
-            </section>
+        <!-- CONCLUSION -->
+        <section class="section" tabindex="0" id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Permethrin spray lets you extend your tick protection to any garment you already own. It's a smart, cost-effective strategy for Hudson Valley residents who want maximum protection without replacing their entire wardrobe.</p>
 
-            <section class="section" tabindex="0" id="conclusion">
-                <h2>Conclusion</h2>
-                <p>Permethrin spray lets you extend your tick protection to any garment you already own. It's a smart, cost-effective strategy for Hudson Valley residents who want maximum protection without replacing their entire wardrobe.</p>
+            <p>Treat your favorite hiking outfit once a season and you've got tick-killing clothes ready to go whenever you venture outdoors.</p>
 
-                <p>Treat your favorite hiking outfit once a season and you've got tick-killing clothes ready to go whenever you venture outdoors.</p>
-            </section>
-        </main>
-    </div>
-
+            <div class="highlight">
+                <strong>🛡️ Bottom Line:</strong> DIY permethrin treatment gives you professional-grade tick protection at a fraction of the cost. One $15-20 bottle can protect your entire wardrobe for a season. That's unbeatable value for tick prevention.
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
     <footer role="contentinfo">
         <div class="footer-container">
             <section class="footer-section">
                 <h3>About</h3>
-                <p>Hudson Valley Ticks provides evidence-based tick prevention and Lyme disease information for Hudson Valley residents.</p>
+                <p>Hudson Valley Ticks provides evidence-based tick prevention and Lyme disease information.</p>
             </section>
             
             <section class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/">Tick Bite Information</a></li>
-                    <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="index.html">Tick Bite Information</a></li>
+                    <li><a href="tick-prevention-gear.html">Tick Prevention Gear</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </section>
             
@@ -489,8 +680,8 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Hudson Valley Ticks. All rights reserved. | <a href="/accessibility.html">Accessibility</a></p>
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">WCAG 2.1 AA Compliant | Amazon Affiliate: hudsonvalleyt-20</p>
+            <p>&copy; 2025 Hudson Valley Ticks. All rights reserved. | <a href="accessibility.html">Accessibility</a></p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">WCAG 2.1 AA Compliant | Affiliate: hudsonvalleyt-20 | All content is evidence-based</p>
         </div>
     </footer>
 </body>

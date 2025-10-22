@@ -5,451 +5,638 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Early Signs of Lyme Disease: What You Need to Know | Hudson Valley Ticks</title>
     <meta name="description" content="Recognize early signs of Lyme disease beyond the bulls-eye rash. Symptoms appear 3-30 days after tick bite. Know when to call your doctor immediately.">
+    <meta name="keywords" content="Lyme disease, tick bite, health, early symptoms">
     <meta name="google-site-verification" content="EdTiTb32BQdG10T38Ag4P7LuN-MymFb4k1G71GaUad0" />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* ============================================
+           WCAG 2.1 AA COMPLIANT STYLES
+           ============================================ */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         :root {
             --primary-green: #2c5f2d;
-            --accent-green: #2d5a2d;
-            --light-green: #b8e986;
-            --bg-light: #f8f9fa;
+            --light-green: #97bc62;
             --text-dark: #1a1a1a;
-            --text-light: #666;
+            --text-light: #ffffff;
+            --bg-light: #f8f9fa;
+            --border-color: #ddd;
         }
+        
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
             color: var(--text-dark);
-            line-height: 1.7;
-            background-color: #fff;
+            background-color: var(--bg-light);
         }
-        a {
-            color: #1a5f1a;
-            text-decoration: underline;
+        
+        /* ============================================
+           SKIP LINK & NAVIGATION
+           ============================================ */
+        .skip-to-main {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--primary-green);
+            color: var(--text-light);
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            z-index: 10001;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            border-radius: 0 0 4px 0;
+            font-weight: 600;
         }
-        a:hover {
-            color: var(--primary-green);
+        
+        .skip-to-main:focus {
+            transform: translateY(0);
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+            color: var(--text-light);
         }
+        
+        .skip-to-main:visited {
+            color: var(--text-light);
+        }
+        
         header {
-            background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+            padding: 0.75rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        
         .nav-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 0 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
+        
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 1.3rem;
+            font-weight: 700;
             color: var(--primary-green);
             text-decoration: none;
+            white-space: nowrap;
         }
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
+        
+        .logo:focus {
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+            border-radius: 2px;
         }
-        .nav-menu a {
-            color: var(--text-dark);
-            text-decoration: underline;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-menu a:hover {
-            color: var(--primary-green);
-        }
+        
         .mobile-menu-toggle {
             display: none;
             background: none;
             border: none;
+            color: var(--primary-green);
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 0.5rem;
+            min-height: 44px;
+            min-width: 44px;
+        }
+        
+        .mobile-menu-toggle:focus {
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+        }
+        
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 500;
+        }
+        
+        .nav-menu a:hover,
+        .nav-menu a:focus {
+            background-color: rgba(44, 95, 45, 0.1);
+            color: var(--primary-green);
+            outline: 2px solid #ffa500;
+            outline-offset: -2px;
+        }
+        
+        .nav-menu a:visited {
+            color: #6600cc;
+        }
+        
+        /* ============================================
+           MAIN CONTENT
+           ============================================ */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: var(--text-light);
+            min-height: calc(100vh - 300px);
+        }
+        
+        .hero {
+            background: var(--primary-green);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+        
+        .section {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:focus {
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--light-green);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        
+        a:hover,
+        a:focus {
+            color: #004499;
+        }
+        
+        a:visited {
+            color: #6600cc;
+        }
+        
+        a:focus {
+            outline: 2px solid #ffa500;
+            outline-offset: 2px;
+        }
+        
+        strong {
             color: var(--primary-green);
         }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* ============================================
+           CONTENT BOXES
+           ============================================ */
+        .intro-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid var(--light-green);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+        
+        .highlight {
+            background: #e8f5e9;
+            border-left: 4px solid var(--light-green);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .warning {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        /* ============================================
+           PRODUCT CARDS & BUTTONS
+           ============================================ */
+        .product-card {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-rating {
+            color: #ff9800;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 0.75rem;
+        }
+        
+        .product-description {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+        
+        .amazon-button {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 44px;
+        }
+        
+        .amazon-button:hover,
+        .amazon-button:focus {
+            background: #1f4620;
+            outline: 3px solid #ffa500;
+            outline-offset: 2px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .amazon-button:visited {
+            color: white;
+        }
+        
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: var(--primary-green);
+            color: var(--text-light);
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: var(--text-light);
+            text-decoration: underline;
+        }
+        
+        .footer-section a:hover,
+        .footer-section a:focus {
+            color: #ffa500;
+        }
+        
+        .footer-section p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom a {
+            color: #ffa500;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
         @media (max-width: 768px) {
-            .mobile-menu-toggle { display: block; }
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
             .nav-menu {
                 position: absolute;
-                top: 60px;
+                top: 100%;
                 left: 0;
                 right: 0;
                 background: white;
                 flex-direction: column;
                 gap: 0;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                display: none;
+                width: 100%;
             }
+            
             .nav-menu.active {
-                max-height: 300px;
+                display: flex;
             }
-            .nav-menu li {
-                padding: 1rem 2rem;
+            
+            .nav-menu a {
+                padding: 1rem;
                 border-bottom: 1px solid #eee;
             }
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--primary-green);
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            text-decoration: underline;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        .hero {
-            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
-            color: #ffffff;
-            padding: 2rem;
-            text-align: center;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        .hero h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-        }
-        .hero p {
-            font-size: 0.95rem;
-            opacity: 0.95;
-            color: #ffffff;
-        }
-        main h2 {
-            color: var(--primary-green);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.6rem;
-            border-bottom: 2px solid var(--light-green);
-            padding-bottom: 0.5rem;
-        }
-        main h3 {
-            color: var(--accent-green);
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 1.25rem;
-        }
-        main p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-        main ul, main ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-        main li {
-            margin-bottom: 0.5rem;
-            line-height: 1.8;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section:focus {
-            outline: 3px solid #ffa500;
-            outline-offset: 2px;
-        }
-        .info-box {
-            background: var(--bg-light);
-            border-left: 4px solid var(--light-green);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-        .info-box strong {
-            color: var(--primary-green);
-        }
-        .warning-box {
-            background: rgba(211, 47, 47, 0.05);
-            border-left: 4px solid #d32f2f;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
-        }
-        .warning-box strong {
-            color: #d32f2f;
-        }
-        .product-box {
-            background: var(--bg-light);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-        .product-name {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 0.5rem;
-        }
-        .product-rating {
-            color: #1a1a1a;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-        .product-price {
-            font-size: 1.25rem;
-            color: var(--primary-green);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        .cta-button {
-            display: inline-block;
-            background: var(--primary-green);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        .cta-button:hover {
-            background: var(--accent-green);
-        }
-        .back-link {
-            color: var(--primary-green);
-            text-decoration: none;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            display: inline-block;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: var(--primary-green);
-            color: #ffffff;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-        footer a {
-            color: var(--light-green);
-            text-decoration: underline;
-        }
-        .footer-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            padding: 2rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .footer-section h3 {
-            color: var(--light-green);
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-        .footer-section ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .footer-section li {
-            margin-bottom: 0.5rem;
-        }
-        .footer-section a {
-            color: var(--light-green);
-            text-decoration: underline;
-        }
-        .footer-bottom {
-            padding: 1rem 0;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            .container { padding: 1rem; }
-            .hero h1 { font-size: 1.8rem; }
-            .hero { padding: 2rem 1rem; }
-            main h2 { font-size: 1.4rem; }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.25rem;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- SKIP LINK FOR ACCESSIBILITY -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
     
+    <!-- HEADER WITH NAVIGATION -->
     <header role="banner">
-        <nav class="nav-container" aria-label="Main navigation">
-            <a href="/" class="logo">🌿 Hudson Valley Ticks</a>
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo">🌿 Hudson Valley Ticks</a>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" 
                     onclick="this.parentElement.querySelector('.nav-menu').classList.toggle('active')">☰</button>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="/">Tick Bite Info</a></li>
-                <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
-                <li><a href="/blog.html">HV Tick Blog</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html">Tick Bite Information</a></li>
+                <li><a href="tick-prevention-gear.html">Tick Prevention Gear</a></li>
+                <li><a href="blog.html">HV Tick Blog</a></li>
             </ul>
         </nav>
     </header>
+    
+    <!-- MAIN CONTENT AREA -->
+    <main id="main-content" role="main">
+        <section class="hero">
+            <h1>Early Signs of Lyme Disease: What You Need to Know</h1>
+            <p>October 18, 2025 • 7 min read • Category: Health</p>
+        </section>
 
-    <div class="container">
-        <a href="/blog.html" class="back-link">← Back to Blog</a>
+        <!-- INTRO SECTION -->
+        <section class="section" tabindex="0" id="intro">
+            <div class="intro-box">
+                <strong>🔴 Critical Fact:</strong> Not everyone gets a bulls-eye rash. Studies show only 60-80% of Lyme disease patients develop the characteristic rash.
+            </div>
 
-        <main id="main-content" role="main">
-            <section class="hero">
-                <h1>Early Signs of Lyme Disease: What You Need to Know</h1>
-                <p>October 18, 2025 • 7 min read • Category: Health</p>
-            </section>
+            <p>You found a tick and removed it. Now you're waiting. What symptoms should you watch for? In the Hudson Valley, where Lyme disease is endemic, knowing what to look for in the first 3-30 days after a tick bite could be lifesaving. Early treatment with antibiotics is highly effective, but only if you recognize the symptoms.</p>
+        </section>
 
-            <section class="section" tabindex="0" id="introduction">
-                <h2>Introduction</h2>
-                <p>You found a tick and removed it. Now you're waiting. What symptoms should you watch for? Most people know about the bulls-eye rash associated with Lyme disease, but here's what many don't realize: not everyone gets the rash, and Lyme disease has many other early warning signs.</p>
-                <p>In the Hudson Valley, where Lyme disease is endemic, knowing what to look for in the first 3-30 days after a tick bite could be lifesaving. Early treatment with antibiotics is highly effective, but only if you recognize the symptoms.</p>
-            </section>
+        <!-- TIMELINE -->
+        <section class="section" tabindex="0" id="timeline">
+            <h2>Timeline: When Lyme Symptoms Appear</h2>
+            <p>Lyme disease symptoms don't appear immediately. Here's what the CDC tells us about timing:</p>
+            <ul>
+                <li><strong>3-5 days:</strong> Earliest symptoms may begin (rash, fatigue)</li>
+                <li><strong>7-14 days:</strong> Most common window for initial symptoms</li>
+                <li><strong>3-30 days:</strong> Full range for early Lyme symptoms to appear</li>
+            </ul>
 
-            <section class="section" tabindex="0" id="timeline">
-                <h2>Timeline: When Lyme Symptoms Appear</h2>
-                <p>Lyme disease symptoms don't appear immediately. Here's what the CDC tells us about timing:</p>
-                <ul>
-                    <li><strong style="color: #2c5f2d;">3-5 days:</strong> Earliest symptoms may begin (rash, fatigue)</li>
-                    <li><strong style="color: #2c5f2d;">7-14 days:</strong> Most common window for initial symptoms</li>
-                    <li><strong style="color: #2c5f2d;">3-30 days:</strong> Full range for early Lyme symptoms to appear</li>
-                </ul>
+            <div class="warning">
+                <strong>⚠️ Common Mistake:</strong> Waiting weeks to see a doctor if you feel fine. Some people carry Lyme disease for months before seeking treatment, leading to more serious complications. If you were bitten and start experiencing ANY symptoms below, seek medical attention immediately—don't wait.
+            </div>
+        </section>
 
-                <div class="warning-box">
-                    <strong style="color: #d32f2f;">⚠️ Common Mistake:</strong> Waiting weeks to see a doctor if you feel fine. Some people carry Lyme disease for months before seeking treatment, leading to more serious complications. If you were bitten and start experiencing ANY of the symptoms below, seek medical attention immediately—don't wait.
-                </div>
-            </section>
+        <!-- BULLSEYE RASH -->
+        <section class="section" tabindex="0" id="bullseye-rash">
+            <h2>The Bulls-Eye Rash (Erythema Migrans)</h2>
+            <p>The bulls-eye rash is the most recognizable sign of Lyme disease, but it's important to know what it actually looks like:</p>
 
-            <section class="section" tabindex="0" id="bullseye-rash">
-                <h2>The Bulls-Eye Rash (Erythema Migrans)</h2>
-                <p>The bulls-eye rash is the most recognizable sign of Lyme disease, but it's important to know what it actually looks like:</p>
+            <h3>What to Look For</h3>
+            <ul>
+                <li><strong>Location:</strong> Usually appears at or near the tick bite site</li>
+                <li><strong>Shape:</strong> Red expanding ring with a clear center</li>
+                <li><strong>Size:</strong> Starts small but expands outward (can reach 12 inches or larger)</li>
+                <li><strong>Timeline:</strong> Appears within 3-30 days of infection</li>
+                <li><strong>Feel:</strong> Usually flat, not raised or itchy</li>
+            </ul>
 
-                <h3>What to Look For</h3>
-                <ul>
-                    <li><strong style="color: #2c5f2d;">Location:</strong> Usually appears at or near the tick bite site</li>
-                    <li><strong style="color: #2c5f2d;">Shape:</strong> Red expanding ring with a clear center</li>
-                    <li><strong style="color: #2c5f2d;">Size:</strong> Starts small but expands outward (can reach 12 inches or larger)</li>
-                    <li><strong style="color: #2c5f2d;">Timeline:</strong> Appears within 3-30 days of infection</li>
-                    <li><strong style="color: #2c5f2d;">Feel:</strong> Usually flat, not raised or itchy</li>
-                </ul>
+            <div class="highlight">
+                <strong>💡 Pro Tip:</strong> Not everyone gets a bulls-eye rash. So the absence of a rash does NOT mean you don't have Lyme disease. Watch for other symptoms!
+            </div>
+        </section>
 
-                <div class="info-box">
-                    <strong style="color: #2c5f2d;">💡 Pro Tip:</strong> Not everyone gets a bulls-eye rash. Studies show only 60-80% of Lyme disease patients develop the characteristic rash. So the absence of a rash does NOT mean you don't have Lyme disease.
-                </div>
-            </section>
+        <!-- SYMPTOMS BEYOND RASH -->
+        <section class="section" tabindex="0" id="symptoms-beyond-rash">
+            <h2>Early Lyme Symptoms Beyond the Rash</h2>
 
-            <section class="section" tabindex="0" id="symptoms-beyond-rash">
-                <h2>Early Lyme Symptoms Beyond the Rash</h2>
+            <h3>Flu-Like Symptoms</h3>
+            <p>The most common early symptoms of Lyme disease mimic the flu:</p>
+            <ul>
+                <li>Fever (often 100-102°F)</li>
+                <li>Chills</li>
+                <li>Fatigue and body aches</li>
+                <li>Headache</li>
+                <li>Joint pain (especially knees, hips, shoulders)</li>
+                <li>Muscle pain</li>
+            </ul>
 
-                <h3>Flu-Like Symptoms</h3>
-                <p>The most common early symptoms of Lyme disease mimic the flu:</p>
-                <ul>
-                    <li>Fever (often 100-102°F)</li>
-                    <li>Chills</li>
-                    <li>Fatigue and body aches</li>
-                    <li>Headache</li>
-                    <li>Joint pain (especially knees, hips, shoulders)</li>
-                    <li>Muscle pain</li>
-                </ul>
+            <h3>Neurological Symptoms</h3>
+            <p>Early Lyme can affect your nervous system:</p>
+            <ul>
+                <li>Severe headache or stiff neck</li>
+                <li>Meningitis-like symptoms</li>
+                <li>Bell's palsy (facial paralysis on one side)</li>
+                <li>Numbness or tingling</li>
+                <li>Nerve pain</li>
+            </ul>
 
-                <h3>Neurological Symptoms</h3>
-                <p>Early Lyme can affect your nervous system:</p>
-                <ul>
-                    <li>Severe headache or stiff neck</li>
-                    <li>Meningitis-like symptoms</li>
-                    <li>Bell's palsy (facial paralysis on one side)</li>
-                    <li>Numbness or tingling</li>
-                    <li>Nerve pain</li>
-                </ul>
+            <h3>Cardiac Symptoms</h3>
+            <p>Some people experience heart-related effects (less common but serious):</p>
+            <ul>
+                <li>Chest pain</li>
+                <li>Palpitations</li>
+                <li>Shortness of breath</li>
+                <li>Heart block (in severe cases)</li>
+            </ul>
 
-                <h3>Cardiac Symptoms</h3>
-                <p>Some people experience heart-related effects (less common but serious):</p>
-                <ul>
-                    <li>Chest pain</li>
-                    <li>Palpitations</li>
-                    <li>Shortness of breath</li>
-                    <li>Heart block (in severe cases)</li>
-                </ul>
+            <div class="warning">
+                <strong>🔴 Critical:</strong> If you experience any chest pain or severe shortness of breath after a tick bite, seek emergency medical care immediately.
+            </div>
+        </section>
 
-                <div class="info-box">
-                    <strong style="color: #2c5f2d;">💡 Important:</strong> If you experience any chest pain or severe shortness of breath after a tick bite, seek emergency medical care immediately.
-                </div>
-            </section>
+        <!-- POST-LYME -->
+        <section class="section" tabindex="0" id="post-lyme">
+            <h2>Post-Lyme Disease Syndrome (PLDS)</h2>
+            <p>Even with treatment, some people experience persistent symptoms weeks or months later. This is called Post-Lyme Disease Syndrome and may include:</p>
+            <ul>
+                <li>Persistent fatigue</li>
+                <li>Chronic joint pain</li>
+                <li>Cognitive difficulties ("brain fog")</li>
+                <li>Sleep disturbances</li>
+                <li>Concentration problems</li>
+            </ul>
+        </section>
 
-            <section class="section" tabindex="0" id="post-lyme">
-                <h2>Post-Lyme Disease Syndrome (PLDS)</h2>
-                <p>Even with treatment, some people experience persistent symptoms weeks or months later. This is called Post-Lyme Disease Syndrome and may include:</p>
-                <ul>
-                    <li>Persistent fatigue</li>
-                    <li>Chronic joint pain</li>
-                    <li>Cognitive difficulties ("brain fog")</li>
-                    <li>Sleep disturbances</li>
-                    <li>Concentration problems</li>
-                </ul>
-            </section>
+        <!-- WHAT TO DO -->
+        <section class="section" tabindex="0" id="what-to-do">
+            <h2>What to Do If You Experience These Symptoms</h2>
 
-            <section class="section" tabindex="0" id="what-to-do">
-                <h2>What to Do If You Experience These Symptoms</h2>
+            <h3>Step 1: Seek Medical Care</h3>
+            <p>Contact your doctor or visit an urgent care facility. Tell them you were potentially exposed to ticks. Lyme disease is diagnosed through clinical presentation and blood tests (though early blood tests may be negative).</p>
 
-                <h3>Step 1: Seek Medical Care</h3>
-                <p>Contact your doctor or visit an urgent care facility. Tell them you were potentially exposed to ticks. Lyme disease is diagnosed through clinical presentation and blood tests (though early blood tests may be negative).</p>
+            <h3>Step 2: Early Antibiotic Treatment</h3>
+            <p>Early Lyme disease is highly treatable with antibiotics, typically doxycycline, amoxicillin, or cefuroxime. Starting treatment within the first 30 days significantly reduces the risk of complications.</p>
 
-                <h3>Step 2: Early Antibiotic Treatment</h3>
-                <p>Early Lyme disease is highly treatable with antibiotics, typically doxycycline, amoxicillin, or cefuroxime. Starting treatment within the first 30 days significantly reduces the risk of complications.</p>
+            <h3>Step 3: Monitor Closely</h3>
+            <p>Keep track of all symptoms and how they progress. Take photos of any rash. Document when symptoms started relative to the tick bite.</p>
 
-                <h3>Step 3: Monitor Closely</h3>
-                <p>Keep track of all symptoms and how they progress. Take photos of any rash. Document when symptoms started relative to the tick bite.</p>
+            <div class="highlight">
+                <strong>💡 Pro Tip:</strong> Find a Lyme-fluent doctor in the Hudson Valley. Not all physicians are equally knowledgeable about tick-borne illness. The right doctor will take your symptoms seriously and provide appropriate treatment.
+            </div>
+        </section>
 
-                <div class="info-box">
-                    <strong style="color: #2c5f2d;">💡 Pro Tip:</strong> Find a Lyme-fluent doctor in the Hudson Valley. Not all physicians are equally knowledgeable about tick-borne illness. The right doctor will take your symptoms seriously and provide appropriate treatment.
-                </div>
-            </section>
+        <!-- PREVENTION -->
+        <section class="section" tabindex="0" id="prevention">
+            <h2>Prevention: Your Best Defense</h2>
+            <p>The best treatment for Lyme disease is prevention. Proper tick removal is critical for reducing infection risk:</p>
 
-            <section class="section" tabindex="0" id="prevention">
-                <h2>Prevention: Your Best Defense</h2>
-                <p>The best treatment for Lyme disease is prevention. This is where tick removal tools become critical:</p>
+            <div class="product-card">
+                <h3 class="product-name">Tick Twister 2-Pack</h3>
+                <div class="product-rating">★★★★★ 4.7/5 (3,200+ reviews)</div>
+                <div class="product-price">$6–$8</div>
+                <p class="product-description"><strong>Why it works:</strong> The Tick Twister is designed by a French veterinarian specifically for safe tick removal. The unique shape allows you to remove ticks without squeezing them (which can increase Lyme transmission). Quick, effective, and recommended by vets and doctors. Keep one in your home, car, and backpack.</p>
+                <a href="https://www.amazon.com/Tick-Twister-Removal-Tool-Pack/dp/B01BECRHEO?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="amazon-button" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+            </div>
+        </section>
 
-                <div class="product-box">
-                    <div class="product-name">Tick Twister 2-Pack</div>
-                    <div class="product-rating">★★★★★ 4.7 (3,200+ reviews)</div>
-                    <div class="product-price">$6–8</div>
-                    <div class="product-details"><strong style="color: #2c5f2d;">Why it works:</strong> The Tick Twister is designed by a French veterinarian specifically for safe tick removal. The unique shape allows you to remove ticks without squeezing them (which can increase Lyme transmission). Quick, effective, and recommended by vets and doctors. Keep one in your home, car, and backpack.</div>
-                    <a href="https://www.amazon.com/Tick-Twister-Removal-Tool-Pack/dp/B01BECRHEO?linkCode=ll1&tag=hudsonvalleyt-20&linkId=&language=en_US&ref_=as_li_ss_tl" class="cta-button" target="_blank">View on Amazon</a>
-                </div>
-            </section>
+        <!-- CONCLUSION -->
+        <section class="section" tabindex="0" id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Knowledge is your first line of defense against Lyme disease. While the bulls-eye rash is a classic sign, don't rely on it—watch for flu-like symptoms, fatigue, joint pain, and neurological symptoms in the weeks after a tick bite.</p>
+            <p>If you think you might have Lyme disease, seek medical attention promptly. Early treatment is highly effective and can prevent serious long-term complications.</p>
 
-            <section class="section" tabindex="0" id="conclusion">
-                <h2>Conclusion</h2>
-                <p>Knowledge is your first line of defense against Lyme disease. While the bulls-eye rash is a classic sign, don't rely on it—watch for flu-like symptoms, fatigue, joint pain, and neurological symptoms in the weeks after a tick bite.</p>
-                <p>If you think you might have Lyme disease, seek medical attention promptly. Early treatment is highly effective and can prevent serious long-term complications.</p>
-
-                <p><strong style="color: #2c5f2d;">Remember:</strong> In the Hudson Valley, ticks and Lyme disease are a real concern. Stay vigilant, practice prevention, and know the early warning signs.</p>
-            </section>
-        </main>
-    </div>
-
+            <div class="highlight">
+                <strong>🛡️ Bottom Line:</strong> In the Hudson Valley, ticks and Lyme disease are a real concern. Stay vigilant, practice prevention, and know the early warning signs. When in doubt, contact your doctor.
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
     <footer role="contentinfo">
         <div class="footer-container">
             <section class="footer-section">
                 <h3>About</h3>
-                <p>Hudson Valley Ticks provides evidence-based tick prevention and Lyme disease information for Hudson Valley residents.</p>
+                <p>Hudson Valley Ticks provides evidence-based tick prevention and Lyme disease information.</p>
             </section>
             
             <section class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/">Tick Bite Information</a></li>
-                    <li><a href="/tick-prevention-gear.html">Tick Prevention Gear</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="index.html">Tick Bite Information</a></li>
+                    <li><a href="tick-prevention-gear.html">Tick Prevention Gear</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </section>
             
@@ -468,8 +655,8 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Hudson Valley Ticks. All rights reserved. | <a href="/accessibility.html">Accessibility</a></p>
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">WCAG 2.1 AA Compliant | Amazon Affiliate: hudsonvalleyt-20</p>
+            <p>&copy; 2025 Hudson Valley Ticks. All rights reserved. | <a href="accessibility.html">Accessibility</a></p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">WCAG 2.1 AA Compliant | Affiliate: hudsonvalleyt-20 | All content is evidence-based</p>
         </div>
     </footer>
 </body>
