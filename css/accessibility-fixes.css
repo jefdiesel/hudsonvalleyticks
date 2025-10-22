@@ -1,0 +1,81 @@
+/******************************************************************************
+ * WCAG ACCESSIBILITY FIXES
+ ******************************************************************************/
+
+/* 1. PRODUCT RATING CONTRAST FIX */
+.product-rating {
+    color: #1a1a1a !important;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+/* 2. BESTSELLER BADGE CONTRAST FIX */
+.badge.bestseller {
+    background-color: #ff6b35 !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* 3. LINK STYLING */
+a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: 500;
+    color: #0066cc;
+}
+
+a:visited { color: #6600cc; }
+a:hover { color: #004499; text-decoration-thickness: 3px; }
+
+/* 4. FOCUS INDICATORS */
+*:focus {
+    outline: 3px solid #ffb81c !important;
+    outline-offset: 2px !important;
+}
+
+button:focus, input:focus, a:focus {
+    outline: 3px solid #ffb81c;
+    outline-offset: 2px;
+}
+
+/* 5. LANDMARKS */
+main, header, footer, nav, section, article, aside {
+    display: block;
+}
+
+/* 6. SKIP LINK */
+.skip-link {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: #000;
+    color: #fff;
+}
+
+.skip-link:focus {
+    top: 0;
+    left: 0;
+}
+
+/* 7. FORM ACCESSIBILITY */
+label { font-weight: 600; display: block; margin-bottom: 0.5em; }
+input, textarea, select { min-height: 44px; padding: 8px 12px; font-size: 16px; }
+
+/* 8. BUTTON ACCESSIBILITY */
+button, .btn {
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 9. TEXT CONTRAST */
+body { color: #1a1a1a; background-color: #ffffff; }
+h1, h2, h3, h4, h5, h6 { color: #1a1a1a; font-weight: 700; }
