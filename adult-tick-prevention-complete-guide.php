@@ -290,7 +290,7 @@ $pageContent = <<<'HTML'
                 </div>
                 <div class="post-body">
                     <p class="product-highlight"><strong>Price:</strong> $14.99 | <strong>Duration:</strong> 12+ hours</p>
-                    <p class="post-excerpt">The CDC-recommended skin repellent for extended outdoor exposure. Picarikin 20% provides 12+ hours of protection—superior to DEET in humid conditions and less greasy for all-day outdoor work. Spray on exposed skin (neck, ears, hands, wrists) before entering tick habitat.</p>
+                    <p class="post-excerpt">The CDC-recommended skin repellent for extended outdoor exposure. Picaridin 20% provides 12+ hours of protection—superior to DEET in humid conditions and less greasy for all-day outdoor work. Spray on exposed skin (neck, ears, hands, wrists) before entering tick habitat.</p>
                     <ul class="product-features">
                         <li>20% Picaridin—CDC-recommended concentration</li>
                         <li>12+ hour protection in most conditions</li>

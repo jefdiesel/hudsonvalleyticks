@@ -260,7 +260,7 @@ $pageContent = <<<'HTML'
                 </div>
             </div>
             
-            <!-- PRODUCT 4: Picarikin Spray -->
+            <!-- PRODUCT 4: Picaridin Spray -->
             <div class="post-card">
                 <div class="post-header">
                     <span class="post-category">Skin Protection</span>
@@ -269,9 +269,9 @@ $pageContent = <<<'HTML'
                 </div>
                 <div class="post-body">
                     <p class="product-highlight"><strong>Price:</strong> $14.99 | <strong>Duration:</strong> 12+ hours</p>
-                    <p class="post-excerpt">Apply to exposed skin (face, ears, neck, hands) immediately before heading to your Halloween party. Picarikin 20% provides 12+ hours of protection. The formula is less greasy than DEET, won't stain costumes, and is highly effective in humid conditions.</p>
+                    <p class="post-excerpt">Apply to exposed skin (face, ears, neck, hands) immediately before heading to your Halloween party. Picaridin 20% provides 12+ hours of protection. The formula is less greasy than DEET, won't stain costumes, and is highly effective in humid conditions.</p>
                     <ul class="product-features">
-                        <li>20% Picarikin (CDC-recommended)</li>
+                        <li>20% Picaridin (CDC-recommended)</li>
                         <li>12+ hour protection per application</li>
                         <li>Less greasy than DEET</li>
                         <li>Won't damage costume makeup or fabric</li>

@@ -53,7 +53,7 @@ $pageContent = <<<'HTML'
                     </div>
                     <div class="post-body">
                         <p class="post-excerpt">Look amazing at adult Halloween parties while staying protected. Sophisticated costume ideas with built-in coverage, compression underlayers, three-layer defense strategy, and protocols for maintaining tick prevention during extended parties.</p>
-                        <div class="product-highlight">📦 Featured: 5 Products - Compression Shirt, Tights, Permethrin, Picarikin, Tick Twister - $79-115 total</div>
+                        <div class="product-highlight">📦 Featured: 5 Products - Compression Shirt, Tights, Permethrin, Picaridin, Tick Twister - $79-115 total</div>
                         <a href="adult-halloween-costumes-tick-prevention.php" class="cta-link">Read Full Post →</a>
                     </div>
                 </article>
@@ -85,7 +85,7 @@ $pageContent = <<<'HTML'
                     </div>
                     <div class="post-body">
                         <p class="post-excerpt">Specialized strategies for outdoor workers, serious hikers, hunters, and recreation enthusiasts who spend 10+ hours per week in tick habitat. Three-layer defense for extended exposure, professional work protocols, and recreation-specific prevention.</p>
-                        <div class="product-highlight">📦 Featured: 5 Products - UPF Shirt, Ripstop Pants, Permethrin Spray, Picarikin 20%, Tick Twister - $112-169 total</div>
+                        <div class="product-highlight">📦 Featured: 5 Products - UPF Shirt, Ripstop Pants, Permethrin Spray, Picaridin 20%, Tick Twister - $112-169 total</div>
                         <a href="adult-tick-prevention-complete-guide.php" class="cta-link">Read Full Post →</a>
                     </div>
                 </article>
@@ -133,7 +133,7 @@ $pageContent = <<<'HTML'
                     </div>
                     <div class="post-body">
                         <p class="post-excerpt">October is peak tick season AND Halloween season. Learn how to choose costumes with built-in tick protection, modify existing costumes for coverage, and implement three-layer defense while trick-or-treating and enjoying fall festivities.</p>
-                        <div class="product-highlight">📦 Featured: 5 Products - Ninja Outfit, Thermal Underwear, Permethrin, Picarikin, Tick Twister - $91-133 total</div>
+                        <div class="product-highlight">📦 Featured: 5 Products - Ninja Outfit, Thermal Underwear, Permethrin, Picaridin, Tick Twister - $91-133 total</div>
                         <a href="halloween-ticks-blog.php" class="cta-link">Read Full Post →</a>
                     </div>
                 </article>
