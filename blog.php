@@ -26,7 +26,87 @@ $pageContent = <<<'HTML'
         <!-- BLOG POSTS GRID - NEWEST TO OLDEST -->
         <section class="section" tabindex="0" id="blog-posts">
             <div class="blog-posts">
-                <!-- Post 22: Dog Halloween Costumes - NEWEST FIRST -->
+                <!-- Post 27: Returning to Activities After Lyme - NEWEST FIRST -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">💪 RECOVERY • Long-Form</span>
+                            <h3 class="post-title">Returning to Outdoor Activities After Lyme Disease: Safe Recovery Guide</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 24 min • Recovery Timeline</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">How to safely rebuild your outdoor life and fitness after Lyme disease treatment. Recovery timelines for early vs late-stage disease, structured activity progression, pacing strategies, overcoming fear of re-infection, and modified activities for lasting enjoyment.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Fitness Tracker, Stationary Bike, Water Aerobics Kit, Walking Shoes, Backpack - $360-600 total</div>
+                        <a href="blog-returning-to-activities.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 26: Natural vs Chemical Prevention -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">🛡️ PREVENTION • Long-Form</span>
+                            <h3 class="post-title">Natural Tick Prevention vs Chemical Options: What Actually Works?</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 24 min • Evidence-Based</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Honest analysis of natural vs chemical tick prevention methods. Essential oils vs permethrin, DEET vs Picaridin, effectiveness data, combined approach strategies, and best practices based on scientific research. No product bias—just results.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Wondercide Spray, Permethrin, DEET, Insect Shield Outfit, Tick Removal Kit - $88-208 total</div>
+                        <a href="blog-natural-vs-chemical.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 25: Pregnancy and Lyme -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">🤰 PREGNANCY • Long-Form</span>
+                            <h3 class="post-title">Pregnancy and Lyme Disease: Risks, Treatment Safety, and Prevention</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 23 min • Comprehensive Guide</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Complete guidance for pregnant women: Lyme disease risks in pregnancy, vertical transmission facts (much lower than commonly believed), safe antibiotic treatment options, testing during pregnancy, and comprehensive prevention strategies for expectant mothers.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Insect Shield Clothing, Prenatal Vitamin, Probiotics, Picaridin, Tick Removal Kit - $110-165 total</div>
+                        <a href="blog-pregnancy-lyme.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 24: Lyme Arthritis -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">💔 ARTHRITIS • Long-Form</span>
+                            <h3 class="post-title">Lyme Arthritis: Understanding Migratory Joint Pain and Treatment</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 23 min • Complete Reference</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Detailed guide to Lyme arthritis: why joints are affected, migratory pain patterns, medical treatment options, physical therapy protocols by stage, flare prevention, and long-term management strategies for persistent joint pain from Lyme disease.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Compression Sleeves, Curcumin, Foam Roller, Resistance Bands, Collagen Peptides - $88-108 total</div>
+                        <a href="blog-lyme-arthritis.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 23: Chronic Lyme Management -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">💊 CHRONIC LYME • Long-Form</span>
+                            <h3 class="post-title">Living with Chronic Lyme Disease: Long-Term Management Strategies</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 23 min • Essential Reading</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Comprehensive guide to managing post-treatment Lyme disease symptoms: pain management, brain fog strategies, sleep optimization, anti-inflammatory lifestyle, stress management, work-life balance, and building a medical team. 2000+ words of evidence-based practical guidance.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Magnesium, Heating Pad, Weighted Blanket, Blue Light Glasses, Omega-3 Fish Oil - $100-172 total</div>
+                        <a href="blog-chronic-lyme-management.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 22: Dog Halloween Costumes -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -382,7 +462,7 @@ $pageContent = <<<'HTML'
 
         <section class="section" tabindex="0" id="featured-outro">
             <div class="featured-section">
-                <h2>📦 22 Featured Blog Posts</h2>
+                <h2>📦 27 Featured Blog Posts</h2>
                 <p>Each blog post recommends specific Amazon products with affiliate links (tag: hudsonvalleyt-20). All products are verified, tested, and genuinely recommended for Hudson Valley tick prevention.</p>
             </div>
         </section>
