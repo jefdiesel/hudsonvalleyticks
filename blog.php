@@ -4,6 +4,7 @@
  * 
  * Lists all blog posts about tick prevention and Lyme disease education
  * WCAG 2.1 AA compliant
+ * UPDATED: Email signup now functional with Substack integration
  */
 
 $pageTitle = 'Hudson Valley Tick Prevention Blog | Expert Guides & Education';
@@ -306,18 +307,63 @@ $pageContent = <<<'HTML'
         </div>
     </section>
 
-    <!-- NEWSLETTER SIGNUP -->
+    <!-- NEWSLETTER SIGNUP - NOW FUNCTIONAL -->
     <section style="background: linear-gradient(135deg, #2c5f2d 0%, #1f4620 100%); color: white; padding: 2rem; margin-top: 3rem; border-radius: 4px; text-align: center;">
         <h2 style="color: white; margin-top: 0;">Stay Informed About Ticks</h2>
         <p style="font-size: 1.05rem; max-width: 600px; margin: 1rem auto;">
             Subscribe to our monthly newsletter for new articles, seasonal alerts, and Hudson Valley-specific tick prevention tips.
         </p>
-        <form style="max-width: 500px; margin: 1.5rem auto; display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
-            <input type="email" placeholder="Your email address" required style="flex: 1; min-width: 250px; padding: 0.75rem; border: none; border-radius: 4px; font-size: 1rem;">
-            <button type="submit" class="amazon-button" style="background: #ff9800; margin-top: 0;">Subscribe</button>
+        <form id="newsletter-form" style="max-width: 500px; margin: 1.5rem auto; display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+            <input type="email" id="newsletter-email" placeholder="Your email address" required style="flex: 1; min-width: 250px; padding: 0.75rem; border: none; border-radius: 4px; font-size: 1rem;">
+            <button type="submit" id="newsletter-btn" class="amazon-button" style="background: #ff9800; margin-top: 0; cursor: pointer;">Subscribe</button>
         </form>
+        <div id="newsletter-message" style="font-size: 0.95rem; margin-top: 1rem; min-height: 1.5rem;"></div>
         <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.9;">We respect your privacy. Unsubscribe anytime.</p>
     </section>
+
+    <script>
+    document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const emailInput = document.getElementById('newsletter-email');
+        const submitBtn = document.getElementById('newsletter-btn');
+        const messageDiv = document.getElementById('newsletter-message');
+        const email = emailInput.value.trim();
+        
+        // Disable button and show loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Subscribing...';
+        messageDiv.innerHTML = '';
+        
+        try {
+            const response = await fetch('newsletter-signup.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email })
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.success) {
+                messageDiv.style.color = '#4caf50';
+                messageDiv.innerHTML = '✓ ' + data.message;
+                emailInput.value = '';
+            } else {
+                messageDiv.style.color = '#ff9800';
+                messageDiv.innerHTML = '⚠ ' + (data.error || 'An error occurred. Please try again.');
+            }
+        } catch (error) {
+            messageDiv.style.color = '#ff9800';
+            messageDiv.innerHTML = '⚠ Connection error. Please try again.';
+            console.error('Signup error:', error);
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Subscribe';
+        }
+    });
+    </script>
 
     <!-- CONTENT ROADMAP -->
     <section style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 4px;">
