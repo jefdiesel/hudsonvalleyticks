@@ -23,7 +23,7 @@ $pageContent = <<<'HTML'
 
     <section class="section">
         <div class="intro-box">
-            <strong>Key Information:</strong> The relationship between Lyme disease and pregnancy is complex and often misunderstood. While the risk of serious complications is lower than some sources suggest, pregnant women with Lyme disease deserve accurate information, appropriate medical care, and evidence-based prevention strategies.
+            <strong>Key Information:</strong>Medical Disclaimer: This article provides educational information about Lyme disease in pregnancy based on current medical literature and CDC guidance. It is not a substitute for professional medical advice, diagnosis, or treatment. Pregnancy management decisions should always be made in consultation with your obstetrician-gynecologist, maternal-fetal medicine specialist, or infectious disease doctor. Do not use this information to self-diagnose or self-treat. Every pregnancy is unique, and your healthcare provider should make all medical decisions specific to your situation. The relationship between Lyme disease and pregnancy is complex and often misunderstood. While the risk of serious complications is lower than some sources suggest, pregnant women with Lyme disease deserve accurate information, appropriate medical care, and evidence-based prevention strategies.
         </div>
 
         <div class="featured-section">
