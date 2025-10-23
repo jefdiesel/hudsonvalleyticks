@@ -26,7 +26,39 @@ $pageContent = <<<'HTML'
         <!-- BLOG POSTS GRID - NEWEST TO OLDEST -->
         <section class="section" tabindex="0" id="blog-posts">
             <div class="blog-posts">
-                <!-- Post 19: Dog Tick Prevention - NEWEST FIRST -->
+                <!-- Post 22: Dog Halloween Costumes - NEWEST FIRST -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">🐕 PETS • Halloween Safety</span>
+                            <h3 class="post-title">Safe Halloween Costumes for Dogs: Tick Prevention Edition</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 16 min • Family Fun</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Dress up your dog adorably while maintaining full tick prevention. Learn which costumes allow tick checks, safe removal of ticks found during trick-or-treating, and how to enjoy Halloween without compromising dog safety.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Bandana, Vest, Shampoo, Tweezers, Headpiece - $46-80 total</div>
+                        <a href="dog-halloween-costumes-tick-prevention.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 21: Adult Halloween Costumes -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">👨 ADULTS • Halloween Safety</span>
+                            <h3 class="post-title">Adult Halloween Costumes That Hide Tick Prevention</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 19 min • Party Perfect</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Look amazing at adult Halloween parties while staying protected. Sophisticated costume ideas with built-in coverage, compression underlayers, three-layer defense strategy, and protocols for maintaining tick prevention during extended parties.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Compression Shirt, Tights, Permethrin, Picarikin, Tick Twister - $79-115 total</div>
+                        <a href="adult-halloween-costumes-tick-prevention.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 20: Dog Tick Prevention (Full Guide) -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -42,7 +74,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 18: Adult Tick Prevention - SECOND NEWEST -->
+                <!-- Post 19: Adult Tick Prevention (Full Guide) -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -58,7 +90,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 17: Tick-Free Yard Gardening -->
+                <!-- Post 18: Tick-Free Yard Gardening -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -74,7 +106,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 16: Fall Foliage -->
+                <!-- Post 17: Fall Foliage -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -90,7 +122,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 15: Halloween Costumes -->
+                <!-- Post 16: Family Halloween -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -350,7 +382,7 @@ $pageContent = <<<'HTML'
 
         <section class="section" tabindex="0" id="featured-outro">
             <div class="featured-section">
-                <h2>📦 20 Featured Blog Posts</h2>
+                <h2>📦 22 Featured Blog Posts</h2>
                 <p>Each blog post recommends specific Amazon products with affiliate links (tag: hudsonvalleyt-20). All products are verified, tested, and genuinely recommended for Hudson Valley tick prevention.</p>
             </div>
         </section>
