@@ -5,11 +5,11 @@
  * Comprehensive index of ALL Hudson Valley Ticks blog posts
  * Organized by category with full links and descriptions
  * WCAG 2.1 AA compliant
- * UPDATED: Complete article listing with all 36+ posts
+ * UPDATED: Complete article listing with all 36+ posts PLUS 5 new hiking guides
  */
 
 $pageTitle = 'Hudson Valley Tick Prevention Blog | Expert Guides & Education';
-$pageDescription = 'Evidence-based blog covering tick prevention, Lyme disease removal tools, personal protection strategies, and seasonal guides for Hudson Valley residents.';
+$pageDescription = 'Evidence-based blog covering tick prevention, Lyme disease removal tools, personal protection strategies, seasonal guides, and Hudson Valley hiking guides for tick-safe outdoor recreation.';
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">
@@ -20,11 +20,12 @@ $pageContent = <<<'HTML'
 <!-- MAIN BLOG CONTENT -->
 <main class="section">
     <div class="intro-box">
-        <strong>📚 Complete Blog Archive:</strong> All evidence-based articles about tick prevention, Lyme disease education, removal tools, personal protection strategies, and seasonal guides for Hudson Valley residents. Content is based on CDC guidelines, peer-reviewed research, and community experience protecting the Hudson Valley.
+        <strong>📚 Complete Blog Archive:</strong> All evidence-based articles about tick prevention, Lyme disease education, removal tools, personal protection strategies, seasonal guides, and Hudson Valley hiking guides. Content is based on CDC guidelines, peer-reviewed research, and community experience protecting the Hudson Valley.
     </div>
 
     <!-- QUICK NAVIGATION BY CATEGORY -->
     <div class="quick-nav">
+        <a href="#hiking">Hiking Guides (5)</a>
         <a href="#papular-hives">Papular Hives (5)</a>
         <a href="#prevention">Prevention (8)</a>
         <a href="#removal">Removal (3)</a>
@@ -34,6 +35,78 @@ $pageContent = <<<'HTML'
         <a href="#yard">Yard Control (4)</a>
         <a href="#special">Special Situations (4)</a>
     </div>
+
+    <!-- ========================================
+         HUDSON VALLEY HIKING GUIDES (5 POSTS)
+         ======================================== -->
+    <section id="hiking">
+        <h2>Hudson Valley Hiking Guides with Tick Prevention</h2>
+        <p>Complete hiking guides for popular Hudson Valley trails with integrated tick prevention strategies, NYC accessibility, seasonal weather patterns, and skill level assessments.</p>
+        
+        <div class="blog-posts">
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Hiking Guide</span>
+                    <h3 class="post-title">Bear Mountain Hiking Guide: Hudson Valley's Most Accessible Peak</h3>
+                    <p class="post-meta">October 2025 | 22 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Comprehensive guide to Bear Mountain in Harriman State Park. Includes NYC driving access (50 miles), Metro-North rail options, difficulty levels (easy to challenging loops), seasonal weather patterns, and integrated tick prevention strategies for this iconic 1,305-foot Hudson Valley summit.</p>
+                    <a href="bear-mountain-hiking-guide.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Hiking Guide</span>
+                    <h3 class="post-title">Storm King Mountain Guide: Hudson River Views & Metro-North Access</h3>
+                    <p class="post-meta">October 2025 | 18 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Expert guide to Storm King Mountain near Cornwall-on-Hudson. Features direct Metro-North railroad access from Grand Central Terminal (60 minutes), multiple difficulty routes, seasonal conditions from muddy spring to optimal fall hiking, and tick prevention for this 1,340-foot scenic peak.</p>
+                    <a href="storm-king-hiking-guide.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Hiking Guide</span>
+                    <h3 class="post-title">Overlook Mountain Guide: Catskills Fire Tower & Summit Views</h3>
+                    <p class="post-meta">October 2025 | 20 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Complete Overlook Mountain hiking guide near Woodstock, NY. Covers 90-minute NYC drive access, 1,500-foot elevation gain challenges, restored 1930s fire tower experience, seasonal weather at high elevation, and comprehensive tick prevention for this popular Catskills gateway peak.</p>
+                    <a href="overlook-mountain-hiking-guide.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Hiking Guide</span>
+                    <span class="post-category">CHALLENGING</span>
+                    <h3 class="post-title">Breakneck Ridge Guide: Hudson Valley's Most Dramatic Scramble</h3>
+                    <p class="post-meta">October 2025 | 19 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Expert guide to Breakneck Ridge near Cold Spring, NY—Hudson Valley's most challenging and iconic hike. Covers Metro-North rail access, steep scrambles with 100+ foot exposure, annual rescue statistics, critical safety considerations, and tick prevention despite dramatic terrain and cliff faces.</p>
+                    <a href="breakneck-ridge-hiking-guide.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Hiking Guide</span>
+                    <span class="post-category">FAMILY-FRIENDLY</span>
+                    <h3 class="post-title">Minnewaska State Park Guide: Family Lakes & Waterfalls</h3>
+                    <p class="post-meta">October 2025 | 16 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Complete family-friendly hiking guide to Minnewaska State Park near Wawarsing. Features easy lakeside walks to moderate waterfall routes, age-appropriate recommendations (ages 3-12+), abundant parking, post-hike swimming opportunities, and integrated tick prevention for younger hikers.</p>
+                    <a href="minnewaska-state-park-hiking-guide.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <!-- ========================================
          PAPULAR HIVES (5 POSTS)
@@ -188,7 +261,7 @@ $pageContent = <<<'HTML'
             <article class="post-card">
                 <div class="post-header">
                     <span class="post-category">Prevention</span>
-                    <h3 class="post-category">SEASONAL</span>
+                    <span class="post-category">SEASONAL</span>
                     <h3 class="post-title">Fall Leaf Peeping: Tick Prevention for Autumn Hiking</h3>
                     <p class="post-meta">October 2025 | 13 minutes</p>
                 </div>
@@ -305,7 +378,7 @@ $pageContent = <<<'HTML'
             <article class="post-card">
                 <div class="post-header">
                     <span class="post-category">Lyme Disease</span>
-                    <h3 class="post-category">PREGNANCY</span>
+                    <span class="post-category">PREGNANCY</span>
                     <h3 class="post-title">Pregnancy & Lyme Disease: Protection & Management</h3>
                     <p class="post-meta">October 2025 | 12 minutes</p>
                 </div>
@@ -345,7 +418,7 @@ $pageContent = <<<'HTML'
                 </div>
                 <div class="post-body">
                     <p class="post-excerpt">Head-to-head comparison of picarikin and DEET effectiveness, duration, toxicity concerns, and best applications. Including Sawyer products review and recommendations for different activities.</p>
-                    <a href="picaridin-vs-deet-bug-repellent.php" class="cta-link">Read Repellent Comparison →</a>
+                    <a href="picarikin-vs-deet-bug-repellent.php" class="cta-link">Read Repellent Comparison →</a>
                 </div>
             </article>
 
@@ -422,7 +495,7 @@ $pageContent = <<<'HTML'
             <article class="post-card">
                 <div class="post-header">
                     <span class="post-category">Permethrin</span>
-                    <h3 class="post-category">SEASONAL</span>
+                    <span class="post-category">SEASONAL</span>
                     <h3 class="post-title">Halloween Tick Prevention for Dogs: Costume Coverage</h3>
                     <p class="post-meta">October 2025 | 9 minutes</p>
                 </div>
@@ -481,7 +554,7 @@ $pageContent = <<<'HTML'
             <article class="post-card">
                 <div class="post-header">
                     <span class="post-category">Yard Control</span>
-                    <h3 class="post-category">SEASONAL</span>
+                    <span class="post-category">SEASONAL</span>
                     <h3 class="post-title">Halloween Tick Prevention in Your Yard</h3>
                     <p class="post-meta">October 2025 | 10 minutes</p>
                 </div>
@@ -559,6 +632,18 @@ $pageContent = <<<'HTML'
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
             
+            <!-- Hiking Guides Category -->
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #ff6f00;">
+                <h3 style="margin-top: 0; color: #ff6f00;">Hiking Guides (5)</h3>
+                <ul style="list-style: none; margin: 0; padding: 0;">
+                    <li><a href="bear-mountain-hiking-guide.php">Bear Mountain Guide</a></li>
+                    <li><a href="storm-king-hiking-guide.php">Storm King Mountain</a></li>
+                    <li><a href="overlook-mountain-hiking-guide.php">Overlook Mountain</a></li>
+                    <li><a href="breakneck-ridge-hiking-guide.php">Breakneck Ridge</a></li>
+                    <li><a href="minnewaska-state-park-hiking-guide.php">Minnewaska State Park</a></li>
+                </ul>
+            </div>
+
             <!-- Papular Hives Category -->
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #9c27b0;">
                 <h3 style="margin-top: 0; color: #9c27b0;">Papular Hives (5)</h3>
@@ -612,7 +697,7 @@ $pageContent = <<<'HTML'
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #2196f3;">
                 <h3 style="margin-top: 0; color: #2196f3;">Repellents (4)</h3>
                 <ul style="list-style: none; margin: 0; padding: 0;">
-                    <li><a href="picaridin-vs-deet-bug-repellent.php">Picarikin vs DEET</a></li>
+                    <li><a href="picarikin-vs-deet-bug-repellent.php">Picarikin vs DEET</a></li>
                     <li><a href="bens-30-deet-tick-repellent.php">Ben's 30% DEET</a></li>
                     <li><a href="deet-wipes-portable-tick-protection.php">DEET Wipes</a></li>
                     <li><a href="blog-natural-vs-chemical.php">Natural Repellents</a></li>
