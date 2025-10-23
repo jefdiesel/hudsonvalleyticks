@@ -5,11 +5,11 @@
  * Comprehensive index of ALL Hudson Valley Ticks blog posts
  * Organized by category with full links and descriptions
  * WCAG 2.1 AA compliant
- * UPDATED: Complete article listing with all 36+ posts PLUS 5 new hiking guides
+ * UPDATED: October 23, 2025 - Added Columbia County Kids Activities (5 new posts)
  */
 
 $pageTitle = 'Hudson Valley Tick Prevention Blog | Expert Guides & Education';
-$pageDescription = 'Evidence-based blog covering tick prevention, Lyme disease removal tools, personal protection strategies, seasonal guides, and Hudson Valley hiking guides for tick-safe outdoor recreation.';
+$pageDescription = 'Evidence-based blog covering tick prevention, Lyme disease removal tools, personal protection strategies, seasonal guides, Hudson Valley hiking guides, and family fall activities for tick-safe outdoor recreation.';
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">
@@ -20,11 +20,12 @@ $pageContent = <<<'HTML'
 <!-- MAIN BLOG CONTENT -->
 <main class="section">
     <div class="intro-box">
-        <strong>📚 Complete Blog Archive:</strong> All evidence-based articles about tick prevention, Lyme disease education, removal tools, personal protection strategies, seasonal guides, and Hudson Valley hiking guides. Content is based on CDC guidelines, peer-reviewed research, and community experience protecting the Hudson Valley.
+        <strong>📚 Complete Blog Archive:</strong> All evidence-based articles about tick prevention, Lyme disease education, removal tools, personal protection strategies, seasonal guides, Hudson Valley hiking guides, and family fall activities. Content is based on CDC guidelines, peer-reviewed research, and community experience protecting the Hudson Valley.
     </div>
 
     <!-- QUICK NAVIGATION BY CATEGORY -->
     <div class="quick-nav">
+        <a href="#fall-activities">Fall Kids Activities (5)</a>
         <a href="#hiking">Hiking Guides (5)</a>
         <a href="#papular-hives">Papular Hives (5)</a>
         <a href="#prevention">Prevention (8)</a>
@@ -35,6 +36,76 @@ $pageContent = <<<'HTML'
         <a href="#yard">Yard Control (4)</a>
         <a href="#special">Special Situations (4)</a>
     </div>
+
+    <!-- ========================================
+         COLUMBIA COUNTY FALL KIDS ACTIVITIES (5 POSTS)
+         ======================================== -->
+    <section id="fall-activities">
+        <h2>Columbia County Fall Activities for Kids with Tick Prevention</h2>
+        <p>Comprehensive guides to popular fall family activities in Columbia County, NY with integrated tick prevention strategies, age-appropriate recommendations, and safety tips.</p>
+        
+        <div class="blog-posts">
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Fall Activity</span>
+                    <h3 class="post-title">Apple Picking in Columbia County: Safe Fall Fun with Tick Prevention</h3>
+                    <p class="post-meta">October 2025 | 18 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Complete guide to apple picking orchards in Columbia County including Colonial Orchards, Cascades Orchards, and Greig Farm. Covers seasonal timing (late September–October), apple varieties (Gala, Fuji, Honeycrisp), family-friendly tips by age, essential gear, and integrated tick prevention strategies for safe orchard visits.</p>
+                    <a href="apple-picking-columbia-county.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Fall Activity</span>
+                    <h3 class="post-title">Easy Hiking Trails for Kids in Columbia County: Fall Adventure Guide</h3>
+                    <p class="post-meta">October 2025 | 19 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Family-friendly hiking trails in Columbia County including James Baird State Park, Taconic State Park, Thorne Lake Trail, and Austerlitz Nature Preserve. Difficulty ratings for ages 2–12, seasonal weather patterns, essential hiking gear, tick prevention during forest hiking, and practical tips for successful family hikes.</p>
+                    <a href="kids-hiking-columbia-county.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Fall Activity</span>
+                    <h3 class="post-title">Pumpkin Patches in Columbia County: Pick Perfect Pumpkins Safely</h3>
+                    <p class="post-meta">October 2025 | 17 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Complete guide to pumpkin picking farms in Columbia County including Greig Farm, Cascades Farm Stand, and Hudson Valley Orchards. Covers pumpkin varieties (jack-o'-lanterns, sugar pumpkins, minis), farm activities (hayrides, corn mazes, face painting), age-appropriate tips (3–12+), and tick prevention strategies for patch visits.</p>
+                    <a href="pumpkin-patches-columbia-county.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Fall Activity</span>
+                    <h3 class="post-title">Kayaking & Water Activities for Kids in Columbia County: Safe Fall Fun</h3>
+                    <p class="post-meta">October 2025 | 18 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Family-friendly water activities in Columbia County including Thorne Lake, Hoff Pond, and Hudson River guided tours. Covers tandem kayaking, paddleboards, canoes, water safety fundamentals, PFD requirements, age-appropriate activities (2–12+), essential gear, water temperature considerations, and tick prevention for pre/post-paddle phases.</p>
+                    <a href="kayaking-water-activities-columbia-county.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <span class="post-category">Fall Activity</span>
+                    <h3 class="post-title">Kids Biking Trails in Columbia County: Family Bike Adventure Guide</h3>
+                    <p class="post-meta">October 2025 | 19 minutes</p>
+                </div>
+                <div class="post-body">
+                    <p class="post-excerpt">Family-friendly biking trails in Columbia County including Hudson Valley Greenway Trail, Hudson River Valley Pathway, Taconic Crest Trail, and Austerlitz routes. Difficulty ratings, age-appropriate guidelines (3–12+), bike equipment recommendations, safety fundamentals, tick prevention while biking, and why fall is ideal for family cycling.</p>
+                    <a href="kids-biking-columbia-county.php" class="cta-link">Read Complete Guide →</a>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <!-- ========================================
          HUDSON VALLEY HIKING GUIDES (5 POSTS)
@@ -632,9 +703,21 @@ $pageContent = <<<'HTML'
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
             
-            <!-- Hiking Guides Category -->
+            <!-- Columbia County Fall Activities -->
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #ff6f00;">
-                <h3 style="margin-top: 0; color: #ff6f00;">Hiking Guides (5)</h3>
+                <h3 style="margin-top: 0; color: #ff6f00;">Fall Kids Activities (5)</h3>
+                <ul style="list-style: none; margin: 0; padding: 0;">
+                    <li><a href="apple-picking-columbia-county.php">Apple Picking</a></li>
+                    <li><a href="kids-hiking-columbia-county.php">Hiking Trails</a></li>
+                    <li><a href="pumpkin-patches-columbia-county.php">Pumpkin Patches</a></li>
+                    <li><a href="kayaking-water-activities-columbia-county.php">Kayaking</a></li>
+                    <li><a href="kids-biking-columbia-county.php">Biking Trails</a></li>
+                </ul>
+            </div>
+
+            <!-- Hiking Guides Category -->
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #e91e63;">
+                <h3 style="margin-top: 0; color: #e91e63;">Hiking Guides (5)</h3>
                 <ul style="list-style: none; margin: 0; padding: 0;">
                     <li><a href="bear-mountain-hiking-guide.php">Bear Mountain Guide</a></li>
                     <li><a href="storm-king-hiking-guide.php">Storm King Mountain</a></li>
@@ -726,8 +809,8 @@ $pageContent = <<<'HTML'
             </div>
 
             <!-- Special Situations Category -->
-            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #e91e63;">
-                <h3 style="margin-top: 0; color: #e91e63;">Special Situations (4)</h3>
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #00a000;">
+                <h3 style="margin-top: 0; color: #00a000;">Special Situations (4)</h3>
                 <ul style="list-style: none; margin: 0; padding: 0;">
                     <li><a href="dog-tick-prevention-complete-guide.php">Dog Prevention</a></li>
                     <li><a href="tick-types-hudson-valley-identification.php">Tick ID Guide</a></li>
@@ -792,6 +875,5 @@ $pageContent = <<<'HTML'
 </main>
 HTML;
 
-// Include the template
 include 'template.php';
 ?>
