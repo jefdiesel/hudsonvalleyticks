@@ -695,4 +695,18 @@ $pageContent = <<<'HTML'
             }
         } catch (error) {
             messageDiv.style.color = '#ff9800';
-            messageDiv.innerHTML = '⚠ Connection error.
+            messageDiv.innerHTML = '⚠ Connection error. Please try again.';
+            console.error('Signup error:', error);
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Subscribe';
+        }
+    });
+    </script>
+
+</main>
+HTML;
+
+// Include the template
+include 'template.php';
+?>
