@@ -24,33 +24,63 @@ Complete standards for creating accessible, SEO-optimized Amazon affiliate produ
 
 ### Published: October 23, 2025
 
-#### **Blog Post: "How to Do a Proper Tick Check on Yourself"**
-- **File**: tick-check-yourself.php (598 lines, 35 KB)
+#### **Original Post: "How to Do a Proper Tick Check on Yourself"**
+- **File**: tick-check-yourself.php
 - **Word Count**: ~3,500 words
-- **Sections**: 7 major sections
 - **Products**: 7 Amazon affiliate links (all verified)
 - **Compliance**: WCAG 2.1 Level AA ✅
 
-**Features**:
-- CDC-approved tick removal technique
-- Step-by-step body checking guide (6 detailed steps)
-- High-risk body area identification
-- Lyme disease symptom timeline
-- After-removal care instructions
-- 3-tier prevention strategies
-- Complete tick-check checklist
-- Hudson Valley seasonal context
+#### **Blog Post Series: Papular Hives from Seed Tick Bites (5 Posts)**
 
-**Affiliate Products Used**:
-1. Tick Twister 2-Pack (B01BECRHEO) - $6-8
-2. TickCheck Premium Kit (B075DKL3Z6) - $15-18
-3. TickCheck Value 3-Pack (B07D6J52JJ) - $8-10
-4. Insect Shield Men's Shirt (B0755CG8H1) - $45-55
-5. Insect Shield Ripstop Pants (B0C36HGF4C) - $50-65
-6. Sawyer Permethrin Spray (B001ANQVYU) - $15-20
-7. Sawyer Picaridin 20% (B0D5QRXBS4) - $12-18
+##### **1. Understanding Papular Hives**
+- **File**: papular-hives-understanding.php
+- **Word Count**: ~3,500 words (15 min read)
+- **Products**: 5 Amazon affiliate links
+- **Compliance**: WCAG 2.1 Level AA ✅
+- **Medical Disclaimers**: Standard
+- **Focus**: Immunology, mast cell activation, tick saliva antigens, multi-pathway itch
+- **Affiliate Products**: Oatmeal bath, cotton gloves, hydrocortisone cream, cetirizine, ice packs
 
-**Also Updated**: blog.php - Updated blog homepage with featured posts and categories
+##### **2. H1/H2 Antihistamine Combination Protocol**
+- **File**: papular-hives-h1h2-protocol.php
+- **Word Count**: ~4,200 words (14 min read)
+- **Products**: 5 Amazon affiliate links
+- **Compliance**: WCAG 2.1 Level AA ✅
+- **Medical Disclaimers**: EXTENSIVE - off-label use warnings for "4x protocol"
+- **Focus**: H1/H2 receptor biology, combination therapy pharmacology, dosing protocols
+- **Affiliate Products**: Cetirizine, famotidine, pill organizer, water bottle, blackout curtains
+
+##### **3. 21-Day Oral Corticosteroid Protocol**
+- **File**: papular-hives-steroid-protocol.php
+- **Word Count**: ~4,800 words (18 min read)
+- **Products**: 5 Amazon affiliate links
+- **Compliance**: WCAG 2.1 Level AA ✅
+- **Medical Disclaimers**: MOST EXTENSIVE - corticosteroid risks, adrenal function, tapering
+- **Focus**: Mast cell stabilization, 21-day timeline, dosing protocols, side effects, medical monitoring
+- **Affiliate Products**: Blood pressure monitor, glucose kit, medical journal, cooling pillow, fish oil
+
+##### **4. Itch Management Techniques**
+- **File**: papular-hives-itch-management.php
+- **Word Count**: ~4,000 words (16 min read)
+- **Products**: 5 Amazon affiliate links
+- **Compliance**: WCAG 2.1 Level AA ✅
+- **Medical Disclaimers**: Standard
+- **Focus**: Cold therapy neurology, oatmeal baths, temperature management, behavioral strategies, sleep
+- **Affiliate Products**: Oatmeal bath, cotton gloves, ice packs, hydrocortisone cream, blackout curtains
+
+##### **5. Emotions, Rest, and Long-Term Recovery**
+- **File**: papular-hives-emotions-recovery.php
+- **Word Count**: ~3,800 words (14 min read)
+- **Products**: 5 Amazon affiliate links
+- **Compliance**: WCAG 2.1 Level AA ✅
+- **Medical Disclaimers**: Mental health guidance
+- **Focus**: Sleep deprivation effects, emotional impacts, 3-week timeline, stress/immune connection
+- **Affiliate Products**: Cooling pillow, recovery journal, massage pad, weighted blanket, moisturizer
+
+**Also Updated**: 
+- **blog.php** - All 5 new papular hives posts added to featured section with new category
+
+**Total Content**: ~19,800 words (5 posts) | 25 Amazon affiliate links | WCAG 2.1 Level AA
 
 ---
 
@@ -336,7 +366,7 @@ https://www.amazon.com/[PRODUCT-NAME]/dp/[ASIN]?linkCode=ll1&tag=hudsonvalleyt-2
 
 ---
 
-**Document Version**: 3.2 (Completed Blog Post)  
+**Document Version**: 3.3 (Papular Hives Series Completed)  
 **Last Updated**: October 23, 2025  
 **Status**: Complete & Production-Ready  
 **Compliance**: WCAG 2.1 Level AA + Amazon Affiliate Standards  

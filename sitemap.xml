@@ -1,118 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
   <url>
-    <loc>https://www.hudsonvalleyticks.com/NEW_PAGE_TEMPLATE.php</loc>
+    <loc>https://hudsonvalleyticks.com/index.php</loc>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/blog.php</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/blog-chronic-lyme-management.php</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.hudsonvalleyticks.com/accessibility.php</loc>
+    <loc>https://hudsonvalleyticks.com/blog-lyme-arthritis.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/blog-natural-vs-chemical.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/blog-pregnancy-lyme.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/blog-returning-to-activities.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Lyme Disease Information -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/early-signs-of-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/how-to-safely-remove-a-tick.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/tick-check-yourself.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/tick-types-hudson-valley-identification.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Tick Prevention Guides -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/adult-tick-prevention-complete-guide.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/dog-tick-prevention-complete-guide.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/fall-leaf-peeping-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/adult-halloween-costumes-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/dog-halloween-costumes-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/halloween-ticks-blog.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Tick Prevention Gear -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/tick-prevention-gear.php</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.hudsonvalleyticks.com/bens-30-deet-tick-repellent.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/blog.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/deet-wipes-portable-tick-protection.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/diy-permethrin-spray-treat-clothes.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/early-signs-of-lyme-disease.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/fall-leaf-peeping-tick-prevention.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/how-to-safely-remove-a-tick.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/index.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/insect-shield-pants-permethrin-hiking.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/insect-shield-white-socks-tick-prevention.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/insectguard-complete-tick-protection-kit.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/leg-gaiters-tick-prevention.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/natural-yard-treatment-tick-control.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/permethrin-treated-clothing-guide.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/picarikin-vs-deet-bug-repellent.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/protecting-your-yard-tick-control.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/sawyer-permethrin-24oz-bulk-treatment.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/template.php</loc>
+    <loc>https://hudsonvalleyticks.com/leg-gaiters-tick-prevention.php</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/insect-shield-pants-permethrin-hiking.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/insect-shield-white-socks-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/insectguard-complete-tick-protection-kit.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Repellents & Treatments -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/bens-30-deet-tick-repellent.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/deet-wipes-portable-tick-protection.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/picaridin-vs-deet-bug-repellent.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/permethrin-treated-clothing-guide.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/sawyer-permethrin-24oz-bulk-treatment.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/diy-permethrin-spray-treat-clothes.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Yard & Environmental Control -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/protecting-your-yard-tick-control.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/natural-yard-treatment-tick-control.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/tick-free-yard-gardening.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Papular Hives Information -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/papular-hives-understanding.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/papular-hives-itch-management.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/papular-hives-steroid-protocol.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/papular-hives-h1h2-protocol.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/papular-hives-emotions-recovery.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Accessibility -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/accessibility.php</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/tick-free-yard-gardening.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/tick-prevention-gear.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.hudsonvalleyticks.com/tick-types-hudson-valley-identification.php</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  
 </urlset>
