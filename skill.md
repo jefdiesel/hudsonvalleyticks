@@ -999,6 +999,45 @@ Notes: [Any issues found]
 
 ---
 
+---
+
+## ⚠️ CRITICAL PRODUCT NAMING & SPELLING RULES
+
+**EXACT PRODUCT NAME SPELLINGS (MUST MATCH - NO EXCEPTIONS):**
+
+```
+✅ CORRECT SPELLINGS:
+- Picaridin 20% (NOT "Picarikin", NOT "Picaridan")
+- Permethrin (NOT "Permithrin", NOT "Permetrin")
+- DEET (NOT "deet", NOT "Deet")
+- Insect Shield (NOT "InsectShield")
+- Sawyer (NOT "Sayer")
+- Tick Twister (NOT "TickTwister", NOT "Tick-Twister")
+- Simparica (NOT "Simparica Plus", generic)
+- Seresto (NOT "Seresto Plus")
+- Bravecto (NOT "Bravecto Plus" unless Plus is specified)
+- Wondercide (NOT "Wonder-cide")
+- Thermacell (NOT "Thermal-cell")
+```
+
+**VERIFICATION PROTOCOL:**
+
+1. **Before creating ANY content:** Reference this spelling list
+2. **During content creation:** Cross-reference product names against this list EVERY TIME a product name is used
+3. **After completing content:** Do a final quality check:
+   - Search document for each product name
+   - Verify spelling matches list exactly
+   - Flag any discrepancies BEFORE finalizing
+4. **If uncertainty:** Check the ASIN or product URL on Amazon—never guess spelling
+
+**Why This Matters:**
+- Incorrect spellings reduce credibility
+- Users searching for products won't find misspelled versions
+- Affiliate links may break if product names are wrong in descriptions
+- Hudson Valley Ticks brand reputation depends on accuracy
+
+---
+
 ## 📑 Full Affiliate Link Template
 
 Use this template for any new product:
