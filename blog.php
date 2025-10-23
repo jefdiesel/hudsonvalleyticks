@@ -7,7 +7,7 @@
  */
 
 $pageTitle = 'Hudson Valley Tick Prevention Blog | Expert Guides & Education';
-$pageDescription = 'Evidence-based blog covering tick prevention, Lyme disease, removal tools, and personal protection strategies for Hudson Valley residents.';
+$pageDescription = 'Evidence-based blog covering tick prevention, Lyme disease, removal tools, personal protection strategies, and papular hives management for Hudson Valley residents.';
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">
@@ -18,14 +18,104 @@ $pageContent = <<<'HTML'
 <!-- MAIN BLOG CONTENT -->
 <main class="section">
     <div class="intro-box">
-        <strong>📚 About This Blog:</strong> We publish research-backed articles about tick prevention, Lyme disease, and outdoor safety for Hudson Valley residents. Our content is based on CDC guidelines, peer-reviewed research, and real-world experience protecting our community from ticks.
+        <strong>📚 About This Blog:</strong> We publish research-backed articles about tick prevention, Lyme disease, papular hives management, and outdoor safety for Hudson Valley residents. Our content is based on CDC guidelines, peer-reviewed research, and real-world experience protecting our community from ticks.
     </div>
 
     <h2>Featured Articles</h2>
     
     <div class="blog-posts">
         
-        <!-- POST 1: How to Do a Proper Tick Check -->
+        <!-- NEW: POST 1: Understanding Papular Hives -->
+        <article class="post-card">
+            <div class="post-header">
+                <span class="post-category">Papular Hives</span>
+                <h3 class="post-title">Understanding Papular Hives from Seed Tick Bites</h3>
+                <p class="post-meta">Published: October 2025 | Read time: 15 minutes</p>
+            </div>
+            <div class="post-body">
+                <p class="post-excerpt">
+                    What are papular hives? Why do hundreds of seed tick bites trigger such severe allergic reactions? Learn the immunology behind papular urticaria, why your body overreacts to seed ticks, and what's happening neurologically when you itch. Comprehensive guide to understanding the science behind the bumps.
+                </p>
+                <div class="product-highlight">
+                    <strong>Topics Covered:</strong> Immunological response, mast cell activation, tick saliva antigens, histamine pathways, seed tick vs. adult tick reactions
+                </div>
+                <a href="papular-hives-understanding.php" class="cta-link">Read Full Guide →</a>
+            </div>
+        </article>
+
+        <!-- NEW: POST 2: H1/H2 Protocol -->
+        <article class="post-card">
+            <div class="post-header">
+                <span class="post-category">Papular Hives</span>
+                <h3 class="post-title">The H1/H2 Antihistamine Combination Protocol</h3>
+                <p class="post-meta">Published: October 2025 | Read time: 14 minutes</p>
+            </div>
+            <div class="post-body">
+                <p class="post-excerpt">
+                    Why single antihistamines often fail for severe papular hives. Learn how combining H1 and H2 antihistamine blockers addresses multiple histamine pathways simultaneously. Includes explanation of the "4x protocol," pharmacological basis, and how to work with your doctor on appropriate dosing.
+                </p>
+                <div class="product-highlight">
+                    <strong>Key Topics:</strong> H1 vs. H2 receptors, combination protocols, mast cell feedback loops, when combination therapy is most effective
+                </div>
+                <a href="papular-hives-h1h2-protocol.php" class="cta-link">Read Full Protocol →</a>
+            </div>
+        </article>
+
+        <!-- NEW: POST 3: Steroid Protocol -->
+        <article class="post-card">
+            <div class="post-header">
+                <span class="post-category">Papular Hives</span>
+                <h3 class="post-title">Oral Corticosteroids for Severe Papular Hives: The 21-Day Protocol</h3>
+                <p class="post-meta">Published: October 2025 | Read time: 18 minutes</p>
+            </div>
+            <div class="post-body">
+                <p class="post-excerpt">
+                    When antihistamines alone aren't enough, oral corticosteroids can suppress the root cause of severe reactions. Evidence-based guide to why corticosteroids work for papular hives, typical 21-day treatment protocols, side effects, monitoring requirements, and how to taper safely. Includes medical references and resource links.
+                </p>
+                <div class="product-highlight">
+                    <strong>Topics Covered:</strong> Corticosteroid mechanism, 21-day timeline, dosing protocols, side effects, medical monitoring, adrenal function, tapering schedules
+                </div>
+                <a href="papular-hives-steroid-protocol.php" class="cta-link">Read Complete Protocol →</a>
+            </div>
+        </article>
+
+        <!-- NEW: POST 4: Itch Management -->
+        <article class="post-card">
+            <div class="post-header">
+                <span class="post-category">Papular Hives</span>
+                <h3 class="post-title">Itch Management Techniques: Breaking the Itch-Scratch Cycle</h3>
+                <p class="post-meta">Published: October 2025 | Read time: 16 minutes</p>
+            </div>
+            <div class="post-body">
+                <p class="post-excerpt">
+                    The most effective itch management prevents scratching rather than just treating individual hives. Comprehensive guide to cold therapy, cool environments, oatmeal baths, cotton gloves, short nails, behavioral strategies, and sleep optimization. Learn why preventing scratching is as important as medication.
+                </p>
+                <div class="product-highlight">
+                    <strong>Physical Strategies:</strong> Cold therapy, temperature management, oatmeal baths, protective clothing, behavioral itch management, sleep strategies
+                </div>
+                <a href="papular-hives-itch-management.php" class="cta-link">Read Itch Management Guide →</a>
+            </div>
+        </article>
+
+        <!-- NEW: POST 5: Emotions and Recovery -->
+        <article class="post-card">
+            <div class="post-header">
+                <span class="post-category">Papular Hives</span>
+                <h3 class="post-title">Emotions, Rest, and Long-Term Recovery from Papular Hives</h3>
+                <p class="post-meta">Published: October 2025 | Read time: 14 minutes</p>
+            </div>
+            <div class="post-body">
+                <p class="post-excerpt">
+                    Severe papular hives affect you emotionally and physically. Address sleep deprivation's mood effects, set realistic 3-week recovery expectations, understand why rest is medically important, manage appearance anxiety, and plan for long-term prevention. Includes strategies for supporting your whole-self recovery.
+                </p>
+                <div class="product-highlight">
+                    <strong>Topics Covered:</strong> Sleep and mood, emotional impacts, realistic timeline, importance of rest, stress and immune function, social-emotional factors, recovery support
+                </div>
+                <a href="papular-hives-emotions-recovery.php" class="cta-link">Read Recovery Guide →</a>
+            </div>
+        </article>
+
+        <!-- ORIGINAL: POST 6: How to Do a Proper Tick Check -->
         <article class="post-card">
             <div class="post-header">
                 <span class="post-category">Tick Prevention</span>
@@ -43,7 +133,7 @@ $pageContent = <<<'HTML'
             </div>
         </article>
 
-        <!-- POST 2: Permethrin vs Pre-Treated Clothing -->
+        <!-- ORIGINAL: POST 7: Permethrin vs Pre-Treated Clothing -->
         <article class="post-card">
             <div class="post-header">
                 <span class="post-category">Clothing Protection</span>
@@ -61,7 +151,7 @@ $pageContent = <<<'HTML'
             </div>
         </article>
 
-        <!-- POST 3: Tick Myths Debunked -->
+        <!-- ORIGINAL: POST 8: Tick Myths Debunked -->
         <article class="post-card">
             <div class="post-header">
                 <span class="post-category">Myth Busting</span>
@@ -79,7 +169,7 @@ $pageContent = <<<'HTML'
             </div>
         </article>
 
-        <!-- POST 4: Lyme Disease Timeline -->
+        <!-- ORIGINAL: POST 9: Lyme Disease Timeline -->
         <article class="post-card">
             <div class="post-header">
                 <span class="post-category">Lyme Disease</span>
@@ -97,7 +187,7 @@ $pageContent = <<<'HTML'
             </div>
         </article>
 
-        <!-- POST 5: Hudson Valley Tick Hotspots -->
+        <!-- ORIGINAL: POST 10: Hudson Valley Tick Hotspots -->
         <article class="post-card">
             <div class="post-header">
                 <span class="post-category">Hudson Valley Specific</span>
@@ -115,7 +205,7 @@ $pageContent = <<<'HTML'
             </div>
         </article>
 
-        <!-- POST 6: Spring Tick Prevention Prep -->
+        <!-- ORIGINAL: POST 11: Spring Tick Prevention Prep -->
         <article class="post-card">
             <div class="post-header">
                 <span class="post-category">Seasonal</span>
@@ -141,6 +231,18 @@ $pageContent = <<<'HTML'
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
             
+            <!-- Papular Hives Category (NEW!) -->
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #9c27b0;">
+                <h3 style="margin-top: 0; color: #9c27b0;">Papular Hives Management</h3>
+                <ul style="list-style: none; margin: 0; padding: 0;">
+                    <li><a href="papular-hives-understanding.php">Understanding Papular Hives</a></li>
+                    <li><a href="papular-hives-h1h2-protocol.php">H1/H2 Antihistamine Protocol</a></li>
+                    <li><a href="papular-hives-steroid-protocol.php">21-Day Steroid Protocol</a></li>
+                    <li><a href="papular-hives-itch-management.php">Itch Management Techniques</a></li>
+                    <li><a href="papular-hives-emotions-recovery.php">Emotions & Long-Term Recovery</a></li>
+                </ul>
+            </div>
+
             <!-- Tick Prevention Category -->
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #2c5f2d;">
                 <h3 style="margin-top: 0; color: #2c5f2d;">Tick Prevention</h3>
@@ -192,8 +294,8 @@ $pageContent = <<<'HTML'
             </div>
 
             <!-- Specific Situations Category -->
-            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #9c27b0;">
-                <h3 style="margin-top: 0; color: #9c27b0;">Special Situations</h3>
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 4px; border-left: 4px solid #00bcd4;">
+                <h3 style="margin-top: 0; color: #00bcd4;">Special Situations</h3>
                 <ul style="list-style: none; margin: 0; padding: 0;">
                     <li><a href="/blog-posts/pregnancy-ticks.php">Pregnancy & Ticks</a></li>
                     <li><a href="/blog-posts/kids-ticks.php">Protecting Children</a></li>
@@ -222,6 +324,10 @@ $pageContent = <<<'HTML'
         <h2>Coming Soon...</h2>
         <p>We're working on these articles to expand our tick education coverage:</p>
         <ul style="columns: 2; column-gap: 2rem;">
+            <li>Post-Hives Skin Barrier Recovery</li>
+            <li>Papular Hives in Children: Special Considerations</li>
+            <li>When to Seek Emergency Care for Severe Reactions</li>
+            <li>Preventing Future Papular Hives Episodes</li>
             <li>Lyme Disease Long-Term Effects & PTLDS</li>
             <li>When to Get Tested After a Tick Bite</li>
             <li>Tick-Borne Co-Infections Explained</li>
@@ -230,10 +336,6 @@ $pageContent = <<<'HTML'
             <li>Tick Prevention on a Budget</li>
             <li>School & Youth Sports Tick Prevention</li>
             <li>Camping & Backpacking Tick Prevention</li>
-            <li>Yard Treatment Options Compared</li>
-            <li>Dog Parks & Tick Risk</li>
-            <li>Hudson Valley Parks Tick Hotspots</li>
-            <li>Tick Prevention for Immunocompromised</li>
         </ul>
         <p><em>Have a topic you'd like us to cover? Email us at info@hudsonvalleyticks.com</em></p>
     </section>
