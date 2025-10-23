@@ -26,14 +26,46 @@ $pageContent = <<<'HTML'
         <!-- BLOG POSTS GRID - NEWEST TO OLDEST -->
         <section class="section" tabindex="0" id="blog-posts">
             <div class="blog-posts">
-                <!-- Post 17: Tick-Free Yard Gardening - NEWEST FIRST -->
+                <!-- Post 19: Dog Tick Prevention - NEWEST FIRST -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">🐕 PETS • Prevention</span>
+                            <h3 class="post-title">Complete Tick Prevention for Dogs: Hudson Valley Pet Safety</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 18 min • Essential for Pet Owners</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Dogs are 10x more susceptible to Lyme disease than humans. Learn tick-borne diseases in dogs, prevention methods (topicals, collars, injectables), safe tick removal, and when to contact your vet. Protect your dog with proven strategies.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Simparica, Seresto Collar, Bravecto, Shampoo, Tweezers - $50-180 total</div>
+                        <a href="dog-tick-prevention-complete-guide.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 18: Adult Tick Prevention - SECOND NEWEST -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">👨 ADULTS • Professional Protection</span>
+                            <h3 class="post-title">Complete Tick Prevention for Adults: The Hudson Valley Guide</h3>
+                        </div>
+                        <div class="post-meta">October 23, 2025 • 22 min • Outdoor Professionals</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">Specialized strategies for outdoor workers, serious hikers, hunters, and recreation enthusiasts who spend 10+ hours per week in tick habitat. Three-layer defense for extended exposure, professional work protocols, and recreation-specific prevention.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - UPF Shirt, Ripstop Pants, Permethrin Spray, Picarikin 20%, Tick Twister - $112-169 total</div>
+                        <a href="adult-tick-prevention-complete-guide.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 17: Tick-Free Yard Gardening -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
                             <span class="post-category">🌱 LANDSCAPING • Complete Guide</span>
                             <h3 class="post-title">Create a Tick-Free Yard: Complete Gardening & Landscaping Guide</h3>
                         </div>
-                        <div class="post-meta">October 23, 2025 • 20 min • Essential Reading</div>
+                        <div class="post-meta">October 22, 2025 • 20 min • Essential Reading</div>
                     </div>
                     <div class="post-body">
                         <p class="post-excerpt">80% of tick bites happen on your own property. Master mowing strategy, raking protocols, tick-repelling plants (lavender, rosemary, sage, marigolds), Harvard tick tubes, and complete yard landscaping design. Layer this with personal protection for near-total Lyme prevention.</p>
@@ -58,7 +90,23 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 15: InsectGuard -->
+                <!-- Post 15: Halloween Costumes -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div>
+                            <span class="post-category">🎃 SEASONAL • Family Safety</span>
+                            <h3 class="post-title">Tick-Proof Your Halloween: A Hudson Valley Guide</h3>
+                        </div>
+                        <div class="post-meta">October 21, 2025 • 12 min • Family Fun</div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">October is peak tick season AND Halloween season. Learn how to choose costumes with built-in tick protection, modify existing costumes for coverage, and implement three-layer defense while trick-or-treating and enjoying fall festivities.</p>
+                        <div class="product-highlight">📦 Featured: 5 Products - Ninja Outfit, Thermal Underwear, Permethrin, Picarikin, Tick Twister - $91-133 total</div>
+                        <a href="halloween-ticks-blog.php" class="cta-link">Read Full Post →</a>
+                    </div>
+                </article>
+
+                <!-- Post 14: InsectGuard -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -74,7 +122,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 14: Sawyer 24oz -->
+                <!-- Post 13: Sawyer 24oz -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -90,7 +138,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 13: DEET Wipes -->
+                <!-- Post 12: DEET Wipes -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -106,7 +154,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 12: Ben's DEET -->
+                <!-- Post 11: Ben's DEET -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -122,7 +170,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 11: Leg Gaiters -->
+                <!-- Post 10: Leg Gaiters -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -138,7 +186,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 10 -->
+                <!-- Post 9 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -154,7 +202,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 9 -->
+                <!-- Post 8 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -170,7 +218,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 8 -->
+                <!-- Post 7 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -186,7 +234,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 7 -->
+                <!-- Post 6 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -202,7 +250,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 6 -->
+                <!-- Post 5 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -218,7 +266,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 5 -->
+                <!-- Post 4 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -234,7 +282,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 4 -->
+                <!-- Post 3 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -250,7 +298,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 3 -->
+                <!-- Post 2 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -266,7 +314,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 2 -->
+                <!-- Post 1 -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -282,7 +330,7 @@ $pageContent = <<<'HTML'
                     </div>
                 </article>
 
-                <!-- Post 1 - OLDEST -->
+                <!-- Post 0 - OLDEST -->
                 <article class="post-card">
                     <div class="post-header">
                         <div>
@@ -302,7 +350,7 @@ $pageContent = <<<'HTML'
 
         <section class="section" tabindex="0" id="featured-outro">
             <div class="featured-section">
-                <h2>📦 17 Featured Blog Posts</h2>
+                <h2>📦 20 Featured Blog Posts</h2>
                 <p>Each blog post recommends specific Amazon products with affiliate links (tag: hudsonvalleyt-20). All products are verified, tested, and genuinely recommended for Hudson Valley tick prevention.</p>
             </div>
         </section>
