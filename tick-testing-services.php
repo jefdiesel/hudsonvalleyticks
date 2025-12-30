@@ -65,7 +65,7 @@ $pageContent = <<<'HTML'
                 <li>Free tick identification</li>
                 <li>Doctor consultation available</li>
             </ul>
-            <a href="https://www.tickcheck.com/?ref=hudsonvalleyticks" class="amazon-button" target="_blank" rel="noopener sponsored">Get Your Tick Tested →</a>
+            <a href="https://www.tickcheck.com/order?ref=Hudson-Valley-Ticks" class="amazon-button" target="_blank" rel="noopener sponsored">Get Your Tick Tested →</a>
         </article>
 
         <article class="product-card">
@@ -210,7 +210,7 @@ $pageContent = <<<'HTML'
         <ol>
             <li>Remove and save the tick</li>
             <li>Take a photo for identification</li>
-            <li>Order a test kit from <a href="https://www.tickcheck.com/?ref=hudsonvalleyticks" target="_blank" rel="noopener sponsored">TickCheck</a></li>
+            <li>Order a test kit from <a href="https://www.tickcheck.com/order?ref=Hudson-Valley-Ticks" target="_blank" rel="noopener sponsored">TickCheck</a></li>
             <li>Mail the tick using the prepaid packaging</li>
             <li>Get results in 1-3 days</li>
             <li>Share results with your doctor</li>
