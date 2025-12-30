@@ -1,6 +1,75 @@
 <?php
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Tick Prevention Gear & Products | Hudson Valley Ticks';
 $pageDescription = 'Best tick prevention products reviewed and tested. From permethrin clothing to DEET repellent wipes. Find what works for Hudson Valley outdoor life.';
+
+// JSON-LD structured data for product collection page
+$jsonLdSchemas = [
+    // Article schema for the collection page
+    generateArticleSchema(
+        'Tick Prevention Gear & Products',
+        'Best tick prevention products reviewed and tested. From permethrin clothing to DEET repellent wipes for Hudson Valley outdoor life.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // Featured Product: Insect Shield Shirt
+    generateProductSchema(
+        'Insect Shield Men\'s UPF Long Sleeve Shirt',
+        'Lightweight Dri-Balance shirt with UPF 30+ sun protection. Factory-treated with EPA-registered permethrin. The gold standard for tick-bite prevention.',
+        45,
+        55,
+        4.6,
+        5000,
+        'https://www.amazon.com/Insect-Shield-Dri-Balance-Repellent-Clothing/dp/B0755CG8H1?tag=hudsonvalleyt-20',
+        null,
+        'Insect Shield'
+    ),
+    // Featured Product: Sawyer Permethrin
+    generateProductSchema(
+        'Sawyer Permethrin 24oz Aerosol',
+        'The most popular permethrin spray for treating clothing. Easy aerosol application, odorless after drying. Treats 4 complete outfits and lasts 6 washes.',
+        18,
+        22,
+        4.7,
+        29000,
+        'https://www.amazon.com/Sawyer-Products-SP657-Permethrin-Repellent/dp/B001ANQVYU?tag=hudsonvalleyt-20',
+        null,
+        'Sawyer'
+    ),
+    // Featured Product: TickCheck Premium Kit
+    generateProductSchema(
+        'TickCheck Premium Tick Removal Kit',
+        'Stainless steel tick removal tools with leather case. Includes fine-tip tweezers, removal tool, and tick ID card. University tested.',
+        15,
+        18,
+        4.7,
+        2000,
+        'https://www.amazon.com/TickCheck-Premium-Tick-Remover-Identification/dp/B075DKL3Z6?tag=hudsonvalleyt-20',
+        null,
+        'TickCheck'
+    ),
+    // FAQ schema
+    generateFAQSchema([
+        [
+            'question' => 'What is the most effective tick prevention strategy?',
+            'answer' => 'Layer your defenses: Permethrin-treated clothing combined with Picaridin repellent on exposed skin plus regular tick checks provides 95%+ protection.'
+        ],
+        [
+            'question' => 'How long does permethrin treatment last on clothing?',
+            'answer' => 'Pre-treated Insect Shield clothing maintains protection through 70 washes. DIY permethrin spray treatment lasts 6 washes or 6 weeks.'
+        ],
+        [
+            'question' => 'Is permethrin safe for humans?',
+            'answer' => 'Yes, permethrin is safe for humans when applied to clothing. It is toxic to cats when wet, so keep cats away during application. It is safe once dry.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Tick Prevention Gear', 'url' => '/tick-prevention-gear.php']
+    ])
+];
 
 $pageContent = <<<'HTML'
 <section class="hero">

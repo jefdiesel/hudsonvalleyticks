@@ -1,15 +1,65 @@
 <?php
 /**
  * BEAR MOUNTAIN HIKING GUIDE - bear-mountain-hiking-guide.php
- * 
+ *
  * Hudson Valley hiking guide with tick prevention
  * Skill Level: Easy to Moderate
  * Distance: 13 miles (summit loop)
  * Published: October 2025
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Bear Mountain Hiking Guide: Hudson Valley\'s Most Accessible Peak | Tick-Safe Trail Guide';
 $pageDescription = 'Complete guide to Bear Mountain hiking near Harriman State Park. Includes NYC access, difficulty levels, seasonal weather, and integrated tick prevention strategies for Hudson Valley hikers.';
+
+// JSON-LD structured data for hiking guide
+$jsonLdSchemas = [
+    // TouristAttraction schema
+    generateTouristAttractionSchema(
+        'Bear Mountain',
+        'At 1,305 feet, Bear Mountain is the highest point in New York State south of the Catskills. It offers stunning Hudson Valley views with convenient access from NYC via the Appalachian Trail.',
+        41.3125,
+        -73.9886,
+        'Bear Mountain State Park, NY'
+    ),
+    // Place schema with geo coordinates
+    generatePlaceSchema(
+        'Bear Mountain State Park',
+        'Popular hiking destination in Harriman State Park featuring the 1,305-foot Bear Mountain summit with multiple trail options from easy to challenging.',
+        41.3125,
+        -73.9886,
+        'Bear Mountain, NY 10911'
+    ),
+    // Article schema
+    generateArticleSchema(
+        'Bear Mountain Hiking Guide: Hudson Valley\'s Most Accessible Peak',
+        'Complete guide to Bear Mountain hiking near Harriman State Park with NYC access, difficulty levels, seasonal weather, and tick prevention strategies.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // FAQ schema
+    generateFAQSchema([
+        [
+            'question' => 'How do I get to Bear Mountain from NYC?',
+            'answer' => 'Bear Mountain is 50 miles from Manhattan, about 60-90 minutes by car via the Palisades Interstate Parkway. You can also take Metro-North Railroad to Harriman Station and walk 1.5 miles to the trailhead.'
+        ],
+        [
+            'question' => 'How difficult is the Bear Mountain hike?',
+            'answer' => 'Bear Mountain offers multiple routes: an easy 5.5-mile summit route (2.5 hours, 1,100 ft elevation gain), a moderate 13-mile loop (5-6 hours, 1,500 ft gain), and a challenging 18+ mile extended circuit.'
+        ],
+        [
+            'question' => 'What is the best season to hike Bear Mountain?',
+            'answer' => 'Fall (September-October) offers optimal hiking conditions with stunning foliage and moderate temperatures of 50-70F. Summer is popular but crowded with peak tick activity.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'Bear Mountain Hiking Guide', 'url' => '/bear-mountain-hiking-guide.php']
+    ])
+];
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">

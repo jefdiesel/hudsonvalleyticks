@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+    HUDSON VALLEY TOWNS SITEMAP
+    Programmatic SEO pages for tick prevention and Lyme disease information
+    organized by county for all Hudson Valley towns.
+  -->
+
+  <!-- ============================================
+       DUTCHESS COUNTY TOWNS
+       ============================================ -->
+
+  <!-- Poughkeepsie -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/poughkeepsie-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/poughkeepsie-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Beacon -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/beacon-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/beacon-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Fishkill -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/fishkill-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/fishkill-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Wappingers Falls -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/wappingers-falls-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/wappingers-falls-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hyde Park -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/hyde-park-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/hyde-park-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Rhinebeck -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/rhinebeck-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/rhinebeck-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Red Hook -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/red-hook-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/red-hook-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Millbrook -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/millbrook-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/millbrook-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pawling -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/pawling-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/pawling-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Dover Plains -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/dover-plains-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/dover-plains-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Amenia -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/amenia-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/amenia-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pleasant Valley -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/pleasant-valley-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/pleasant-valley-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- LaGrange -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/lagrange-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/lagrange-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Clinton -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/clinton-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/clinton-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Milan -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/milan-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/milan-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================
+       COLUMBIA COUNTY TOWNS
+       ============================================ -->
+
+  <!-- Hudson -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/hudson-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/hudson-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Catskill (Columbia) -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/catskill-columbia-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/catskill-columbia-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Kinderhook -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/kinderhook-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/kinderhook-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Chatham -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/chatham-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/chatham-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Claverack -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/claverack-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/claverack-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Germantown -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/germantown-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/germantown-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Livingston -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/livingston-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/livingston-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Copake -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/copake-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/copake-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hillsdale -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/hillsdale-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/hillsdale-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ancram -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/ancram-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/ancram-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Taghkanic -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/taghkanic-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/taghkanic-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ghent -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/ghent-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/ghent-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Stockport -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/stockport-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/stockport-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================
+       ULSTER COUNTY TOWNS
+       ============================================ -->
+
+  <!-- Kingston -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/kingston-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/kingston-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- New Paltz -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/new-paltz-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/new-paltz-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Saugerties -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/saugerties-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/saugerties-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Woodstock -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/woodstock-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/woodstock-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Rosendale -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/rosendale-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/rosendale-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Marlboro -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/marlboro-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/marlboro-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Highland -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/highland-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/highland-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ellenville -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/ellenville-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/ellenville-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Phoenicia -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/phoenicia-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/phoenicia-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Shokan -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/shokan-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/shokan-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================
+       ORANGE COUNTY TOWNS
+       ============================================ -->
+
+  <!-- Newburgh -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/newburgh-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/newburgh-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Middletown -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/middletown-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/middletown-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Warwick -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/warwick-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/warwick-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Monroe -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/monroe-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/monroe-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cornwall -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/cornwall-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/cornwall-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Highland Falls -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/highland-falls-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/highland-falls-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Goshen -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/goshen-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/goshen-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Chester -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/chester-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/chester-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Washingtonville -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/washingtonville-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/washingtonville-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================
+       PUTNAM COUNTY TOWNS
+       ============================================ -->
+
+  <!-- Carmel -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/carmel-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/carmel-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Brewster -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/brewster-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/brewster-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cold Spring -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/cold-spring-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/cold-spring-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mahopac -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/mahopac-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/mahopac-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Patterson -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/patterson-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/patterson-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Southeast -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/southeast-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/southeast-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================
+       GREENE COUNTY TOWNS
+       ============================================ -->
+
+  <!-- Catskill (Greene) -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/catskill-greene-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/catskill-greene-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Athens -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/athens-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/athens-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Coxsackie -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/coxsackie-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/coxsackie-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Windham -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/windham-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/windham-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hunter -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/hunter-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/hunter-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tannersville -->
+  <url>
+    <loc>https://hudsonvalleyticks.com/tannersville-tick-prevention.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hudsonvalleyticks.com/tannersville-lyme-disease.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

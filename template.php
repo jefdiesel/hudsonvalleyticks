@@ -1,13 +1,15 @@
 <?php
 /**
  * MASTER TEMPLATE - template.php
- * 
+ *
  * Every page includes this file at the bottom.
  * Set $pageTitle, $pageDescription, and $pageContent before including this file.
- * 
+ *
  * Usage in your content pages:
- * 
+ *
  * <?php
+ * require_once 'jsonld-helpers.php';
+ *
  * $pageTitle = 'Your Page Title';
  * $pageDescription = 'Your page description';
  * $pageContent = <<<'HTML'
@@ -16,14 +18,36 @@
  *     </section>
  *     ...more HTML...
  * HTML;
+ *
+ * // Optional: Add JSON-LD structured data
+ * $jsonLdSchemas = [
+ *     generateArticleSchema('Title', 'Description', '2025-10-01'),
+ *     generateBreadcrumbSchema([['name' => 'Home', 'url' => '/']])
+ * ];
+ *
  * include 'template.php';
  * ?>
  */
 
+// Include JSON-LD helpers if not already included
+if (!function_exists('renderJsonLdSchemas')) {
+    require_once __DIR__ . '/jsonld-helpers.php';
+}
+
 // Set defaults if not provided by content page
 $pageTitle = $pageTitle ?? 'Hudson Valley Ticks | Tick Prevention & Education';
 $pageDescription = $pageDescription ?? 'Evidence-based tick prevention and Lyme disease information for Hudson Valley residents.';
+$jsonLdSchemas = $jsonLdSchemas ?? [];
 $currentPage = basename($_SERVER['PHP_SELF'], '.php');
+
+// Generate canonical URL
+$siteUrl = 'https://hudsonvalleyticks.com';
+$pageUrl = $pageUrl ?? $siteUrl . '/' . basename($_SERVER['PHP_SELF']);
+$canonicalUrl = $canonicalUrl ?? $pageUrl;
+
+// OG Image defaults
+$ogImage = $ogImage ?? $siteUrl . '/images/og-default.jpg';
+$ogType = $ogType ?? 'website';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +56,35 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
-    <meta name="keywords" content="ticks, Lyme disease, Hudson Valley, prevention, blog, education">
+    <meta name="keywords" content="ticks, Lyme disease, Hudson Valley, tick prevention, tick bite, tick removal, permethrin, DEET">
     <meta name="google-site-verification" content="EdTiTb32BQdG10T38Ag4P7LuN-MymFb4k1G71GaUad0" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="<?php echo htmlspecialchars($ogType); ?>">
+    <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($pageUrl); ?>">
+    <meta property="og:site_name" content="Hudson Valley Ticks">
+    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage); ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage); ?>">
+
+    <?php
+    // Render JSON-LD structured data if provided
+    if (!empty($jsonLdSchemas)) {
+        echo renderJsonLdSchemas($jsonLdSchemas);
+    }
+    ?>
     <style>
         /* ============================================
            WCAG 2.1 AA COMPLIANT STYLES
@@ -715,8 +766,9 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
                     onclick="this.parentElement.querySelector('.nav-menu').classList.toggle('active')">☰</button>
             <ul class="nav-menu">
                 <li><a href="index.php" <?php if($currentPage === 'index') echo 'class="active"'; ?>>Tick Bite Information</a></li>
-                <li><a href="tick-prevention-gear.php" <?php if($currentPage === 'tick-prevention-gear') echo 'class="active"'; ?>>Tick Prevention Gear</a></li>
-                <li><a href="blog.php" <?php if($currentPage === 'blog') echo 'class="active"'; ?>>HV Tick Blog</a></li>
+                <li><a href="tick-prevention-gear.php" <?php if($currentPage === 'tick-prevention-gear') echo 'class="active"'; ?>>Prevention Gear</a></li>
+                <li><a href="tick-testing-services.php" <?php if($currentPage === 'tick-testing-services') echo 'class="active"'; ?>>Tick Testing</a></li>
+                <li><a href="blog.php" <?php if($currentPage === 'blog') echo 'class="active"'; ?>>Blog</a></li>
             </ul>
         </nav>
     </header>

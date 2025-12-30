@@ -1,15 +1,54 @@
 <?php
 /**
  * BEN'S 30% DEET TICK REPELLENT PAGE
- * 
+ *
  * Product review and guide for Ben's 30% DEET spray repellent
  */
+
+require_once 'jsonld-helpers.php';
 
 // PAGE TITLE - Shows in browser tab and Google search
 $pageTitle = 'Ben\'s 30% DEET: CDC-Recommended Tick Repellent | Hudson Valley Ticks';
 
 // PAGE DESCRIPTION - Shows under title in Google search results (keep under 160 characters)
 $pageDescription = 'Ben\'s 30% DEET is the CDC-recommended minimum for effective tick protection. Water-based formula provides 12 hours of strong protection. Trusted by professionals.';
+
+// JSON-LD structured data for product review
+$jsonLdSchemas = [
+    // Product schema
+    generateProductSchema(
+        'Ben\'s 30% DEET 3.4oz Pump Spray',
+        'Water-based tick and insect repellent with 30% DEET. CDC-recommended minimum concentration for effective tick protection. Provides up to 12 hours of protection.',
+        10,
+        15,
+        4.4,
+        6200,
+        'https://www.amazon.com/Bens-Mosquito-Insect-Repellent-Ounce/dp/B0CDG6KS9J?tag=hudsonvalleyt-20',
+        null,
+        'Ben\'s'
+    ),
+    // Review schema
+    generateReviewSchema(
+        'Ben\'s 30% DEET 3.4oz Pump Spray',
+        'Ben\'s 30% DEET stands out as the gold standard for tick protection. The water-based formula provides 12 hours of effective protection without the greasy feel of alcohol-based alternatives. Ideal for Hudson Valley hikers and outdoor enthusiasts.',
+        4.5,
+        'Hudson Valley Ticks',
+        '2025-10-21'
+    ),
+    // Article schema
+    generateArticleSchema(
+        'Ben\'s 30% DEET: CDC-Recommended Tick Repellent',
+        'Complete review of Ben\'s 30% DEET tick repellent. Water-based formula provides 12 hours of protection.',
+        '2025-10-21',
+        '2025-10-21'
+    ),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Tick Prevention Gear', 'url' => '/tick-prevention-gear.php'],
+        ['name' => 'Ben\'s 30% DEET Review', 'url' => '/bens-30-deet-tick-repellent.php']
+    ])
+];
 
 // PAGE CONTENT - Everything between the hero section and footer
 $pageContent = <<<'HTML'

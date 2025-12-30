@@ -1,15 +1,62 @@
 <?php
 /**
  * BREAKNECK RIDGE HIKING GUIDE - breakneck-ridge-hiking-guide.php
- * 
+ *
  * Hudson Valley hiking guide with tick prevention
  * Skill Level: Challenging
  * Distance: 3.5-5 miles depending on route
  * Published: October 2025
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Breakneck Ridge Hiking Guide: Challenging Hudson Valley Classic with Tick Prevention';
 $pageDescription = 'Complete guide to Breakneck Ridge trail near Cold Spring, NY. Includes Metro-North access, challenging route descriptions, seasonal weather, and comprehensive tick prevention for this iconic Hudson Valley scramble.';
+
+// JSON-LD structured data for hiking guide
+$jsonLdSchemas = [
+    // TouristAttraction schema
+    generateTouristAttractionSchema(
+        'Breakneck Ridge',
+        'Hudson Valley\'s most challenging and iconic hike featuring steep scrambles, dramatic cliff faces, and breathtaking Hudson River vistas. A rite of passage for serious hikers near Cold Spring, NY.',
+        41.4486,
+        -73.9711,
+        'Cold Spring, NY'
+    ),
+    // Place schema
+    generatePlaceSchema(
+        'Breakneck Ridge Trail',
+        'Challenging hiking trail near Cold Spring, NY with steep rock scrambles, exposed cliff sections, and panoramic Hudson River views. Direct Metro-North access from NYC.',
+        41.4486,
+        -73.9711,
+        'Cold Spring, NY 10516'
+    ),
+    // Article schema
+    generateArticleSchema(
+        'Breakneck Ridge Hiking Guide: Challenging Hudson Valley Classic',
+        'Complete guide to Breakneck Ridge trail near Cold Spring, NY with Metro-North access, challenging route descriptions, and tick prevention strategies.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // FAQ schema
+    generateFAQSchema([
+        [
+            'question' => 'How difficult is Breakneck Ridge?',
+            'answer' => 'Breakneck Ridge is classified as challenging with steep rock scrambles, exposed cliff sections with 100+ foot drops, and significant elevation gain. It is Hudson Valley\'s most demanding popular hike and requires good fitness and sure footing.'
+        ],
+        [
+            'question' => 'Is Breakneck Ridge safe?',
+            'answer' => 'Breakneck Ridge requires caution due to steep scrambles and exposed sections. Annual rescues occur, particularly in wet conditions. It is not recommended for inexperienced hikers, children, or those afraid of heights.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'Breakneck Ridge Hiking Guide', 'url' => '/breakneck-ridge-hiking-guide.php']
+    ])
+];
+
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">

@@ -1,7 +1,7 @@
 <?php
 /**
  * BLOG POST: How to Do a Proper Tick Check on Yourself
- * 
+ *
  * This page includes:
  * - Comprehensive step-by-step tick checking guide
  * - Amazon affiliate product links (with tag: hudsonvalleyt-20)
@@ -10,8 +10,55 @@
  * - Proper PHP template structure
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'How to Do a Proper Tick Check on Yourself | Hudson Valley Ticks';
 $pageDescription = 'Step-by-step guide to checking yourself for ticks after outdoor activities. Learn the CDC-recommended method and best tools for tick removal in Hudson Valley.';
+
+// JSON-LD structured data
+$jsonLdSchemas = [
+    // Article schema
+    generateArticleSchema(
+        'How to Do a Proper Tick Check on Yourself',
+        'Step-by-step guide to checking yourself for ticks after outdoor activities using the CDC-recommended method.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // HowTo schema
+    generateHowToSchema(
+        'How to Do a Proper Tick Check',
+        'CDC-recommended method to find and remove ticks before Lyme disease transmission',
+        [
+            'Shower within 2 hours of coming indoors to wash off unattached ticks.',
+            'Use a full-length mirror and good lighting to examine your entire body.',
+            'Check hair and scalp thoroughly by running fingers through hair.',
+            'Examine behind ears, around neck, and in armpits.',
+            'Check waistband area, belly button, and groin region carefully.',
+            'Inspect behind knees, between toes, and all skin folds.',
+            'Have a partner check your back or use a hand mirror.',
+            'Check clothing and gear for any ticks that may have hitchhiked inside.'
+        ],
+        'PT15M'
+    ),
+    // FAQ schema
+    generateFAQSchema([
+        [
+            'question' => 'When should I do a tick check?',
+            'answer' => 'Do a tick check within 2 hours of returning from any outdoor activity in tick-prone areas. Shower immediately, then conduct a thorough body examination.'
+        ],
+        [
+            'question' => 'Where do ticks hide on the body?',
+            'answer' => 'Ticks prefer warm, moist areas including behind knees and ears, groin and waistband area, armpits, hairline, belly button, and between toes.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'Tick Check Guide', 'url' => '/tick-check-yourself.php']
+    ])
+];
+
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">

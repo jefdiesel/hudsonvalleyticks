@@ -1,15 +1,55 @@
 <?php
 /**
  * BLOG MAIN PAGE: blog.php
- * 
+ *
  * Comprehensive index of ALL Hudson Valley Ticks blog posts
  * Organized by category with full links and descriptions
  * WCAG 2.1 AA compliant
  * UPDATED: October 23, 2025 - Added Columbia County Kids Activities (5 new posts)
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Hudson Valley Tick Prevention Blog | Expert Guides & Education';
 $pageDescription = 'Evidence-based blog covering tick prevention, Lyme disease removal tools, personal protection strategies, seasonal guides, Hudson Valley hiking guides, and family fall activities for tick-safe outdoor recreation.';
+
+// JSON-LD structured data for blog index page
+$jsonLdSchemas = [
+    // Article/CollectionPage schema
+    [
+        '@context' => 'https://schema.org',
+        '@type' => 'CollectionPage',
+        'name' => 'Hudson Valley Tick Prevention Blog',
+        'description' => 'Evidence-based blog covering tick prevention, Lyme disease education, personal protection strategies, Hudson Valley hiking guides, and family outdoor activities.',
+        'url' => SITE_URL . '/blog.php',
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => SITE_NAME
+        ],
+        'mainEntity' => [
+            '@type' => 'ItemList',
+            'numberOfItems' => 46,
+            'itemListElement' => [
+                ['@type' => 'ListItem', 'position' => 1, 'name' => 'Fall Kids Activities', 'url' => SITE_URL . '/blog.php#fall-activities'],
+                ['@type' => 'ListItem', 'position' => 2, 'name' => 'Hiking Guides', 'url' => SITE_URL . '/blog.php#hiking'],
+                ['@type' => 'ListItem', 'position' => 3, 'name' => 'Papular Hives Management', 'url' => SITE_URL . '/blog.php#papular-hives'],
+                ['@type' => 'ListItem', 'position' => 4, 'name' => 'Tick Prevention', 'url' => SITE_URL . '/blog.php#prevention'],
+                ['@type' => 'ListItem', 'position' => 5, 'name' => 'Tick Removal', 'url' => SITE_URL . '/blog.php#removal'],
+                ['@type' => 'ListItem', 'position' => 6, 'name' => 'Lyme Disease Education', 'url' => SITE_URL . '/blog.php#lyme-disease'],
+                ['@type' => 'ListItem', 'position' => 7, 'name' => 'Repellents', 'url' => SITE_URL . '/blog.php#repellents'],
+                ['@type' => 'ListItem', 'position' => 8, 'name' => 'Permethrin Treatments', 'url' => SITE_URL . '/blog.php#permethrin'],
+                ['@type' => 'ListItem', 'position' => 9, 'name' => 'Yard Control', 'url' => SITE_URL . '/blog.php#yard'],
+                ['@type' => 'ListItem', 'position' => 10, 'name' => 'Special Situations', 'url' => SITE_URL . '/blog.php#special']
+            ]
+        ]
+    ],
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php']
+    ])
+];
+
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">

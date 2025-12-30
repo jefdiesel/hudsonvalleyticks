@@ -1,15 +1,57 @@
 <?php
 /**
  * EARLY SIGNS OF LYME DISEASE PAGE
- * 
+ *
  * Health guide covering early symptoms and what to watch for
  */
+
+require_once 'jsonld-helpers.php';
 
 // PAGE TITLE - Shows in browser tab and Google search
 $pageTitle = 'Early Signs of Lyme Disease: What You Need to Know | Hudson Valley Ticks';
 
 // PAGE DESCRIPTION - Shows under title in Google search results (keep under 160 characters)
 $pageDescription = 'Recognize early signs of Lyme disease beyond the bulls-eye rash. Symptoms appear 3-30 days after tick bite. Know when to call your doctor immediately.';
+
+// JSON-LD structured data for medical article
+$jsonLdSchemas = [
+    // Article schema
+    generateArticleSchema(
+        'Early Signs of Lyme Disease: What You Need to Know',
+        'Recognize early signs of Lyme disease beyond the bulls-eye rash. Symptoms appear 3-30 days after tick bite.',
+        '2025-10-18',
+        '2025-10-18'
+    ),
+    // Medical web page schema
+    generateMedicalWebPageSchema(
+        'Early Signs of Lyme Disease',
+        'Complete guide to recognizing early Lyme disease symptoms including the bulls-eye rash, flu-like symptoms, and neurological signs.',
+        '2025-10-18',
+        '2025-10-18',
+        ['Lyme Disease', 'Erythema Migrans', 'Tick-Borne Disease']
+    ),
+    // FAQ schema for common questions
+    generateFAQSchema([
+        [
+            'question' => 'When do Lyme disease symptoms appear after a tick bite?',
+            'answer' => 'Lyme disease symptoms typically appear 3-30 days after a tick bite, with most symptoms developing within 7-14 days.'
+        ],
+        [
+            'question' => 'Does everyone with Lyme disease get a bulls-eye rash?',
+            'answer' => 'No, only 60-80% of Lyme disease patients develop the characteristic bulls-eye rash (erythema migrans). The absence of a rash does not mean you do not have Lyme disease.'
+        ],
+        [
+            'question' => 'What are the early flu-like symptoms of Lyme disease?',
+            'answer' => 'Early flu-like symptoms include fever (100-102F), chills, fatigue, body aches, headache, joint pain, and muscle pain.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'Early Signs of Lyme Disease', 'url' => '/early-signs-of-lyme-disease.php']
+    ])
+];
 
 // PAGE CONTENT - Everything between the hero section and footer
 $pageContent = <<<'HTML'

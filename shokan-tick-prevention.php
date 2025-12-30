@@ -1,0 +1,7 @@
+<?php
+/**
+ * Shokan Tick Prevention Guide
+ * Auto-generated programmatic SEO page
+ */
+$townSlug = 'shokan';
+include __DIR__ . '/town-tick-prevention-template.php';

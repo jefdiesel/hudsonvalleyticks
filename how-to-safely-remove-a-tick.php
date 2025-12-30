@@ -4,8 +4,67 @@
  * CDC-approved tick removal instructions
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'How to Safely Remove a Tick: Step-by-Step Instructions | Hudson Valley Ticks';
 $pageDescription = 'Follow CDC-approved tick removal steps. Avoid common mistakes that spread Lyme disease. Complete guide for adults, children, and pets with safe removal.';
+
+// JSON-LD structured data
+$jsonLdSchemas = [
+    // Article schema
+    generateArticleSchema(
+        'How to Safely Remove a Tick: Step-by-Step Instructions',
+        'Follow CDC-approved tick removal steps. Avoid common mistakes that spread Lyme disease.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // HowTo schema for step-by-step instructions
+    generateHowToSchema(
+        'How to Safely Remove a Tick',
+        'CDC-approved method for safely removing a tick to prevent Lyme disease transmission',
+        [
+            'Grasp the tick as close to your skin as possible using fine-tipped tweezers or a tick removal tool, at the mouthparts where it is attached.',
+            'Pull straight outward and upward with steady, even pressure. Do not jerk or twist. The removal should take 1-3 seconds of steady pulling.',
+            'Place the entire tick (alive or dead) in a small container, jar, or zip-lock bag for potential testing. Do not crush it.',
+            'Clean the bite area with soap and water, then apply rubbing alcohol or antiseptic. Wash your hands thoroughly.',
+            'Take a photo of the bite area, mark the date, and monitor for any signs of rash or illness over the next 3-30 days.'
+        ],
+        'PT5M'
+    ),
+    // Product schema for TickCheck Kit
+    generateProductSchema(
+        'TickCheck Premium Tick Removal Kit',
+        'Includes specially designed removal tools, a magnifying glass, disinfectant, and collection containers for safe tick removal.',
+        15,
+        18,
+        4.8,
+        2100,
+        'https://www.amazon.com/TickCheck-Premium-Kit-Tick-Removal/dp/B075DKL3Z6?tag=hudsonvalleyt-20',
+        null,
+        'TickCheck'
+    ),
+    // FAQ schema
+    generateFAQSchema([
+        [
+            'question' => 'Why is proper tick removal important?',
+            'answer' => 'Improper tick removal can increase your risk of Lyme disease transmission by up to 40%. The wrong technique can cause the tick to regurgitate infected fluid directly into your bloodstream.'
+        ],
+        [
+            'question' => 'Should I twist the tick when removing it?',
+            'answer' => 'No, never twist the tick. Twisting can separate the mouthparts and leave them embedded in your skin. Always pull straight out with steady, even pressure.'
+        ],
+        [
+            'question' => 'How long does a tick need to be attached to transmit Lyme disease?',
+            'answer' => 'Lyme disease transmission risk is low in the first 24 hours, increases significantly at 24-48 hours, and is high after 48+ hours of attachment. Quick removal within the first 24 hours dramatically reduces your risk.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'How to Safely Remove a Tick', 'url' => '/how-to-safely-remove-a-tick.php']
+    ])
+];
 
 $pageContent = <<<'HTML'
     <section class="hero">

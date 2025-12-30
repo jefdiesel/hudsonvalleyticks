@@ -1,15 +1,51 @@
 <?php
 /**
  * STORM KING MOUNTAIN HIKING GUIDE - storm-king-hiking-guide.php
- * 
+ *
  * Hudson Valley hiking guide with tick prevention
  * Skill Level: Moderate
  * Distance: 5-7 miles depending on route
  * Published: October 2025
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Storm King Mountain Hiking Guide: Hudson Valley River Views & Tick Prevention';
 $pageDescription = 'Complete guide to Storm King Mountain trail near Cornwall-on-Hudson. Includes NYC access via Metro-North, difficulty breakdown, seasonal weather patterns, and integrated tick prevention for Hudson Valley hikers.';
+
+// JSON-LD structured data for hiking guide
+$jsonLdSchemas = [
+    // TouristAttraction schema
+    generateTouristAttractionSchema(
+        'Storm King Mountain',
+        'Storm King Mountain offers dramatic Hudson River vistas from a 1,340-foot summit near Cornwall-on-Hudson. Accessible via Metro-North railroad, it provides a moderate hiking experience with world-class scenery.',
+        41.4264,
+        -74.0033,
+        'Cornwall-on-Hudson, NY'
+    ),
+    // Place schema
+    generatePlaceSchema(
+        'Storm King State Park',
+        'Moderate difficulty hiking destination featuring the 1,340-foot Storm King Mountain summit with panoramic Hudson River views. Convenient Metro-North access from NYC.',
+        41.4264,
+        -74.0033,
+        'Cornwall-on-Hudson, NY 12520'
+    ),
+    // Article schema
+    generateArticleSchema(
+        'Storm King Mountain Hiking Guide: Hudson Valley River Views & Tick Prevention',
+        'Complete guide to Storm King Mountain trail near Cornwall-on-Hudson with NYC access, seasonal weather patterns, and tick prevention strategies.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'Storm King Hiking Guide', 'url' => '/storm-king-hiking-guide.php']
+    ])
+];
+
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">

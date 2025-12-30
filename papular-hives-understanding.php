@@ -2,13 +2,52 @@
 /**
  * BLOG POST: Understanding Papular Hives from Seed Tick Bites
  * papular-hives-understanding.php
- * 
+ *
  * Comprehensive guide to understanding the immunological response to seed tick bite swarms
  * WCAG 2.1 AA compliant | Medical disclosure included
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Understanding Papular Hives from Seed Tick Bites | Hudson Valley Ticks';
 $pageDescription = 'Evidence-based guide to papular urticaria from seed tick bite swarms: immunological responses, why they itch, and when to seek medical care.';
+
+// JSON-LD structured data for medical article
+$jsonLdSchemas = [
+    // Article schema
+    generateArticleSchema(
+        'Understanding Papular Hives from Seed Tick Bites',
+        'Evidence-based guide to papular urticaria from seed tick bite swarms: immunological responses, why they itch, and when to seek medical care.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // Medical web page schema
+    generateMedicalWebPageSchema(
+        'Understanding Papular Hives from Seed Tick Bites',
+        'Comprehensive guide to understanding papular urticaria (papular hives) caused by seed tick bite swarms, including immunological responses and treatment guidance.',
+        '2025-10-01',
+        '2025-10-01',
+        ['Papular Urticaria', 'Tick Bite Reaction', 'Allergic Reaction']
+    ),
+    // FAQ schema
+    generateFAQSchema([
+        [
+            'question' => 'What are papular hives from tick bites?',
+            'answer' => 'Papular hives (papular urticaria) are raised, itchy bumps that form when your immune system overreacts to tick bite antigens. Unlike regular hives which are flat and can move around, papular hives are persistent bumps that stay in the exact location of the bite.'
+        ],
+        [
+            'question' => 'Why do seed tick bites cause such severe reactions?',
+            'answer' => 'When hundreds of seed ticks attach simultaneously, your immune system faces an overwhelming challenge with dozens of puncture wounds, each introducing foreign proteins into your skin. The collective immune response causes a massive allergic reaction.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'Understanding Papular Hives', 'url' => '/papular-hives-understanding.php']
+    ])
+];
+
 $pageContent = <<<'HTML'
 <!-- HERO SECTION -->
 <div class="hero">

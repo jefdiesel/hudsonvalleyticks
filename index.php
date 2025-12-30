@@ -4,8 +4,24 @@
  * Evidence-based tick information and treatment resources
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Hudson Valley Ticks | Evidence-Based Tick Information & Treatment Resources';
 $pageDescription = 'Tick prevention for Hudson Valley. Learn CDC-approved methods to prevent Lyme disease with expert tips, product reviews, and outdoor safety guides today.';
+
+// Homepage JSON-LD structured data
+$jsonLdSchemas = [
+    // Organization schema
+    generateOrganizationSchema(),
+    // WebSite schema with SearchAction
+    generateWebSiteSchema(),
+    // LocalBusiness schema for Hudson Valley area
+    generateLocalBusinessSchema(),
+    // Breadcrumb for homepage
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/']
+    ])
+];
 
 $pageContent = <<<'HTML'
     <section class="hero">

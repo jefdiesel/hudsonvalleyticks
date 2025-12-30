@@ -4,8 +4,46 @@
  * 2000+ words with 5 unique Amazon affiliate product recommendations
  */
 
+require_once 'jsonld-helpers.php';
+
 $pageTitle = 'Lyme Arthritis: Persistent Joint Pain and Treatment | Hudson Valley Ticks';
 $pageDescription = 'Learn about Lyme arthritis symptoms, inflammation patterns, migratory joint pain, and evidence-based treatment strategies for managing chronic joint pain.';
+
+// JSON-LD structured data for medical article
+$jsonLdSchemas = [
+    // Article schema
+    generateArticleSchema(
+        'Lyme Arthritis: Understanding and Treating Migratory Joint Pain',
+        'Learn about Lyme arthritis symptoms, inflammation patterns, migratory joint pain, and evidence-based treatment strategies.',
+        '2025-10-01',
+        '2025-10-01'
+    ),
+    // Medical web page schema
+    generateMedicalWebPageSchema(
+        'Lyme Arthritis: Persistent Joint Pain and Treatment',
+        'Comprehensive guide to Lyme arthritis including symptoms, inflammation patterns, migratory joint pain, and evidence-based treatment strategies for managing chronic joint pain.',
+        '2025-10-01',
+        '2025-10-01',
+        ['Lyme Arthritis', 'Lyme Disease', 'Joint Pain', 'Inflammatory Arthritis']
+    ),
+    // FAQ schema
+    generateFAQSchema([
+        [
+            'question' => 'What is Lyme arthritis?',
+            'answer' => 'Lyme arthritis is a direct manifestation of Lyme disease caused by the bacterium Borrelia burgdorferi. It occurs in 10-25% of untreated Lyme disease cases and primarily affects large joints, with knees affected in approximately 80% of cases.'
+        ],
+        [
+            'question' => 'How is Lyme arthritis different from other types of arthritis?',
+            'answer' => 'Unlike rheumatoid arthritis which affects joints symmetrically, or osteoarthritis that develops gradually, Lyme arthritis often presents as acute, severe pain in a single large joint. The pain can be migratory, moving from one joint to another.'
+        ]
+    ]),
+    // Breadcrumb
+    generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'Blog', 'url' => '/blog.php'],
+        ['name' => 'Lyme Arthritis', 'url' => '/blog-lyme-arthritis.php']
+    ])
+];
 
 $pageContent = <<<'HTML'
     <section class="hero">
